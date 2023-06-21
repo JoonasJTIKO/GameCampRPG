@@ -28,6 +28,7 @@ namespace GameCampRPG
             if (!Activated) return false;
 
             Activated = false;
+            extraAction = false;
             return true;
         }
 

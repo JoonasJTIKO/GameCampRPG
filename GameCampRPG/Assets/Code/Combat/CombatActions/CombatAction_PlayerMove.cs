@@ -44,6 +44,7 @@ namespace GameCampRPG
                 targetY = gridNavigation.SelectedY;
 
                 extraAction = playerUnit.SetQueuedAction(this);
+                if (!extraAction) playerUnit.IsSelectable = false;
 
                 return true;
             }
@@ -53,7 +54,6 @@ namespace GameCampRPG
 
         public override bool DequeueAction()
         {
-            playerUnit.SetQueuedAction(null);
             return base.DequeueAction();
         }
 

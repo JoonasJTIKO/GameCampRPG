@@ -105,6 +105,7 @@ namespace GameCampRPG
         {
             if (ExtraAction != null && action == null)
             {
+                ExtraAction.DequeueAction();
                 ExtraAction = action;
                 DoExtraAction = false;
                 return false;

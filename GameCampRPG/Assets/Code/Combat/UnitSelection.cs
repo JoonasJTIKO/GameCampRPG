@@ -217,6 +217,14 @@ namespace GameCampRPG
             {
                 playerUnits[currentPlayerSelection].ActivateActionsMenu(false);
                 turnManager.EnemyUnits[currentEnemySelection].Highlight(false);
+
+                int counter = 0;
+                foreach (CombatPlayerUnit unit in playerUnits)
+                {
+                    if (unit.IsSelectable == true) break;
+                    counter++;
+                }
+                if (counter == playerUnits.Count) return;
                 
                 while (!playerUnits[currentPlayerSelection].IsAlive || !playerUnits[currentPlayerSelection].IsSelectable)
                 {

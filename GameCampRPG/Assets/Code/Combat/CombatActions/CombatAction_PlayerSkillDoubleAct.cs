@@ -35,6 +35,8 @@ namespace GameCampRPG
         {
             if (base.QueueAction())
             {
+                playerUnit.IsSelectable = false;
+
                 playerUnit.SetQueuedAction(this);
                 return true;
             }
@@ -44,7 +46,6 @@ namespace GameCampRPG
 
         public override bool DequeueAction()
         {
-            playerUnit.SetQueuedAction(null);
             return base.DequeueAction();
         }
 

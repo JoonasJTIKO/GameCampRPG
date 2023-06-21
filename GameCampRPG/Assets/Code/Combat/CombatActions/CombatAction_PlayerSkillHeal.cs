@@ -45,7 +45,6 @@ namespace GameCampRPG
 
         public override bool DequeueAction()
         {
-            playerUnit.SetQueuedAction(null);
             return base.DequeueAction();
         }
 

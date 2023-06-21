@@ -89,6 +89,8 @@ namespace GameCampRPG
 
         public virtual bool SetQueuedAction(CombatActionBase action)
         {
+            if (QueuedAction != null) QueuedAction.DequeueAction();
+
             QueuedAction = action;
             return false;
         }
