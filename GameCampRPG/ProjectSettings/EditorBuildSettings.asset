@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GlobalScene.unity
+    guid: 36583725025ffa641a1ada3aae852b74
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: 0810b1132f76f5e41a606d58e2a85d8e
+  - enabled: 1
+    path: Assets/Scenes/OverworldTest.unity
+    guid: cc817c587c3ddbe44a2d37fbeed262f3
+  - enabled: 1
+    path: Assets/Scenes/CombatTest.unity
+    guid: 481ad95577aa2d749af71c321ad41e4a
+  - enabled: 1
+    path: Assets/Scenes/DialogTestScene.unity
+    guid: 9c9cc331b826e0c43b6b878c1be9e719
+  - enabled: 1
+    path: Assets/Scenes/NPCTest.unity
+    guid: 78642890e3c18e941a71e86ac24577df
+  m_configObjects: {}
