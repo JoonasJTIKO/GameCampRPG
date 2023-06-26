@@ -196,6 +196,13 @@ namespace GameCampRPG.UI
 
         private void Heal()
         {
+            //TODO: Some kind of animation or such to indicate healing
+            PlayerInfo playerInfo = GameInstance.Instance.GetPlayerInfo();
+            for (int i = 0; i < playerInfo.CharacterHealths.Length; i++)
+            {
+                //TODO: If different player characters have different max healths, somehow override 3 with respective characters max health
+                playerInfo.SetCharacterHealth(i, 3);
+            }
             Debug.Log("Healing");
         }
 
