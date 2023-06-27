@@ -13,8 +13,6 @@ namespace GameCampRPG
 
         private UnitSelection unitSelection;
 
-        private int multiAmount = 1;
-
         private void Awake()
         {
             playerUnit = GetComponent<CombatPlayerUnit>();
@@ -38,7 +36,7 @@ namespace GameCampRPG
         {
             foreach (CombatEnemyUnit target in targetUnits)
             {
-                target.TakeDamage(playerUnit.AttackStrength);
+                target.TakeDamage(playerUnit.SkillStrength);
             }
             yield return new WaitForSeconds(1);
             Executed();
@@ -89,7 +87,9 @@ namespace GameCampRPG
 
         public void BeginTargetSelect()
         {
-            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.EnemyUnits, multiAmount);
+            if (onCooldown) return;
+
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.EnemyUnits, playerUnit.SkillStrength);
             unitSelection.OnEnemySelected += TargetSelected;
             unitSelection.OnGoBack += StopTargetSelect;
         }

@@ -11,11 +11,12 @@ namespace GameCampRPG
         private UnitSelection unitSelection;
         private CombatPlayerMoving playerMoving;
         private CombatPlayerUnit playerUnit;
+        private CombatPlayerBuffManager playerBuffManager;
         private GridVisual grid;
 
         private int targetX, targetY;
 
-        private int healAmount = 2;
+        private int healAmount = 1;
 
         private GridNavigation.TargetingShape targetingShape = GridNavigation.TargetingShape.Cross;
 
@@ -25,7 +26,18 @@ namespace GameCampRPG
             unitSelection = FindObjectOfType<UnitSelection>();
             playerMoving = GetComponent<CombatPlayerMoving>();
             playerUnit = GetComponent<CombatPlayerUnit>();
+            playerBuffManager = GetComponent<CombatPlayerBuffManager>();
             grid = FindObjectOfType<GridVisual>();
+        }
+
+        private void OnEnable()
+        {
+            playerBuffManager.SkillBuffActivated += ChangeShape;
+        }
+
+        private void OnDisable()
+        {
+            playerBuffManager.SkillBuffActivated -= ChangeShape;
         }
 
         public override bool QueueAction()
@@ -106,12 +118,14 @@ namespace GameCampRPG
             if (go == null) return;
 
             CombatPlayerUnit unit = go.GetComponent<CombatPlayerUnit>();
-            unit.ChangeHealth(healAmount);
+            unit.ChangeHealth(healAmount + playerUnit.SkillStrength);
             Debug.Log("Healing " + unit);
         }
 
         private void SelectHealTarget()
         {
+            if (onCooldown) return;
+
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None);
             unitSelection.OnGoBack += CancelSelect;
             gridNavigation.OnSelected += OnSelected;
@@ -132,6 +146,18 @@ namespace GameCampRPG
             gridNavigation.OnSelected -= OnSelected;
             unitSelection.OnGoBack -= CancelSelect;
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.PlayerUnits);
+        }
+
+        private void ChangeShape(bool input)
+        {
+            if (input)
+            {
+                targetingShape = GridNavigation.TargetingShape.Square;
+            }
+            else
+            {
+                targetingShape = GridNavigation.TargetingShape.Cross;
+            }
         }
     }
 }

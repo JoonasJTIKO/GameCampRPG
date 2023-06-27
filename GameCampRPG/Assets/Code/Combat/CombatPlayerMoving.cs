@@ -37,6 +37,16 @@ namespace GameCampRPG
             GridPositionY = yPosition;
         }
 
+        private void OnEnable()
+        {
+            GetComponent<CombatPlayerUnit>().OnDied += PlayerDied;
+        }
+
+        private void OnDisable()
+        {
+            GetComponent<CombatPlayerUnit>().OnDied -= PlayerDied;
+        }
+
         private void Start()
         {
             grid.MoveToNode(GridPositionX, GridPositionY);
@@ -55,6 +65,11 @@ namespace GameCampRPG
             transform.position = position;
             yield return new WaitForSeconds(1);
             Moved?.Invoke();
+        }
+
+        private void PlayerDied()
+        {
+            grid.ClearNode(GridPositionX, GridPositionY);
         }
     }
 }

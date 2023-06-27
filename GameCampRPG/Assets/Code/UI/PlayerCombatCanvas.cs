@@ -11,11 +11,19 @@ namespace GameCampRPG.UI
         [SerializeField]
         private TMP_Text currentUnitText;
 
+        [SerializeField]
+        private TMP_Text currentCooldownText;
+
         public static event Action OnAttackPressed, OnSkillPressed, OnBlockPressed, OnMovePressed;
 
         public void SetUnitText(string text)
         {
             currentUnitText.text = text;
+        }
+
+        public void SetCooldownText(int number)
+        {
+            currentCooldownText.text = number.ToString();
         }
 
         public void AttackPressed()

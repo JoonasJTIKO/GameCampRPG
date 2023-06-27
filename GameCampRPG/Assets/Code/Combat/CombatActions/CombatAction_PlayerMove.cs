@@ -8,13 +8,13 @@ namespace GameCampRPG
 {
     public class CombatAction_PlayerMove : CombatActionBase
     {
-        [SerializeField]
         private int maxMoveDistance = 1;
 
         private GridNavigation gridNavigation;
         private UnitSelection unitSelection;
         private CombatPlayerMoving playerMoving;
         private CombatPlayerUnit playerUnit;
+        private CombatPlayerBuffManager playerBuffManager;
 
         private int targetX, targetY;
 
@@ -24,16 +24,19 @@ namespace GameCampRPG
             unitSelection = FindObjectOfType<UnitSelection>();
             playerMoving = GetComponent<CombatPlayerMoving>();
             playerUnit = GetComponent<CombatPlayerUnit>();
+            playerBuffManager = GetComponent<CombatPlayerBuffManager>();
         }
 
         private void OnEnable()
         {
             playerMoving.Moved += Executed;
+            playerBuffManager.MovementBuffActivated += ChangeMoveDistance;
         }
 
         private void OnDisable()
         {
             playerMoving.Moved -= Executed;
+            playerBuffManager.MovementBuffActivated -= ChangeMoveDistance;
         }
 
         public override bool QueueAction()
@@ -101,6 +104,12 @@ namespace GameCampRPG
             gridNavigation.OnSelected -= OnSelected;
             unitSelection.OnGoBack -= CancelSelect;
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.PlayerUnits);
+        }
+
+        private void ChangeMoveDistance(bool input)
+        {
+            if (input) maxMoveDistance = 2;
+            else maxMoveDistance = 1;
         }
     }
 }

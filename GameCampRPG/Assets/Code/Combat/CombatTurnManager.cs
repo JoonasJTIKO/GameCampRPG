@@ -24,6 +24,8 @@ namespace GameCampRPG
 
         private EnemySpawning enemySpawning;
 
+        private PowerUpSpawning powerUpSpawning;
+
         private bool actionExecuting = false;
 
         private int playerCount, enemyCount;
@@ -38,8 +40,11 @@ namespace GameCampRPG
 
             unitSelection = GetComponent<UnitSelection>();
             enemySpawning = GetComponent<EnemySpawning>();
-            EnemyUnits = enemySpawning.InitializeEnemies();
+            powerUpSpawning = GetComponent<PowerUpSpawning>();
+            EnemyUnits = enemySpawning.InitializeEnemies();        }
 
+        private void Start()
+        {
             StartPlayerTurn();
         }
 
@@ -83,7 +88,7 @@ namespace GameCampRPG
         {
             foreach (CombatPlayerUnit unit in playerUnits)
             {
-                if (unit.QueuedAction == null) return;
+                if (unit.QueuedAction == null && unit.IsAlive) return;
             }
             EndPlayerTurn();
         }
@@ -112,9 +117,12 @@ namespace GameCampRPG
         {
             if (transitionRoutine != null) return;
 
+            powerUpSpawning.SpawnPowerUp();
+
             foreach (CombatPlayerUnit unit in playerUnits)
             {
                 unit.IsSelectable = true;
+                unit.ProgressCooldowns();
             }
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.PlayerUnits);
         }

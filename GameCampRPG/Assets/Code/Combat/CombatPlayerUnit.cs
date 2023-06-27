@@ -19,9 +19,13 @@ namespace GameCampRPG
 
         public bool IsSelectable = true;
 
+        private CombatPlayerBuffManager playerBuffManager;
+
         protected override void Awake()
         {
             base.Awake();
+
+            playerBuffManager = GetComponent<CombatPlayerBuffManager>();
 
             if (GameInstance.Instance == null) return;
 
@@ -45,12 +49,24 @@ namespace GameCampRPG
 
             if (GameInstance.Instance.GetPlayerInfo().SkillStrengths[characterIndex] == 0)
             {
-                GameInstance.Instance.GetPlayerInfo().SetCharacterSkillStrength(characterIndex, skillStrenght);
+                GameInstance.Instance.GetPlayerInfo().SetCharacterSkillStrength(characterIndex, skillStrength);
             }
             else
             {
-                skillStrenght = GameInstance.Instance.GetPlayerInfo().SkillStrengths[characterIndex];
+                skillStrength = GameInstance.Instance.GetPlayerInfo().SkillStrengths[characterIndex];
             }
+        }
+
+        private void OnEnable()
+        {
+            playerBuffManager.AttackBuffActivated += ChangeAttackDamage;
+            playerBuffManager.SkillBuffActivated += ChangeSkillStrength;
+        }
+
+        private void OnDisable()
+        {
+            playerBuffManager.AttackBuffActivated -= ChangeAttackDamage;
+            playerBuffManager.SkillBuffActivated -= ChangeSkillStrength;
         }
 
         public override bool ExecuteQueuedAction()
@@ -78,9 +94,15 @@ namespace GameCampRPG
                 PlayerCombatCanvas ui = GameInstance.Instance.GetPlayerCombatCanvas();
                 ui.Show();
                 ui.SetUnitText("Unit " + (characterIndex + 1));
+                ui.SetCooldownText(0);
                 foreach (CombatActionBase action in combatActions)
                 {
                     action.BeginListening();
+
+                    if (action.CurrentCooldown != 0)
+                    {
+                        ui.SetCooldownText(action.CurrentCooldown);
+                    }
                 }
             }
             else
@@ -118,6 +140,30 @@ namespace GameCampRPG
             }
             base.SetQueuedAction(action);
             return false;
+        }
+
+        private void ChangeAttackDamage(bool input)
+        {
+            if (!input && attackStrength != GameInstance.Instance.GetPlayerInfo().AttackStrengths[characterIndex])
+            {
+                attackStrength--;
+            }
+            else if (input && attackStrength == GameInstance.Instance.GetPlayerInfo().AttackStrengths[characterIndex])
+            {
+                attackStrength++;
+            }
+        }
+
+        private void ChangeSkillStrength(bool input)
+        {
+            if (!input && skillStrength != GameInstance.Instance.GetPlayerInfo().SkillStrengths[characterIndex])
+            {
+                skillStrength--;
+            }
+            else if (input && skillStrength == GameInstance.Instance.GetPlayerInfo().SkillStrengths[characterIndex])
+            {
+                skillStrength++;
+            }
         }
     }
 }

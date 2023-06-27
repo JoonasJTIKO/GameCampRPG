@@ -59,6 +59,8 @@ namespace GameCampRPG
 
         private void BeginTargetSelect()
         {
+            if (onCooldown) return;
+
             unitSelection.LockPlayerActions(true);
             playerUnit.IsSelectable = false;
             unitSelection.OnPlayerSelected += TargetSelected;

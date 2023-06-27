@@ -221,7 +221,7 @@ namespace GameCampRPG
                 int counter = 0;
                 foreach (CombatPlayerUnit unit in playerUnits)
                 {
-                    if (unit.IsSelectable == true) break;
+                    if (unit.IsSelectable == true && unit.IsAlive) break;
                     counter++;
                 }
                 if (counter == playerUnits.Count) return;

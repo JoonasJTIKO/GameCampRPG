@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CombatTest.unity
     guid: 481ad95577aa2d749af71c321ad41e4a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DialogTestScene.unity
     guid: 9c9cc331b826e0c43b6b878c1be9e719
   - enabled: 1

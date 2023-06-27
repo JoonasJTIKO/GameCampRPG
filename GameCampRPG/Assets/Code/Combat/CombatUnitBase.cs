@@ -15,7 +15,7 @@ namespace GameCampRPG
         protected int attackStrength = 1;
 
         [SerializeField]
-        protected int skillStrenght = 1;
+        protected int skillStrength = 1;
 
         [SerializeField]
         private GameObject model;
@@ -37,9 +37,9 @@ namespace GameCampRPG
             get { return attackStrength; }
         }
 
-        public int SkillStrenght
+        public int SkillStrength
         {
-            get { return skillStrenght; }
+            get { return skillStrength; }
         }
 
         public bool IsAlive
@@ -93,6 +93,14 @@ namespace GameCampRPG
 
             QueuedAction = action;
             return false;
+        }
+
+        public void ProgressCooldowns()
+        {
+            foreach (CombatActionBase combatAction in combatActions)
+            {
+                combatAction.ProgressCooldown();
+            }
         }
 
         private void Die()
