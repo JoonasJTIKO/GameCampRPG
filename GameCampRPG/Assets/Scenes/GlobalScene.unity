@@ -2694,6 +2694,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813b1725914c09646972e5125e0f2961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  items:
+  - <ID>k__BackingField: 0
+    <Name>k__BackingField: Main Weapon
+    <Description>k__BackingField: "T\xE4\xE4 on hahmon main weapon"
+    <Amount>k__BackingField: 1
+    <MaxAmount>k__BackingField: 1
+    <IsUnique>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 0}
 --- !u!114 &1971147450
 MonoBehaviour:
   m_ObjectHideFlags: 0

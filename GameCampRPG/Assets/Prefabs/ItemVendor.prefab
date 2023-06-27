@@ -97,22 +97,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cca341810923ff4a9482a3abf86f654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xOffset: 55
+  yOffset: 100
   items:
-  - <ID>k__BackingField: 0
+  - <ID>k__BackingField: 1
     <Name>k__BackingField: Random potion
     <Description>k__BackingField: Random description
     <Amount>k__BackingField: 3
     <MaxAmount>k__BackingField: 20
     <IsUnique>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
-  - <ID>k__BackingField: 1
+  - <ID>k__BackingField: 2
     <Name>k__BackingField: Random item
     <Description>k__BackingField: Random description 2
     <Amount>k__BackingField: 1
     <MaxAmount>k__BackingField: 10
     <IsUnique>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
-  - <ID>k__BackingField: 2
+  - <ID>k__BackingField: 3
     <Name>k__BackingField: Random ase??
     <Description>k__BackingField: Random description 3
     <Amount>k__BackingField: 1

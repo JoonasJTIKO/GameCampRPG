@@ -26,7 +26,8 @@ namespace GameCampRPG
 
             inputs = GameInstance.Instance.GetPlayerInfo().PlayerInputs;
             moveAction = inputs.Overworld.Move;
-            interact = inputs.Overworld.Interact;        }
+            interact = inputs.Overworld.Interact;
+        }
 
         private void OnEnable()
         {

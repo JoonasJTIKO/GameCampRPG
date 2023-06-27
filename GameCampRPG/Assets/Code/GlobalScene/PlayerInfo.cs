@@ -10,6 +10,8 @@ namespace GameCampRPG
 
         public PlayerInputs PlayerInputs { get; private set; }
 
+        [SerializeField]
+        private Item[] items;
 
         private int[] charaterHealths = new int[3];
         public int[] CharacterHealths { get { return charaterHealths; } }
@@ -23,6 +25,12 @@ namespace GameCampRPG
         private void Awake()
         {
             PlayerInputs = new PlayerInputs();
+            playerInventory = new Inventory(50);
+
+            foreach (Item item in items)
+            {
+                playerInventory.AddItems(item);
+            }
         }
 
         public void SetCharacterHealth(int characterIndex, int value)

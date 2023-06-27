@@ -113,21 +113,21 @@ MonoBehaviour:
   xOffset: 55
   yOffset: 100
   items:
-  - <ID>k__BackingField: 0
+  - <ID>k__BackingField: 4
     <Name>k__BackingField: Vaarallinen item
     <Description>k__BackingField: "T\xE4m\xE4 on eritt\xE4in vaarallinen item"
     <Amount>k__BackingField: 2
     <MaxAmount>k__BackingField: 5
     <IsUnique>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
-  - <ID>k__BackingField: 1
+  - <ID>k__BackingField: 5
     <Name>k__BackingField: Turvallinen item
     <Description>k__BackingField: "T\xE4m\xE4 on eritt\xE4in turvallinen item"
     <Amount>k__BackingField: 1
     <MaxAmount>k__BackingField: 10
     <IsUnique>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
-  - <ID>k__BackingField: 2
+  - <ID>k__BackingField: 6
     <Name>k__BackingField: Radioaktiivinen item
     <Description>k__BackingField: "T\xE4m\xE4 on eritt\xE4in radioaktiivinen item"
     <Amount>k__BackingField: 1
