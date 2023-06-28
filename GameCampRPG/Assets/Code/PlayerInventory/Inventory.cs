@@ -29,7 +29,7 @@ namespace GameCampRPG
         }
 
         /// <summary>
-        /// Adds item(s) to this inventory, the item stores it't amount
+        /// Adds item(s) to this inventory, the item stores it's amount
         /// </summary>
         /// <param name="item">Item(s) to be added</param>
         /// <returns>The amount of the given item that were added. Therefore 0 means adding failed</returns>

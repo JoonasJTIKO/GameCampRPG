@@ -28,6 +28,7 @@ namespace GameCampRPG.UI
 
         public void AttackPressed()
         {
+            Debug.Log("Attack");
             OnAttackPressed?.Invoke();
         }
 

@@ -195,6 +195,14 @@ namespace GameCampRPG
 
         public void SwitchTargetingMode(TargetingMode mode, int spread = 0)
         {
+            StartCoroutine(SwitchTargetingModeRoutine(mode, spread));
+        }
+
+        private IEnumerator SwitchTargetingModeRoutine(TargetingMode mode, int spread = 0)
+        {
+            inputs.Combat.Disable();
+            yield return new WaitForFixedUpdate();
+
             currentTargetingMode = mode;
             spreadTargetingAmount = spread;
 
@@ -207,8 +215,7 @@ namespace GameCampRPG
             {
                 turnManager.EnemyUnits[currentEnemySelection].Highlight(false);
                 playerUnits[currentPlayerSelection].ActivateActionsMenu(false);
-                inputs.Combat.Disable();
-                return;
+                yield break;
             }
 
             if (inputs != null) inputs.Combat.Enable();
@@ -224,8 +231,8 @@ namespace GameCampRPG
                     if (unit.IsSelectable == true && unit.IsAlive) break;
                     counter++;
                 }
-                if (counter == playerUnits.Count) return;
-                
+                if (counter == playerUnits.Count) yield break;
+
                 while (!playerUnits[currentPlayerSelection].IsAlive || !playerUnits[currentPlayerSelection].IsSelectable)
                 {
                     currentPlayerSelection++;

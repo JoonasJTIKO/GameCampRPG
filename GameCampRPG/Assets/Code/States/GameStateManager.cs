@@ -42,8 +42,11 @@ namespace GameCampRPG
                         }
                     }
                     Destroy(devModeObject);
+                    return;
                 }
             }
+
+            LoadInitialState();
         }
 
         private void Initialize()
@@ -55,7 +58,10 @@ namespace GameCampRPG
             states.Add(villageState);
             states.Add(overworldState);
             states.Add(combatState);
+        }
 
+        private void LoadInitialState()
+        {
             foreach (GameStateBase state in states)
             {
                 if (state.Type == initialState)

@@ -10,6 +10,9 @@ namespace GameCampRPG
         private List<EnemyData> enemies;
 
         [SerializeField]
+        private List<Item> drops;
+
+        [SerializeField]
         private StateType targetState;
 
         [SerializeField]
@@ -21,6 +24,7 @@ namespace GameCampRPG
             PlayerInputs inputs = GameInstance.Instance.GetPlayerInfo().PlayerInputs;
             inputs.Overworld.Disable();
             GameInstance.Instance.GetCombatInfo().Enemies = enemies;
+            GameInstance.Instance.GetCombatInfo().Drops = drops;
             StartCoroutine(Transition());
         }
 

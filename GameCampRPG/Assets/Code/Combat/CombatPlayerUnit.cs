@@ -21,11 +21,14 @@ namespace GameCampRPG
 
         private CombatPlayerBuffManager playerBuffManager;
 
+        private PHEnemyHealthDisplay healthDisplay;
+
         protected override void Awake()
         {
             base.Awake();
 
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
+            healthDisplay = GetComponentInChildren<PHEnemyHealthDisplay>();
 
             if (GameInstance.Instance == null) return;
 
@@ -55,6 +58,11 @@ namespace GameCampRPG
             {
                 skillStrength = GameInstance.Instance.GetPlayerInfo().SkillStrengths[characterIndex];
             }
+        }
+
+        private void Start()
+        {
+            healthDisplay.UpdateText(Health.ToString());
         }
 
         private void OnEnable()
@@ -93,7 +101,20 @@ namespace GameCampRPG
 
                 PlayerCombatCanvas ui = GameInstance.Instance.GetPlayerCombatCanvas();
                 ui.Show();
-                ui.SetUnitText("Unit " + (characterIndex + 1));
+
+                switch (characterIndex)
+                {
+                    case 0:
+                        ui.SetUnitText("Rogue");
+                        break;
+                    case 1:
+                        ui.SetUnitText("Knight");
+                        break;
+                    case 2:
+                        ui.SetUnitText("Mage");
+                        break;
+                }
+
                 ui.SetCooldownText(0);
                 foreach (CombatActionBase action in combatActions)
                 {
@@ -120,6 +141,7 @@ namespace GameCampRPG
         public void TakeDamage(int amount)
         {
             ChangeHealth(-amount);
+            healthDisplay.UpdateText(Health.ToString());
             Debug.Log("unit " + characterIndex + " Took " + amount + " damage");
         }
 

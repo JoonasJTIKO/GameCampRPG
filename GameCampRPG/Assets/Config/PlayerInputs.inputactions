@@ -421,7 +421,7 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "MenuUp",
@@ -436,6 +436,24 @@
                     "name": "MenuDown",
                     "type": "Button",
                     "id": "6aa53cfd-3ceb-4d32-b610-3d338ae5eb91",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Point",
+                    "type": "PassThrough",
+                    "id": "343b5728-27b9-4b68-ba3e-c64b50c60d6e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Click",
+                    "type": "PassThrough",
+                    "id": "23799eb4-55cd-43bf-9399-6efb0c6621df",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -506,6 +524,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "MenuDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d2eb8281-ef07-42e6-b054-c0f4683f6263",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "927162a0-8d40-4063-b20f-6287fc0823d8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

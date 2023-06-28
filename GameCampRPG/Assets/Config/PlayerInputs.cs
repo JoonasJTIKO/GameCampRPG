@@ -443,7 +443,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""MenuUp"",
@@ -458,6 +458,24 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""name"": ""MenuDown"",
                     ""type"": ""Button"",
                     ""id"": ""6aa53cfd-3ceb-4d32-b610-3d338ae5eb91"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Point"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""343b5728-27b9-4b68-ba3e-c64b50c60d6e"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Click"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""23799eb4-55cd-43bf-9399-6efb0c6621df"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -530,6 +548,28 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""action"": ""MenuDown"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d2eb8281-ef07-42e6-b054-c0f4683f6263"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Point"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""927162a0-8d40-4063-b20f-6287fc0823d8"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -575,6 +615,8 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
         m_UI_MenuUp = m_UI.FindAction("MenuUp", throwIfNotFound: true);
         m_UI_MenuDown = m_UI.FindAction("MenuDown", throwIfNotFound: true);
+        m_UI_Point = m_UI.FindAction("Point", throwIfNotFound: true);
+        m_UI_Click = m_UI.FindAction("Click", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -771,6 +813,8 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_Select;
     private readonly InputAction m_UI_MenuUp;
     private readonly InputAction m_UI_MenuDown;
+    private readonly InputAction m_UI_Point;
+    private readonly InputAction m_UI_Click;
     public struct UIActions
     {
         private @PlayerInputs m_Wrapper;
@@ -778,6 +822,8 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         public InputAction @Select => m_Wrapper.m_UI_Select;
         public InputAction @MenuUp => m_Wrapper.m_UI_MenuUp;
         public InputAction @MenuDown => m_Wrapper.m_UI_MenuDown;
+        public InputAction @Point => m_Wrapper.m_UI_Point;
+        public InputAction @Click => m_Wrapper.m_UI_Click;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -796,6 +842,12 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @MenuDown.started += instance.OnMenuDown;
             @MenuDown.performed += instance.OnMenuDown;
             @MenuDown.canceled += instance.OnMenuDown;
+            @Point.started += instance.OnPoint;
+            @Point.performed += instance.OnPoint;
+            @Point.canceled += instance.OnPoint;
+            @Click.started += instance.OnClick;
+            @Click.performed += instance.OnClick;
+            @Click.canceled += instance.OnClick;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -809,6 +861,12 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @MenuDown.started -= instance.OnMenuDown;
             @MenuDown.performed -= instance.OnMenuDown;
             @MenuDown.canceled -= instance.OnMenuDown;
+            @Point.started -= instance.OnPoint;
+            @Point.performed -= instance.OnPoint;
+            @Point.canceled -= instance.OnPoint;
+            @Click.started -= instance.OnClick;
+            @Click.performed -= instance.OnClick;
+            @Click.canceled -= instance.OnClick;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -862,5 +920,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         void OnSelect(InputAction.CallbackContext context);
         void OnMenuUp(InputAction.CallbackContext context);
         void OnMenuDown(InputAction.CallbackContext context);
+        void OnPoint(InputAction.CallbackContext context);
+        void OnClick(InputAction.CallbackContext context);
     }
 }

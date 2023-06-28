@@ -125,8 +125,8 @@ namespace GameCampRPG
 
         private bool MoveSelection(Vector2 input, TargetingShape shape)
         {
-            int newX = (int)(currentX + input.x);
-            int newY = (int)(currentY + input.y);
+            int newX = (int)(currentX + input.y);
+            int newY = (int)(currentY - input.x);
 
             if (Mathf.Abs(newX - startX) > maxRange || Mathf.Abs(newY - startY) > maxRange
                 || newX < 0 || newX >= gridVisual.Size || newY < 0 || newY >= gridVisual.Size)

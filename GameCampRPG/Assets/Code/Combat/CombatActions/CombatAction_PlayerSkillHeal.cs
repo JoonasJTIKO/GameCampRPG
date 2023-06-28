@@ -47,6 +47,8 @@ namespace GameCampRPG
                 targetX = gridNavigation.SelectedX;
                 targetY = gridNavigation.SelectedY;
 
+                playerUnit.IsSelectable = false;
+
                 extraAction = playerUnit.SetQueuedAction(this);
 
                 return true;

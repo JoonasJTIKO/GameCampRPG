@@ -41,7 +41,8 @@ namespace GameCampRPG
             unitSelection = GetComponent<UnitSelection>();
             enemySpawning = GetComponent<EnemySpawning>();
             powerUpSpawning = GetComponent<PowerUpSpawning>();
-            EnemyUnits = enemySpawning.InitializeEnemies();        }
+            EnemyUnits = enemySpawning.InitializeEnemies();
+        }
 
         private void Start()
         {
@@ -108,6 +109,12 @@ namespace GameCampRPG
         private void EndCombat()
         {
             GameInstance.Instance.GetPlayerInfo().PlayerInputs.Combat.Disable();
+
+            foreach (IItem item in GameInstance.Instance.GetCombatInfo().Drops)
+            {
+                GameInstance.Instance.GetPlayerInfo().playerInventory.AddItems(item);
+            }
+
             GameInstance.Instance.GetPlayerCombatCanvas().Hide();
             audioListener.enabled = false;
             transitionRoutine = StartCoroutine(Transition());
