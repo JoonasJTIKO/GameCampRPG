@@ -71,6 +71,7 @@ namespace GameCampRPG.UI
             }
         }
 
+        //TODO: passing the sprite of the gameobject to the dialogue
         public void StartDialogue(BaseVendor caller, string[] lines, bool openMenu = false)
         {
             Show();

@@ -6,12 +6,12 @@ namespace GameCampRPG
 {
     public class PlayerInfo : MonoBehaviour
     {
-        public Inventory playerInventory { get; private set; }
+        public Inventory PlayerInventory { get; private set; }
 
         public PlayerInputs PlayerInputs { get; private set; }
 
         [SerializeField]
-        private Item[] items;
+        private List<Item> items;
 
         private int[] charaterHealths = new int[3];
         public int[] CharacterHealths { get { return charaterHealths; } }
@@ -25,11 +25,11 @@ namespace GameCampRPG
         private void Awake()
         {
             PlayerInputs = new PlayerInputs();
-            playerInventory = new Inventory(50);
+            PlayerInventory = new Inventory(50);
 
             foreach (Item item in items)
             {
-                playerInventory.AddItems(item);
+                PlayerInventory.AddItems(item);
             }
         }
 
@@ -65,5 +65,18 @@ namespace GameCampRPG
 
             skillStrengths[characterIndex] = value;
         }
+
+        public void AddItemToInventory(IItem item)
+        {
+            int amount = PlayerInventory.AddItems(item);
+            if (amount != 0)
+            {
+                items = new List<Item>();
+                foreach (Item playerItem in PlayerInventory.ShowAllItems())
+                {
+                    items.Add(playerItem);
+                }
+            }
+;       }
     }
 }

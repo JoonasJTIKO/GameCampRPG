@@ -121,6 +121,13 @@ MonoBehaviour:
     <MaxAmount>k__BackingField: 1
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
+  - <ID>k__BackingField: 3
+    <Name>k__BackingField: Random ase??
+    <Description>k__BackingField: Random description 3
+    <Amount>k__BackingField: 1
+    <MaxAmount>k__BackingField: 1
+    <IsUnique>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 0}
 --- !u!65 &7405245339927233692
 BoxCollider:
   m_ObjectHideFlags: 0

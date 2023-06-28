@@ -31,7 +31,7 @@ namespace GameCampRPG.UI
 
         private float positionOffset = 50f;
 
-        private float selectedItem = 0f;
+        private int selectedItem = 0;
 
         private void Awake()
         {
@@ -47,7 +47,7 @@ namespace GameCampRPG.UI
         {
             if (inputs == null) return;
 
-            selectedItem = 0f;
+            selectedItem = 0;
             select.performed += SelectPerformed;
             menuUp.performed += MoveInMenusUp;
             menuDown.performed += MoveInMenusDown;
@@ -128,7 +128,22 @@ namespace GameCampRPG.UI
             {
                 GameInstance.Instance.GetDialogueCanvas().StartDialogue(baseVendor, baseVendor.DialogueLines[^1]);
                 Hide();
+                return;
             }
+
+            IItem item = null;
+
+            if (itemVendor != null)
+            {
+                item = itemVendor.Inventory.GetItem(shopItemData[selectedItem]);
+                shopItemData = itemVendor.Inventory.ShowAllItems();
+            }
+            else if (blackVendor != null)
+            {
+                item = blackVendor.Inventory.GetItem(shopItemData[selectedItem]);
+                shopItemData = blackVendor.Inventory.ShowAllItems();
+            }
+            GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
             DrawMenuList();
             UpdateSelectedItem();
         }
