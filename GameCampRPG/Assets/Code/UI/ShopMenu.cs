@@ -56,12 +56,13 @@ namespace GameCampRPG.UI
             if (itemVendor != null)
             {
                 shopItemData = itemVendor.Inventory.ShowAllItems();
+                DrawMenuList(itemVendor);
             }
             else if (blackVendor != null)
             {
                 shopItemData = blackVendor.Inventory.ShowAllItems();
+                DrawMenuList(blackVendor);
             }
-            DrawMenuList();
             UpdateSelectedItem();
         }
 
@@ -131,25 +132,32 @@ namespace GameCampRPG.UI
                 return;
             }
 
-            IItem item = null;
-
+            IItem item;
             if (itemVendor != null)
             {
                 item = itemVendor.Inventory.GetItem(shopItemData[selectedItem]);
                 shopItemData = itemVendor.Inventory.ShowAllItems();
+                GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
+                DrawMenuList(itemVendor);
             }
             else if (blackVendor != null)
             {
                 item = blackVendor.Inventory.GetItem(shopItemData[selectedItem]);
                 shopItemData = blackVendor.Inventory.ShowAllItems();
+                GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
+                DrawMenuList(blackVendor);
             }
-            GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
-            DrawMenuList();
             UpdateSelectedItem();
         }
 
-        private void DrawMenuList()
+        private void DrawMenuList(BaseVendor vendor)
         {
+            if (shopItemData.Count == 0)
+            {
+                Hide();
+                GameInstance.Instance.GetDialogueCanvas().StartDialogue(vendor, vendor.DialogueLines[^2]);
+            }
+
             if (shopItems.Count != 0)
             {
                 foreach (GameObject shopItem in shopItems)

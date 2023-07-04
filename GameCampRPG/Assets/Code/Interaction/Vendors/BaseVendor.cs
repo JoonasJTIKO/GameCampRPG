@@ -16,6 +16,8 @@ namespace GameCampRPG
 
         public string[][] DialogueLines { get; protected set; }
 
+        public Sprite Icon { get; protected set; }
+
         abstract protected void SetDialogue();
     }
 }
