@@ -18,6 +18,9 @@ namespace GameCampRPG
         [SerializeField]
         private PlayerCombatCanvas UI_PlayerCombatCanvas;
 
+        [SerializeField]
+        private PauseMenuCanvas UI_PauseMenuCanvas;
+
         private Camera overworldCamera;
 
         private GameStateManager gameStateManager;
@@ -99,6 +102,11 @@ namespace GameCampRPG
         public PlayerCombatCanvas GetPlayerCombatCanvas()
         {
             return UI_PlayerCombatCanvas;
+        }
+
+        public PauseMenuCanvas GetPauseMenuCanvas()
+        {
+            return UI_PauseMenuCanvas;
         }
     }
 }

@@ -38,7 +38,9 @@ namespace GameCampRPG
                 "Saisko olla vähän jotain?"},
                 new string[] {"Ai haluuks puhuu? No annas kun minä kerron sinulle kaiken loren tästä paikasta",
                 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."},
-                new string[] {"Oolraits, no mukavaa päivän jatkoo siulle"}
+                new string[] {"Kiitos ku ostit kaiken tavaran multa.",
+                "Ny mulla on vihdoinkin varaa maksaa mun vuokra"},
+                new string[] {"Oolraits, no mukavaa päivän jatkoo siulle"},
             };
         }
 

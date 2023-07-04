@@ -35,6 +35,7 @@ namespace GameCampRPG
                 new string[] {"Jaahas, mitäs sitä täältä ollaan oikein hakemassa?",
                 "Mun nimi on Hirvi ja kaikki mitä multa löytyy on laillisesti hankittu",
                 "Saisko sulle olla jotain tiskin alta?"},
+                new string[] {"Kiitza sulle rahoista.", "Et tuu ikinä saamaan niitä enää takasin XD"},
                 new string[] {"Hyvästi, ja jos kerrot poliisille nii mä tiiän mis asut."}
             };
         }
