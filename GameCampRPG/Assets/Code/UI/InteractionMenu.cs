@@ -218,6 +218,8 @@ namespace GameCampRPG.UI
 
         private void Cancel()
         {
+            GameInstance.Instance.GetQuestManager().CheckForQuestProgress(vendor: baseVendor);
+
             GameInstance.Instance.GetDialogueCanvas().StartDialogue(baseVendor, baseVendor.DialogueLines[^1]);
             Hide();
         }

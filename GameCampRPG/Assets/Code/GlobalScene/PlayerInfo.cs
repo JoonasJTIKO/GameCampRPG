@@ -71,11 +71,10 @@ namespace GameCampRPG
             int amount = PlayerInventory.AddItems(item);
             if (amount != 0)
             {
-                items = new List<Item>();
-                foreach (Item playerItem in PlayerInventory.ShowAllItems())
-                {
-                    items.Add(playerItem);
-                }
+                Item copy = new Item();
+                copy.ID = item.ID;
+                copy.Amount = amount;
+                GameInstance.Instance.GetQuestManager().CheckForQuestProgress(copy);
             }
 ;       }
     }

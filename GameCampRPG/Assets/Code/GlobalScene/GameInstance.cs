@@ -4,6 +4,7 @@ using UnityEngine;
 using GameCampRPG.UI;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem;
+using GameCampRPG.Quests;
 
 namespace GameCampRPG
 {
@@ -21,6 +22,9 @@ namespace GameCampRPG
         [SerializeField]
         private PauseMenuCanvas UI_PauseMenuCanvas;
 
+        [SerializeField]
+        private QuestCanvas UI_QuestCanvas;
+
         private Camera overworldCamera;
 
         private GameStateManager gameStateManager;
@@ -28,6 +32,8 @@ namespace GameCampRPG
         private PlayerInfo playerInfo;
 
         private CombatInfo combatInfo;
+
+        private QuestManager questManager;
 
         private static GameInstance instance;
 
@@ -59,6 +65,7 @@ namespace GameCampRPG
             gameStateManager = GetComponent<GameStateManager>();
             playerInfo = GetComponent<PlayerInfo>();
             combatInfo = GetComponent<CombatInfo>();
+            questManager = GetComponent<QuestManager>();
         }
 
         public void SetOverworldCamera(Camera camera)
@@ -107,6 +114,16 @@ namespace GameCampRPG
         public PauseMenuCanvas GetPauseMenuCanvas()
         {
             return UI_PauseMenuCanvas;
+        }
+
+        public QuestCanvas GetQuestCanvas()
+        {
+            return UI_QuestCanvas;
+        }
+
+        public QuestManager GetQuestManager()
+        {
+            return questManager;
         }
     }
 }

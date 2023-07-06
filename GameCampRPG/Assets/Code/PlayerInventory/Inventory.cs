@@ -48,7 +48,7 @@ namespace GameCampRPG
             if (existing != null && !existing.IsUnique)
             {
                 int amount = item.Amount;
-                while (amount > existing.MaxAmount)
+                while (amount + existing.Amount > existing.MaxAmount)
                 {
                     amount--;
                 }
