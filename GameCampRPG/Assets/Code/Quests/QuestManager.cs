@@ -10,7 +10,7 @@ namespace GameCampRPG.Quests
         [SerializeField]
         private QuestObjective[] questObjectives;
 
-        private QuestObjective activeQuest = null;
+        public QuestObjective ActiveQuest { get; private set; }
 
         private QuestCanvas questCanvas = null;
 
@@ -28,25 +28,30 @@ namespace GameCampRPG.Quests
 
         private void StartNextQuest()
         {
-            activeQuest = questObjectives[ID];
+            ActiveQuest = questObjectives[ID];
 
-            if (activeQuest.Type == QuestType.SpeakWithNPC)
+            if (ActiveQuest.Type == QuestType.SpeakWithNPC)
             {
-                questCanvas.UpdateText(activeQuest.Text, 0, 1);
+                questCanvas.UpdateText(ActiveQuest.Text, 0, 1);
             }
             else
             {
-                questCanvas.UpdateText(activeQuest.Text, activeQuest.RequiredItems[0].Amount, activeQuest.RequiredItems[0].MaxAmount);
+                questCanvas.UpdateText(ActiveQuest.Text, ActiveQuest.RequiredItems[0].Amount, ActiveQuest.RequiredItems[0].MaxAmount);
             }
 
             ID++;
         }
 
+        public bool CheckQuestNPC(BaseVendor vendor)
+        {
+            return vendor.SpeakerName.ToLower() == ActiveQuest.NPCName.ToLower();
+        }
+
         public void CheckForQuestProgress(IItem obtainedItem = null, BaseVendor vendor = null)
         {
-            if (obtainedItem != null && activeQuest.Type == QuestType.CollectItems)
+            if (obtainedItem != null && ActiveQuest.Type == QuestType.CollectItems)
             {
-                foreach (IItem item in activeQuest.RequiredItems)
+                foreach (IItem item in ActiveQuest.RequiredItems)
                 {
                     if (item.Amount == item.MaxAmount) continue;
 
@@ -63,24 +68,24 @@ namespace GameCampRPG.Quests
                     }
                 }
 
-                questCanvas.UpdateText(activeQuest.Text, activeQuest.RequiredItems[0].Amount, activeQuest.RequiredItems[0].MaxAmount);
+                questCanvas.UpdateText(ActiveQuest.Text, ActiveQuest.RequiredItems[0].Amount, ActiveQuest.RequiredItems[0].MaxAmount);
 
                 int counter = 0;
-                foreach (IItem item in activeQuest.RequiredItems)
+                foreach (IItem item in ActiveQuest.RequiredItems)
                 {
                     if (item.Amount != item.MaxAmount) break;
 
                     counter++;
                 }
 
-                if (counter == activeQuest.RequiredItems.Length)
+                if (counter == ActiveQuest.RequiredItems.Length)
                 {
                     StartNextQuest();
                 }
             }
-            else if (vendor != null && activeQuest.Type == QuestType.SpeakWithNPC)
+            else if (vendor != null && ActiveQuest.Type == QuestType.SpeakWithNPC)
             {
-                if (vendor.SpeakerName.ToLower() == activeQuest.NPCName.ToLower())
+                if (vendor.SpeakerName.ToLower() == ActiveQuest.NPCName.ToLower())
                 {
                     StartNextQuest();
                 }

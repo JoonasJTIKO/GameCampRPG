@@ -3633,11 +3633,16 @@ MonoBehaviour:
     Text: Go greet your brother
     Type: 0
     NPCName: Hermanni
+    QuestDialogue:
+    - Sup kids!
+    - Uhh... go take care of some pesky snakes.
+    - Bring back 3 Snakeskin as proof of your heroic deeds!
     RequiredItems: []
   - ID: 1
     Text: Obtain 3 Snakeskin
     Type: 1
     NPCName: 
+    QuestDialogue: []
     RequiredItems:
     - <ID>k__BackingField: 5
       <Name>k__BackingField: Snakeskin

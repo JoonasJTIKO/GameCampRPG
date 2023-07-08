@@ -22,10 +22,26 @@ namespace GameCampRPG
                 "Oisko healin paikka vai aiotko p‰ivitt‰‰ itse‰si?"},
                 new string[] {"No eip‰ mulla muuta, terppa!"}
             };
+
+            Debug.Log(DialogueLines[0]);
+        }
+
+        private void SetQuestDialogue(string[] text)
+        {
+            DialogueLines[0] = text;
         }
 
         public void Interact()
         {
+            if (GameInstance.Instance.GetQuestManager().CheckQuestNPC(this))
+            {
+                SetQuestDialogue(GameInstance.Instance.GetQuestManager().ActiveQuest.QuestDialogue);
+            }
+            else
+            {
+                SetDialogue();
+            }
+
             GameInstance.Instance.GetDialogueCanvas().StartDialogue(this, this.DialogueLines[0], true);
         }
 

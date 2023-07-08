@@ -44,8 +44,22 @@ namespace GameCampRPG
             };
         }
 
+        private void SetQuestDialogue(string[] text)
+        {
+            DialogueLines[0] = text;
+        }
+
         public void Interact()
         {
+            if (GameInstance.Instance.GetQuestManager().CheckQuestNPC(this))
+            {
+                SetQuestDialogue(GameInstance.Instance.GetQuestManager().ActiveQuest.QuestDialogue);
+            }
+            else
+            {
+                SetDialogue();
+            }
+
             GameInstance.Instance.GetDialogueCanvas().StartDialogue(this, this.DialogueLines[0], true);
         }
 

@@ -24,6 +24,9 @@ namespace GameCampRPG.Quests
         public string NPCName;
 
         [SerializeField]
+        public string[] QuestDialogue;
+
+        [SerializeField]
         public Item[] RequiredItems;
     }
 }
