@@ -22,8 +22,6 @@ namespace GameCampRPG
                 "Oisko healin paikka vai aiotko p‰ivitt‰‰ itse‰si?"},
                 new string[] {"No eip‰ mulla muuta, terppa!"}
             };
-
-            Debug.Log(DialogueLines[0]);
         }
 
         private void SetQuestDialogue(string[] text)

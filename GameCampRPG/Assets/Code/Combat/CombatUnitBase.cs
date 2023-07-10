@@ -53,6 +53,16 @@ namespace GameCampRPG
             combatActions = GetComponents<CombatActionBase>().ToList();
         }
 
+        public void ChangeStats(int amount)
+        {
+            maxHealth += amount;
+            Health = maxHealth;
+
+            attackStrength += amount;
+
+            skillStrength += amount;
+        }
+
         public bool ChangeHealth(int amount)
         {
             if ((amount < 0 && Health == 0) || (amount > 0 && Health == maxHealth))
