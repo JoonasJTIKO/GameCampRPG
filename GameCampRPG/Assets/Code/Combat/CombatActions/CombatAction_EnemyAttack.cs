@@ -45,7 +45,7 @@ namespace GameCampRPG
         {
             base.Execute();
             
-            targeting.AttackTargeted();
+            targeting.AttackTargeted(enemyUnit.AttackStrength);
             enemyUnit.SetQueuedAction(null);
         }
     }

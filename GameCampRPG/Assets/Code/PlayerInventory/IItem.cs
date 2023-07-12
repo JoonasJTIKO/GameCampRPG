@@ -12,6 +12,7 @@ namespace GameCampRPG
         int Amount { get; set; }
         int MaxAmount { get; set; }
         bool IsUnique { get; set; }
+        bool Equippable { get; set; }
         Sprite Icon { get; set; }
     }
 }

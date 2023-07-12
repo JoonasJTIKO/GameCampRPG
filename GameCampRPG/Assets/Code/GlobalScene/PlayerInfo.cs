@@ -13,14 +13,20 @@ namespace GameCampRPG
         [SerializeField]
         private List<Item> items;
 
-        private int[] charaterHealths = new int[3];
-        public int[] CharacterHealths { get { return charaterHealths; } }
+        private int[] characterHealths = new int[3];
+        public int[] CharacterHealths { get { return characterHealths; } }
 
         private int[] attackStrengths = new int[3];
         public int[] AttackStrengths { get { return attackStrengths; } }
 
         private int[] skillStrengths = new int[3];
         public int[] SkillStrengths { get { return skillStrengths; } }
+
+        private int[] skillCooldownModifiers = new int[3];
+        public int[] SkillCooldownModifiers { get { return skillCooldownModifiers; } }
+
+        private int[] defenses = new int[3];
+        public int[] Defenses { get { return defenses; } }
 
         private void Awake()
         {
@@ -41,7 +47,7 @@ namespace GameCampRPG
                 value = 0;
             }
 
-            charaterHealths[characterIndex] = value;
+            characterHealths[characterIndex] = value;
         }
 
         public void SetCharacterAttackStrength(int characterIndex, int value)
@@ -66,6 +72,28 @@ namespace GameCampRPG
             skillStrengths[characterIndex] = value;
         }
 
+        public void SetCharacterSkillModifier(int characterIndex, int value)
+        {
+            if (value < 1)
+            {
+                Debug.LogWarning("Skill modifier must be at least 1, setting it to 1");
+                value = 1;
+            }
+
+            skillCooldownModifiers[characterIndex] = value;
+        }
+
+        public void SetCharacterDefense(int characterIndex, int value)
+        {
+            if (value < 1)
+            {
+                Debug.LogWarning("Defense must be at least 1, setting it to 1");
+                value = 1;
+            }
+
+            defenses[characterIndex] = value;
+        }
+
         public void AddItemToInventory(IItem item)
         {
             int amount = PlayerInventory.AddItems(item);
@@ -77,5 +105,47 @@ namespace GameCampRPG
                 GameInstance.Instance.GetQuestManager().CheckForQuestProgress(copy);
             }
 ;       }
+
+        public void IncreaseStat(Item.ItemStat stat, int characterIndex)
+        {
+            if (stat == Item.ItemStat.None) return;
+
+            switch (stat)
+            {
+                case Item.ItemStat.IncreaseDamage:
+                    SetCharacterAttackStrength(attackStrengths[characterIndex] + 1, characterIndex);
+                    break;
+                case Item.ItemStat.IncreaseDefense:
+                    SetCharacterDefense(defenses[characterIndex] + 1, characterIndex);
+                    break;
+                case Item.ItemStat.IncreaseSkill:
+                    SetCharacterSkillStrength(skillStrengths[characterIndex] + 1, characterIndex);
+                    break;
+                case Item.ItemStat.DecreaseCooldown:
+                    SetCharacterSkillModifier(skillCooldownModifiers[characterIndex] + 1, characterIndex);
+                    break;
+            }
+        }
+
+        public void DecreaseStat(Item.ItemStat stat, int characterIndex)
+        {
+            if (stat == Item.ItemStat.None) return;
+
+            switch (stat)
+            {
+                case Item.ItemStat.IncreaseDamage:
+                    SetCharacterAttackStrength(attackStrengths[characterIndex] - 1, characterIndex);
+                    break;
+                case Item.ItemStat.IncreaseDefense:
+                    SetCharacterDefense(defenses[characterIndex] - 1, characterIndex);
+                    break;
+                case Item.ItemStat.IncreaseSkill:
+                    SetCharacterSkillStrength(skillStrengths[characterIndex] - 1, characterIndex);
+                    break;
+                case Item.ItemStat.DecreaseCooldown:
+                    SetCharacterSkillModifier(skillCooldownModifiers[characterIndex] - 1, characterIndex);
+                    break;
+            }
+        }
     }
 }

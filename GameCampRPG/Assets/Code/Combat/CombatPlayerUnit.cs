@@ -23,6 +23,8 @@ namespace GameCampRPG
 
         private PHEnemyHealthDisplay healthDisplay;
 
+        private int defense = 1;
+
         protected override void Awake()
         {
             base.Awake();
@@ -57,6 +59,15 @@ namespace GameCampRPG
             else
             {
                 skillStrength = GameInstance.Instance.GetPlayerInfo().SkillStrengths[characterIndex];
+            }
+
+            if (GameInstance.Instance.GetPlayerInfo().Defenses[characterIndex] == 0)
+            {
+                GameInstance.Instance.GetPlayerInfo().SetCharacterDefense(characterIndex, defense);
+            }
+            else
+            {
+                defense = GameInstance.Instance.GetPlayerInfo().Defenses[characterIndex];
             }
         }
 
@@ -140,6 +151,8 @@ namespace GameCampRPG
 
         public void TakeDamage(int amount)
         {
+            amount = amount / defense;
+
             ChangeHealth(-amount);
             healthDisplay.UpdateText(Health.ToString());
             Debug.Log("unit " + characterIndex + " Took " + amount + " damage");
@@ -162,6 +175,13 @@ namespace GameCampRPG
             }
             base.SetQueuedAction(action);
             return false;
+        }
+
+        public override bool ChangeHealth(int amount)
+        {
+            bool returnValue = base.ChangeHealth(amount);
+            healthDisplay.UpdateText(Health.ToString());
+            return returnValue;
         }
 
         private void ChangeAttackDamage(bool input)

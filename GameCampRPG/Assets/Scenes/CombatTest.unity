@@ -2051,7 +2051,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c095f93bcfb8e4b4eaaefa2f884dee2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6642292224141418442, guid: 417b7dd1fadb517438eedcb8f079a0e0, type: 3}
+  snakePrefab: {fileID: 6642292224141418442, guid: 417b7dd1fadb517438eedcb8f079a0e0, type: 3}
+  slimePrefab: {fileID: 6642292224141418442, guid: 417b7dd1fadb517438eedcb8f079a0e0, type: 3}
+  treePrefab: {fileID: 6642292224141418442, guid: 417b7dd1fadb517438eedcb8f079a0e0, type: 3}
   enemyPositions:
   - {fileID: 531408957}
   - {fileID: 69816308}

@@ -1215,8 +1215,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - Type: 0
+    Difficulty: 1
   - Type: 0
+    Difficulty: 1
   - Type: 0
+    Difficulty: 1
   drops:
   - <ID>k__BackingField: 5
     <Name>k__BackingField: Rubber
@@ -2449,10 +2452,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - Type: 0
+    Difficulty: 0
   - Type: 0
+    Difficulty: 0
   - Type: 0
+    Difficulty: 0
   - Type: 0
+    Difficulty: 0
   - Type: 0
+    Difficulty: 0
   drops:
   - <ID>k__BackingField: 5
     <Name>k__BackingField: Rubber

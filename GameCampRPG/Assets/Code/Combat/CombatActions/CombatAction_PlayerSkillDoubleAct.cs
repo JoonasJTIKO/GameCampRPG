@@ -15,6 +15,10 @@ namespace GameCampRPG
         {
             playerUnit = GetComponent<CombatPlayerUnit>();
             unitSelection = FindObjectOfType<UnitSelection>();
+
+            if (GameInstance.Instance == null) return;
+
+            cooldown -= GameInstance.Instance.GetPlayerInfo().SkillCooldownModifiers[0];
         }
 
         public override void BeginListening()

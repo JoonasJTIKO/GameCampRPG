@@ -63,7 +63,7 @@ namespace GameCampRPG
             skillStrength += amount;
         }
 
-        public bool ChangeHealth(int amount)
+        public virtual bool ChangeHealth(int amount)
         {
             if ((amount < 0 && Health == 0) || (amount > 0 && Health == maxHealth))
             {

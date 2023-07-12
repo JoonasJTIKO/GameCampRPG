@@ -28,6 +28,10 @@ namespace GameCampRPG
             playerUnit = GetComponent<CombatPlayerUnit>();
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
             grid = FindObjectOfType<GridVisual>();
+
+            if (GameInstance.Instance == null) return;
+
+            cooldown -= GameInstance.Instance.GetPlayerInfo().SkillCooldownModifiers[0];
         }
 
         private void OnEnable()

@@ -114,12 +114,12 @@ namespace GameCampRPG
             }
         }
 
-        public void AttackTargeted()
+        public void AttackTargeted(int damage)
         {
-            StartCoroutine(Attack());
+            StartCoroutine(Attack(damage));
         }
 
-        private IEnumerator Attack()
+        private IEnumerator Attack(int damage)
         {
             switch (targetingType)
             {
@@ -129,7 +129,7 @@ namespace GameCampRPG
                         case TargetingDirection.Up:
                             for (int i = 0; i < grid.Size; i++)
                             {
-                                AttackNode(startPosition, i);
+                                AttackNode(startPosition, i, damage);
                                 grid.TargetNode(startPosition, i, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
@@ -137,7 +137,7 @@ namespace GameCampRPG
                         case TargetingDirection.Down:
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
-                                AttackNode(startPosition, i);
+                                AttackNode(startPosition, i, damage);
                                 grid.TargetNode(startPosition, i, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
@@ -145,7 +145,7 @@ namespace GameCampRPG
                         case TargetingDirection.Left:
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
-                                AttackNode(i, startPosition);
+                                AttackNode(i, startPosition, damage);
                                 grid.TargetNode(i, startPosition, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
@@ -153,7 +153,7 @@ namespace GameCampRPG
                         case TargetingDirection.Right:
                             for (int i = 0; i < grid.Size; i++)
                             {
-                                AttackNode(i, startPosition);
+                                AttackNode(i, startPosition, damage);
                                 grid.TargetNode(i, startPosition, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
@@ -165,12 +165,12 @@ namespace GameCampRPG
             OnAttackFinished?.Invoke();
         }
 
-        private void AttackNode(int x, int y)
+        private void AttackNode(int x, int y, int damage)
         {
             GameObject unit = grid.CheckForPlayer(x, y);
             if (unit != null)
             {
-                unit.GetComponent<CombatPlayerUnit>().TakeDamage(1);
+                unit.GetComponent<CombatPlayerUnit>().TakeDamage(damage);
             }
         }
     }

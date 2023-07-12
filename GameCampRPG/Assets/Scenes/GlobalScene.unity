@@ -3585,7 +3585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac195fac615f7a46861dfc389aa6f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialState: 3
+  initialState: 2
 --- !u!114 &1971147449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3613,8 +3613,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemies:
   - Type: 0
+    Difficulty: 0
   - Type: 0
+    Difficulty: 0
   - Type: 0
+    Difficulty: 0
   Drops: []
 --- !u!114 &1971147451
 MonoBehaviour:
@@ -3651,6 +3654,10 @@ MonoBehaviour:
       <MaxAmount>k__BackingField: 3
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <equippableType>k__BackingField: 0
 --- !u!1 &1988249305
 GameObject:
   m_ObjectHideFlags: 0
