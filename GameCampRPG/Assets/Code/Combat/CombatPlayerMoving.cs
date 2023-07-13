@@ -13,7 +13,12 @@ namespace GameCampRPG
         [SerializeField]
         private int yPosition;
 
+        [SerializeField]
+        private float moveTime = 0.5f;
+
         private GridVisual grid;
+
+        private float deltaTime;
 
         public event Action Moved;
 
@@ -62,8 +67,14 @@ namespace GameCampRPG
 
         private IEnumerator Move(Vector3 position)
         {
-            transform.position = position;
-            yield return new WaitForSeconds(1);
+            Vector3 startPos = transform.position;
+
+            while (deltaTime <= moveTime)
+            {
+                deltaTime += Time.deltaTime;
+                transform.position = Parabola.MParabola(startPos, position, 2f, deltaTime / moveTime);
+                yield return null;
+            }
             Moved?.Invoke();
         }
 

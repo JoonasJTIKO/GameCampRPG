@@ -1190,6 +1190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 4
   yPosition: 1
+  moveTime: 0.5
 --- !u!114 &1128559967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,6 +1887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 4
   yPosition: 3
+  moveTime: 0.5
 --- !u!114 &1687399445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2531,6 +2533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 4
   yPosition: 2
+  moveTime: 0.5
 --- !u!114 &2030457295
 MonoBehaviour:
   m_ObjectHideFlags: 0
