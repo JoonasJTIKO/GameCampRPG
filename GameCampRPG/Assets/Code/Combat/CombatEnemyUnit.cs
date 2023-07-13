@@ -8,6 +8,8 @@ namespace GameCampRPG
     {
         private PHEnemyHealthDisplay enemyHealthDisplay;
 
+        private int dazedForTurns = 0;
+
         protected override void Awake()
         {
             base.Awake();
@@ -34,6 +36,9 @@ namespace GameCampRPG
 
         public void SelectAction()
         {
+            if (dazedForTurns > 0) dazedForTurns--;
+            if (dazedForTurns > 0) return;
+
             combatActions[0].QueueAction();
         }
 
@@ -44,7 +49,15 @@ namespace GameCampRPG
             if (Health == 0)
             {
                 GetComponent<EnemyGridTargeting>().UnTarget();
+                SetQueuedAction(null);
             }
+        }
+
+        public void Daze(int turns)
+        {
+            GetComponent<EnemyGridTargeting>().UnTarget();
+            SetQueuedAction(null);
+            dazedForTurns = turns;
         }
     }
 }

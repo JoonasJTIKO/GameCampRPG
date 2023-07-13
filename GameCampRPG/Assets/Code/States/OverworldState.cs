@@ -24,6 +24,7 @@ namespace GameCampRPG
             {
                 SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
             }
+            GameInstance.Instance.GetQuestCanvas().Show();
             GameInstance.Instance.GetSceneFadeCanvas().FadeOut();
             PlayerInputs inputs = GameInstance.Instance.GetPlayerInfo().PlayerInputs;
             inputs.Overworld.Enable();

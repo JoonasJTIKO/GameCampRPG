@@ -2670,6 +2670,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: talkDialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: leaveDialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.data[0].speakerName
+      value: Lemon child
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.data[1].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.data[1].speakerName
+      value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].speakerName
+      value: Lemon child
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.data[0].dialogueLine
+      value: Greetings brave warriors!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.data[1].dialogueLine
+      value: Sup
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].dialogueLine
+      value: May success follow you wherever you travel!
+      objectReference: {fileID: 0}
     - target: {fileID: 5772859958937571720, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2844,6 +2892,102 @@ PrefabInstance:
     - target: {fileID: 5772859958937575028, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
       propertyPath: m_Name
       value: HealVendor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: introDialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: leaveDialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[0].speakerName
+      value: Bro
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[1].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[1].speakerName
+      value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[2].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[2].speakerName
+      value: Bro
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: introDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: introDialogue.Array.data[0].speakerName
+      value: Bro
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: introDialogue.Array.data[1].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: introDialogue.Array.data[1].speakerName
+      value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].speakerName
+      value: Bro
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: leaveDialogue.Array.data[1].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: leaveDialogue.Array.data[1].speakerName
+      value: Bro
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[0].dialogueLine
+      value: Can't you kids play at home
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[1].dialogueLine
+      value: We have a world to save!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: talkDialogue.Array.data[2].dialogueLine
+      value: Yeah, well, good luck with that I guess
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: introDialogue.Array.data[0].dialogueLine
+      value: Hey kiddos
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: introDialogue.Array.data[1].dialogueLine
+      value: Sup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].dialogueLine
+      value: Be careful out there
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520517570759054580, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
+      propertyPath: leaveDialogue.Array.data[1].dialogueLine
+      value: Im the one dad will get mad at if you get hurt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cb1ee51570df894583065263454b4ba, type: 3}
@@ -3681,6 +3825,94 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: introDialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: leaveDialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: specialDialogue.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[0].speakerName
+      value: Sus
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[1].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[1].speakerName
+      value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[2].speakerIcon
+      value: 
+      objectReference: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[2].speakerName
+      value: Sus
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: introDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: introDialogue.Array.data[0].speakerName
+      value: Sus
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: introDialogue.Array.data[1].speakerIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: introDialogue.Array.data[1].speakerName
+      value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].speakerIcon
+      value: 
+      objectReference: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].speakerName
+      value: Sus
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[0].dialogueLine
+      value: Don't wanna talk
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[1].dialogueLine
+      value: Why lol
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: talkDialogue.Array.data[2].dialogueLine
+      value: Go away
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: introDialogue.Array.data[0].dialogueLine
+      value: Sup
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: introDialogue.Array.data[1].dialogueLine
+      value: Sup
+      objectReference: {fileID: 0}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: leaveDialogue.Array.data[0].dialogueLine
+      value: I know where you live
+      objectReference: {fileID: 0}
     - target: {fileID: 5772859958937571720, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
       propertyPath: m_RootOrder
       value: 1

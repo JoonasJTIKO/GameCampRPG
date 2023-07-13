@@ -23,6 +23,7 @@ namespace GameCampRPG
             {
                 SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
             }
+            GameInstance.Instance.GetQuestCanvas().Hide();
             GameInstance.Instance.GetSceneFadeCanvas().FadeOut();
         }
 

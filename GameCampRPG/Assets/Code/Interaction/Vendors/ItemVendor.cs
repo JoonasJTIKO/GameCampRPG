@@ -32,19 +32,15 @@ namespace GameCampRPG
         override protected void SetDialogue()
         {
             this.SpeakerName = "Kalle";
-            this.DialogueLines = new string[][]
-            {
-                new string[] {"Tervetulloo miun pieneen kauppaan. Miun nimi on Kalle.",
-                "Saisko olla vähän jotain?"},
-                new string[] {"Ai haluuks puhuu? No annas kun minä kerron sinulle kaiken loren tästä paikasta",
-                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."},
-                new string[] {"Kiitos ku ostit kaiken tavaran multa.",
-                "Ny mulla on vihdoinkin varaa maksaa mun vuokra"},
-                new string[] {"Oolraits, no mukavaa päivän jatkoo siulle"},
-            };
+            this.DialogueLines = new DialogueLine[4][];
+
+            DialogueLines[0] = introDialogue;
+            DialogueLines[1] = talkDialogue;
+            DialogueLines[2] = specialDialogue;
+            DialogueLines[3] = leaveDialogue;
         }
 
-        private void SetQuestDialogue(string[] text)
+        private void SetQuestDialogue(DialogueLine[] text)
         {
             DialogueLines[0] = text;
         }

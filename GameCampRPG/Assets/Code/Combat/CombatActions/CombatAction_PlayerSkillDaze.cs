@@ -5,20 +5,35 @@ using UnityEngine;
 
 namespace GameCampRPG
 {
-    public class CombatAction_PlayerSkillDoubleAct : CombatActionBase
+    public class CombatAction_PlayerSkillDaze : CombatActionBase
     {
         private CombatPlayerUnit playerUnit;
 
         private UnitSelection unitSelection;
 
+        private CombatPlayerBuffManager playerBuffManager;
+
+        private int buffedStrength = 0;
+
         private void Awake()
         {
             playerUnit = GetComponent<CombatPlayerUnit>();
             unitSelection = FindObjectOfType<UnitSelection>();
+            playerBuffManager = GetComponent<CombatPlayerBuffManager>();
 
             if (GameInstance.Instance == null) return;
 
             cooldown -= GameInstance.Instance.GetPlayerInfo().SkillCooldownModifiers[0];
+        }
+
+        private void OnEnable()
+        {
+            playerBuffManager.SkillBuffActivated += BoostEffect;
+        }
+
+        private void OnDisable()
+        {
+            playerBuffManager.SkillBuffActivated -= BoostEffect;
         }
 
         public override void BeginListening()
@@ -61,32 +76,27 @@ namespace GameCampRPG
             StartCoroutine(Wait());
         }
 
-        private void BeginTargetSelect()
+        public void BeginTargetSelect()
         {
-            if (onCooldown) return;
-
-            unitSelection.LockPlayerActions(true);
-            playerUnit.IsSelectable = false;
-            unitSelection.OnPlayerSelected += TargetSelected;
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.EnemyUnits);
+            unitSelection.OnEnemySelected += TargetSelected;
             unitSelection.OnGoBack += StopTargetSelect;
-            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.PlayerUnits);
         }
 
         private void StopTargetSelect()
         {
-            unitSelection.LockPlayerActions(false);
-            playerUnit.IsSelectable = true;
-            unitSelection.OnPlayerSelected -= TargetSelected;
-            unitSelection.OnGoBack -= StopTargetSelect;
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.PlayerUnits);
+            unitSelection.OnEnemySelected -= TargetSelected;
+            unitSelection.OnGoBack -= StopTargetSelect;
         }
 
-        private void TargetSelected(CombatPlayerUnit unit)
+        private void TargetSelected(List<CombatEnemyUnit> units)
         {
-            unitSelection.LockPlayerActions(false);
-            unitSelection.OnPlayerSelected -= TargetSelected;
+            unitSelection.OnEnemySelected -= TargetSelected;
             unitSelection.OnGoBack -= StopTargetSelect;
-            unit.DoExtraAction = true;
+
+            units[0].Daze(GameInstance.Instance.GetPlayerInfo().SkillStrengths[0] + buffedStrength);
+
             QueueAction();
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.PlayerUnits);
         }
@@ -95,6 +105,18 @@ namespace GameCampRPG
         {
             yield return new WaitForSeconds(0.5f);
             Executed();
+        }
+
+        private void BoostEffect(bool input)
+        {
+            if (input)
+            {
+                buffedStrength = 1;
+            }
+            else
+            {
+                buffedStrength = 0;
+            }
         }
     }
 }

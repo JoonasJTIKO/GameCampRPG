@@ -2706,6 +2706,7 @@ MonoBehaviour:
   initialSelectedObject: {fileID: 0}
   dialogueText: {fileID: 65091958}
   speaker: {fileID: 400930207}
+  speakerIcon: {fileID: 1397414932}
   textSpeed: 2.5
   interactionMenu: {fileID: 760248264}
 --- !u!114 &1296204294
@@ -3637,9 +3638,15 @@ MonoBehaviour:
     Type: 0
     NPCName: Hermanni
     QuestDialogue:
-    - Sup kids!
-    - Uhh... go take care of some pesky snakes.
-    - Bring back 3 Snakeskin as proof of your heroic deeds!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Bro
+      dialogueLine: Kill snakes
+    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+      speakerName: Hero
+      dialogueLine: Alright
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Bro
+      dialogueLine: Alright
     RequiredItems: []
   - ID: 1
     Text: Obtain 3 Snakeskin

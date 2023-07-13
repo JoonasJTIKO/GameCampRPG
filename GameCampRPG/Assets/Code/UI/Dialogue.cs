@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace GameCampRPG.UI
 {
@@ -15,6 +16,9 @@ namespace GameCampRPG.UI
         private TextMeshProUGUI speaker;
 
         [SerializeField]
+        private Image speakerIcon;
+
+        [SerializeField]
         private float textSpeed;
 
         [SerializeField]
@@ -24,9 +28,7 @@ namespace GameCampRPG.UI
 
         private InputAction select;
 
-        private string[] lines;
-
-        private Sprite speakerIcon;
+        private DialogueLine[] lines;
 
         private int index;
 
@@ -63,19 +65,19 @@ namespace GameCampRPG.UI
 
         private void PerformSkip(InputAction.CallbackContext callback)
         {
-            if (dialogueText.text == lines[index])
+            if (dialogueText.text == lines[index].Dialogue)
             {
                 NextLine();
             }
             else
             {
                 StopCoroutine(typeLine);
-                dialogueText.text = lines[index];
+                dialogueText.text = lines[index].Dialogue;
             }
         }
 
         //TODO: passing the sprite of the gameobject to the dialogue
-        public void StartDialogue(BaseVendor caller, string[] lines, bool openMenu = false)
+        public void StartDialogue(BaseVendor caller, DialogueLine[] lines, bool openMenu = false)
         {
             //this.speakerIcon = caller.Icon;
             Show();
@@ -108,7 +110,9 @@ namespace GameCampRPG.UI
 
         IEnumerator TypeLine()
         {
-            foreach (char c in lines[index].ToCharArray())
+            this.speakerIcon.sprite = lines[index].SpeakerIcon;
+
+            foreach (char c in lines[index].Dialogue.ToCharArray())
             {
                 dialogueText.text += c;
                 yield return new WaitForSeconds(textSpeed / 60);
