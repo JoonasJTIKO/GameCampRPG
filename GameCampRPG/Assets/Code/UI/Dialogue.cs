@@ -111,6 +111,7 @@ namespace GameCampRPG.UI
         IEnumerator TypeLine()
         {
             this.speakerIcon.sprite = lines[index].SpeakerIcon;
+            this.speaker.text = lines[index].SpeakerName;
 
             foreach (char c in lines[index].Dialogue.ToCharArray())
             {
