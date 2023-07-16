@@ -12,8 +12,10 @@ namespace GameCampRPG
 
         private GridVisual grid;
 
-        private void Awake()
+        public override void Awake()
         {
+            base.Awake();
+
             enemyUnit = GetComponent<CombatEnemyUnit>();
             targeting = GetComponent<EnemyGridTargeting>();
 

@@ -25,6 +25,13 @@ namespace GameCampRPG
 
         private int counter = 0;
 
+        protected CombatPlayerUnit playerUnit;
+
+        public virtual void Awake()
+        {
+            playerUnit = GetComponent<CombatPlayerUnit>();
+        }
+
         public virtual bool QueueAction()
         {
             if (Activated) return false;
@@ -72,6 +79,14 @@ namespace GameCampRPG
         {
             counter = cooldown + 1;
             onCooldown = true;
+
+            if (cooldown > 0)
+            {
+                if (playerUnit != null)
+                {
+                    playerUnit.UpdateSkillCooldown(cooldown);
+                }
+            }
         }
 
         public void ProgressCooldown()
@@ -80,6 +95,11 @@ namespace GameCampRPG
             {
                 counter--;
                 if (counter == 0) onCooldown = false;
+
+                if (playerUnit != null)
+                {
+                    playerUnit.UpdateSkillCooldown(cooldown);
+                }
             }
         }
     }

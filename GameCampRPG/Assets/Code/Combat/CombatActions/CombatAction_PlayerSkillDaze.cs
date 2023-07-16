@@ -7,17 +7,16 @@ namespace GameCampRPG
 {
     public class CombatAction_PlayerSkillDaze : CombatActionBase
     {
-        private CombatPlayerUnit playerUnit;
-
         private UnitSelection unitSelection;
 
         private CombatPlayerBuffManager playerBuffManager;
 
         private int buffedStrength = 0;
 
-        private void Awake()
+        public override void Awake()
         {
-            playerUnit = GetComponent<CombatPlayerUnit>();
+            base.Awake();
+
             unitSelection = FindObjectOfType<UnitSelection>();
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
 

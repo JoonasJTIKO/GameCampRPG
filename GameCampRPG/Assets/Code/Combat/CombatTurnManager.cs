@@ -141,7 +141,7 @@ namespace GameCampRPG
 
         public void EndPlayerTurn()
         {
-            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None);
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None, defaultCamera: true);
             StartCoroutine(ExecuteQueuedActions());
         }
 

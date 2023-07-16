@@ -13,17 +13,17 @@ namespace GameCampRPG
         private GridNavigation gridNavigation;
         private UnitSelection unitSelection;
         private CombatPlayerMoving playerMoving;
-        private CombatPlayerUnit playerUnit;
         private CombatPlayerBuffManager playerBuffManager;
 
         private int targetX, targetY;
 
-        private void Awake()
+        public override void Awake()
         {
+            base.Awake();
+
             gridNavigation = FindObjectOfType<GridNavigation>();
             unitSelection = FindObjectOfType<UnitSelection>();
             playerMoving = GetComponent<CombatPlayerMoving>();
-            playerUnit = GetComponent<CombatPlayerUnit>();
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
         }
 

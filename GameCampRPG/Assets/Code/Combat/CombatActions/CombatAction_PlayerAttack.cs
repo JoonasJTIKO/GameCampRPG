@@ -10,13 +10,12 @@ namespace GameCampRPG
     {
         private CombatEnemyUnit targetUnit = null;
 
-        private CombatPlayerUnit playerUnit;
-
         private UnitSelection unitSelection;
 
-        private void Awake()
+        public override void Awake()
         {
-            playerUnit = GetComponent<CombatPlayerUnit>();
+            base.Awake();
+
             unitSelection = FindObjectOfType<UnitSelection>();
         }
 

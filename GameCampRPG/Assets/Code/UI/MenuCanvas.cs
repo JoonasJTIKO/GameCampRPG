@@ -8,10 +8,10 @@ namespace GameCampRPG.UI
     public class MenuCanvas : MonoBehaviour
     {
         [SerializeField]
-        private GameObject eventSystem;
+        protected GameObject eventSystem;
 
         [SerializeField]
-        private GameObject initialSelectedObject;
+        protected GameObject initialSelectedObject;
 
         public virtual void Show()
         {

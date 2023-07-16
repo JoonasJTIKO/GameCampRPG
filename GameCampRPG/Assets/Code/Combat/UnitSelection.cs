@@ -18,6 +18,9 @@ namespace GameCampRPG
 
         private CombatTurnManager turnManager;
 
+        [SerializeField]
+        private CombatCameraMoving cameraMoving;
+
         public enum TargetingMode
         {
             None = 0,
@@ -193,9 +196,31 @@ namespace GameCampRPG
             }
         }
 
-        public void SwitchTargetingMode(TargetingMode mode, int spread = 0)
+        public void SwitchTargetingMode(TargetingMode mode, int spread = 0, bool defaultCamera = false)
         {
             StartCoroutine(SwitchTargetingModeRoutine(mode, spread));
+
+            if (defaultCamera)
+            {
+                cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Default);
+                return;
+            }
+
+            switch (mode)
+            {
+                case TargetingMode.PlayerUnits:
+                    GameInstance.Instance.GetPlayerCombatCanvas().Show();
+                    cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Default);
+                    break;
+                case TargetingMode.EnemyUnits:
+                    GameInstance.Instance.GetPlayerCombatCanvas().Hide();
+                    cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Enemies);
+                    break;
+                case TargetingMode.None:
+                    GameInstance.Instance.GetPlayerCombatCanvas().Hide();
+                    cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Grid);
+                    break;
+            }
         }
 
         private IEnumerator SwitchTargetingModeRoutine(TargetingMode mode, int spread = 0)

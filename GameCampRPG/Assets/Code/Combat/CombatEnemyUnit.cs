@@ -8,6 +8,8 @@ namespace GameCampRPG
     {
         private PHEnemyHealthDisplay enemyHealthDisplay;
 
+        private EnemyGridTargeting gridTargeting;
+
         private int dazedForTurns = 0;
 
         protected override void Awake()
@@ -15,6 +17,7 @@ namespace GameCampRPG
             base.Awake();
 
             enemyHealthDisplay = GetComponentInChildren<PHEnemyHealthDisplay>();
+            gridTargeting = GetComponent<EnemyGridTargeting>();
         }
 
         private void Start()
@@ -24,6 +27,8 @@ namespace GameCampRPG
 
         public void Highlight(bool state)
         {
+            gridTargeting.HighlightTargeted(state);
+
             if (state)
             {
                 gameObject.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);

@@ -73,7 +73,9 @@ namespace GameCampRPG
 
         private void Start()
         {
-            healthDisplay.UpdateText(Health.ToString());
+            if (GameInstance.Instance == null) return;
+
+            GameInstance.Instance.GetPlayerCombatCanvas().SetHealthText(characterIndex, Health);
         }
 
         private void OnEnable()
@@ -104,44 +106,19 @@ namespace GameCampRPG
 
         public void ActivateActionsMenu(bool state)
         {
+            GameInstance.Instance.GetPlayerCombatCanvas().SelectUnit(characterIndex, state);
+
             if (state)
             {
-                gameObject.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
-
                 if (LockAction) return;
 
-                PlayerCombatCanvas ui = GameInstance.Instance.GetPlayerCombatCanvas();
-                ui.Show();
-
-                switch (characterIndex)
-                {
-                    case 0:
-                        ui.SetUnitText("Rogue");
-                        break;
-                    case 1:
-                        ui.SetUnitText("Knight");
-                        break;
-                    case 2:
-                        ui.SetUnitText("Mage");
-                        break;
-                }
-
-                ui.SetCooldownText(0);
                 foreach (CombatActionBase action in combatActions)
                 {
                     action.BeginListening();
-
-                    if (action.CurrentCooldown != 0)
-                    {
-                        ui.SetCooldownText(action.CurrentCooldown);
-                    }
                 }
             }
             else
             {
-                gameObject.transform.localScale = new Vector3(1, 1, 1);
-                PlayerCombatCanvas ui = GameInstance.Instance.GetPlayerCombatCanvas();
-                ui.Hide();
                 foreach (CombatActionBase action in combatActions)
                 {
                     action.StopListening();
@@ -154,8 +131,12 @@ namespace GameCampRPG
             amount = amount / defense;
 
             ChangeHealth(-amount);
-            healthDisplay.UpdateText(Health.ToString());
-            Debug.Log("unit " + characterIndex + " Took " + amount + " damage");
+            GameInstance.Instance.GetPlayerCombatCanvas().SetHealthText(characterIndex, Health);
+        }
+
+        public void UpdateSkillCooldown(int cooldown)
+        {
+            GameInstance.Instance.GetPlayerCombatCanvas().SetCooldownText(characterIndex, cooldown);
         }
 
         public override bool SetQueuedAction(CombatActionBase action)

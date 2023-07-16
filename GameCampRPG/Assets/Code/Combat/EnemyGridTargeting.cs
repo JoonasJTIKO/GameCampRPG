@@ -112,6 +112,45 @@ namespace GameCampRPG
                     }
                     break;
             }
+            startPosition = -1;
+        }
+
+        public void HighlightTargeted(bool state)
+        {
+            if (startPosition == -1) return;
+
+            switch (targetingType)
+            {
+                case TargetingType.Line:
+                    switch (targetingDirection)
+                    {
+                        case TargetingDirection.Up:
+                            for (int i = 0; i < grid.Size; i++)
+                            {
+                                grid.HighlightNode(startPosition, i, state);
+                            }
+                            break;
+                        case TargetingDirection.Down:
+                            for (int i = grid.Size - 1; i >= 0; i--)
+                            {
+                                grid.HighlightNode(startPosition, i, state);
+                            }
+                            break;
+                        case TargetingDirection.Left:
+                            for (int i = grid.Size - 1; i >= 0; i--)
+                            {
+                                grid.HighlightNode(i, startPosition, state);
+                            }
+                            break;
+                        case TargetingDirection.Right:
+                            for (int i = 0; i < grid.Size; i++)
+                            {
+                                grid.HighlightNode(i, startPosition, state);
+                            }
+                            break;
+                    }
+                    break;
+            }
         }
 
         public void AttackTargeted(int damage)
@@ -161,7 +200,7 @@ namespace GameCampRPG
                     }
                     break;
             }
-
+            startPosition = -1;
             OnAttackFinished?.Invoke();
         }
 

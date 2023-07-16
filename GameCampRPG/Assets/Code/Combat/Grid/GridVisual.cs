@@ -10,16 +10,16 @@ namespace GameCampRPG
         private List<CombatPlayerMoving> playerUnits;
 
         [SerializeField]
-        private GameObject nodePrefab;
+        private GridNodeVisual nodePrefab;
 
         [SerializeField]
-        private GameObject targetedNodePrefab;
+        private GridNodeVisual targetedNodePrefab;
 
         [SerializeField]
         private float nodeDistance = 1f;
 
-        private GameObject[,] grid;
-        private GameObject[,] targetedGrid;
+        private GridNodeVisual[,] grid;
+        private GridNodeVisual[,] targetedGrid;
 
         private GridData gridData;
 
@@ -38,20 +38,20 @@ namespace GameCampRPG
         {
             if (grid != null) return;
 
-            grid = new GameObject[size, size];
-            targetedGrid = new GameObject[size, size];
+            grid = new GridNodeVisual[size, size];
+            targetedGrid = new GridNodeVisual[size, size];
 
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
-                    GameObject node = Instantiate(nodePrefab);
+                    GameObject node = Instantiate(nodePrefab.gameObject);
                     node.transform.position = new Vector3(transform.position.x + j * nodeDistance, transform.position.y, transform.position.z + i * nodeDistance);
-                    grid[j, i] = node;
+                    grid[j, i] = node.GetComponent<GridNodeVisual>();
 
-                    GameObject targetedNode = Instantiate(targetedNodePrefab);
+                    GameObject targetedNode = Instantiate(targetedNodePrefab.gameObject);
                     targetedNode.transform.position = new Vector3(transform.position.x + j * nodeDistance, transform.position.y, transform.position.z + i * nodeDistance);
-                    targetedGrid[j, i] = targetedNode;
+                    targetedGrid[j, i] = targetedNode.GetComponent<GridNodeVisual>();
                     targetedNode.SetActive(false);
                 }
             }
@@ -65,16 +65,8 @@ namespace GameCampRPG
         {
             if (x < 0 || x >= Size || y < 0 || y >= Size) return;
 
-            if (state)
-            {
-                grid[x, y].transform.localScale = new Vector3(1, 1, 1);
-                targetedGrid[x, y].transform.localScale = new Vector3(1, 1, 1);
-            }
-            else
-            {
-                grid[x, y].transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
-                targetedGrid[x, y].transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
-            }
+            grid[x, y].Highlight(state);
+            targetedGrid[x, y].Highlight(state);
         }
 
         public Vector3 GetNodePosition(int x, int y)
@@ -97,13 +89,13 @@ namespace GameCampRPG
             gridData.TargetNode(x, y, state);
             if (state)
             {
-                targetedGrid[x, y].SetActive(true);
-                grid[x, y].SetActive(false);
+                targetedGrid[x, y].gameObject.SetActive(true);
+                grid[x, y].gameObject.SetActive(false);
             }
             else if (gridData.Grid[x, y].TargetingCount == 0)
             {
-                targetedGrid[x, y].SetActive(false);
-                grid[x, y].SetActive(true);
+                targetedGrid[x, y].gameObject.SetActive(false);
+                grid[x, y].gameObject.SetActive(true);
             }
         }
 

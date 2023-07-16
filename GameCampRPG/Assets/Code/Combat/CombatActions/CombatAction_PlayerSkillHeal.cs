@@ -10,7 +10,6 @@ namespace GameCampRPG
         private GridNavigation gridNavigation;
         private UnitSelection unitSelection;
         private CombatPlayerMoving playerMoving;
-        private CombatPlayerUnit playerUnit;
         private CombatPlayerBuffManager playerBuffManager;
         private GridVisual grid;
 
@@ -20,12 +19,13 @@ namespace GameCampRPG
 
         private GridNavigation.TargetingShape targetingShape = GridNavigation.TargetingShape.Cross;
 
-        private void Awake()
+        public override void Awake()
         {
+            base.Awake();
+
             gridNavigation = FindObjectOfType<GridNavigation>();
             unitSelection = FindObjectOfType<UnitSelection>();
             playerMoving = GetComponent<CombatPlayerMoving>();
-            playerUnit = GetComponent<CombatPlayerUnit>();
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
             grid = FindObjectOfType<GridVisual>();
 

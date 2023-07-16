@@ -25,10 +25,12 @@ namespace GameCampRPG
             }
             GameInstance.Instance.GetQuestCanvas().Hide();
             GameInstance.Instance.GetSceneFadeCanvas().FadeOut();
+            GameInstance.Instance.GetPlayerCombatCanvas().Show();
         }
 
         public override void Deactivate()
         {
+            GameInstance.Instance.GetPlayerCombatCanvas().Hide();
             SceneManager.UnloadSceneAsync(SceneName);
         }
 

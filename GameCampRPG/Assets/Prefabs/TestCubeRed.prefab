@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3838871201983632395}
   - component: {fileID: 3838871201983632394}
   - component: {fileID: 3838871201983632405}
+  - component: {fileID: -8004513332847351309}
   m_Layer: 0
   m_Name: TestCubeRed
   m_TagString: Untagged
@@ -97,3 +98,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8004513332847351309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838871201983632404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ed9c9244ec9de45b1a912b9eb990d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSpeed: 1

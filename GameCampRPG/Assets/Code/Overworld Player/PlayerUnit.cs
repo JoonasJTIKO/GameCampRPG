@@ -63,6 +63,8 @@ namespace GameCampRPG
 
         public void Interact(InputAction.CallbackContext callback)
         {
+            if (interactionSensor.IntersectingObject == null) return;
+
             interactionSensor.IntersectingObject.Interact();
         }
     }
