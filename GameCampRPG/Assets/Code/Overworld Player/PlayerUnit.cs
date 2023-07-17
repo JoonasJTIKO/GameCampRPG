@@ -13,6 +13,8 @@ namespace GameCampRPG
 
         private InputAction interact;
 
+        private InputAction openPauseMenu;
+
         private Vector2 move;
 
         [SerializeField]
@@ -26,6 +28,7 @@ namespace GameCampRPG
 
             inputs = GameInstance.Instance.GetPlayerInfo().PlayerInputs;
             moveAction = inputs.Overworld.Move;
+            openPauseMenu = inputs.Overworld.Pause;
             interact = inputs.Overworld.Interact;
         }
 
@@ -34,6 +37,7 @@ namespace GameCampRPG
             if (GameInstance.Instance == null) return;
 
             interact.performed += Interact;
+            openPauseMenu.performed += OpenPauseMenu;
         }
 
         private void OnDisable()
@@ -41,6 +45,7 @@ namespace GameCampRPG
             if (GameInstance.Instance == null) return;
 
             interact.performed -= Interact;
+            openPauseMenu.performed -= OpenPauseMenu;
         }
 
         private void FixedUpdate()
@@ -66,6 +71,20 @@ namespace GameCampRPG
             if (interactionSensor.IntersectingObject == null) return;
 
             interactionSensor.IntersectingObject.Interact();
+        }
+
+        public void OpenPauseMenu(InputAction.CallbackContext callback)
+        {
+            if (Time.timeScale != 0f)
+            {
+                GameInstance.Instance.GetPauseMenuCanvas().Show();
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                GameInstance.Instance.GetPauseMenuCanvas().Hide();
+                Time.timeScale = 1f;
+            }
         }
     }
 }

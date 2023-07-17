@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameCampRPG.UI
 {
-    public class PauseMenuCanvas : MonoBehaviour
+    public class PauseMenuCanvas : MenuCanvas
     {
     }
 }
