@@ -21,8 +21,6 @@ namespace GameCampRPG
 
         private CombatPlayerBuffManager playerBuffManager;
 
-        private PHEnemyHealthDisplay healthDisplay;
-
         private int defense = 1;
 
         protected override void Awake()
@@ -30,7 +28,6 @@ namespace GameCampRPG
             base.Awake();
 
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
-            healthDisplay = GetComponentInChildren<PHEnemyHealthDisplay>();
 
             if (GameInstance.Instance == null) return;
 
@@ -161,7 +158,7 @@ namespace GameCampRPG
         public override bool ChangeHealth(int amount)
         {
             bool returnValue = base.ChangeHealth(amount);
-            healthDisplay.UpdateText(Health.ToString());
+            GameInstance.Instance.GetPlayerCombatCanvas().SetHealthText(characterIndex, Health);
             return returnValue;
         }
 

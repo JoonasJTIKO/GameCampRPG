@@ -20,6 +20,9 @@ namespace GameCampRPG
         private PlayerCombatCanvas UI_PlayerCombatCanvas;
 
         [SerializeField]
+        private EnemyInfoCanvas UI_EnemyInfoCanvas;
+
+        [SerializeField]
         private PauseMenuCanvas UI_PauseMenuCanvas;
 
         [SerializeField]
@@ -109,6 +112,11 @@ namespace GameCampRPG
         public PlayerCombatCanvas GetPlayerCombatCanvas()
         {
             return UI_PlayerCombatCanvas;
+        }
+
+        public EnemyInfoCanvas GetEnemyInfoCanvas()
+        {
+            return UI_EnemyInfoCanvas;
         }
 
         public PauseMenuCanvas GetPauseMenuCanvas()

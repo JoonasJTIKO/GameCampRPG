@@ -30,15 +30,7 @@ namespace GameCampRPG.UI
         {
             if (!transform.parent.gameObject.activeSelf) return;
 
-            animator.ResetTrigger("select");
-            animator.ResetTrigger("unselect");
-
-            if (state)
-            {
-                animator.SetTrigger("select");
-                return;
-            }
-            animator.SetTrigger("unselect");
+            animator.SetBool("Selected", state);
         }
     }
 }

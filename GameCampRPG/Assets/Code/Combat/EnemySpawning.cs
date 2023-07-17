@@ -31,12 +31,15 @@ namespace GameCampRPG
             else if (combatInfo.Enemies.Count == 1) positionIndex = 2;
             if (combatInfo.Enemies.Count % 2 == 0) skipThird = true;
 
+            int unitIndex = 0;
             foreach (EnemyData data in combatInfo.Enemies)
             {
                 CombatEnemyUnit enemy = SpawnEnemyOfType(data.Type);
                 SetEnemyDifficulty(enemy, data.Difficulty);
                 enemy.transform.position = enemyPositions[positionIndex].position;
                 enemy.transform.rotation = enemyPositions[positionIndex].rotation;
+                enemy.UnitIndex = unitIndex;
+                unitIndex++;
 
                 if (skipThird && positionIndex == 1) positionIndex = 3;
                 else
@@ -46,6 +49,8 @@ namespace GameCampRPG
 
                 enemies.Add(enemy);
             }
+
+            GameInstance.Instance.GetEnemyInfoCanvas().ActivatePanels(combatInfo.Enemies.Count);
 
             return enemies;
         }

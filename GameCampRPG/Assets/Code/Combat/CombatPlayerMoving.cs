@@ -68,6 +68,7 @@ namespace GameCampRPG
         private IEnumerator Move(Vector3 position)
         {
             Vector3 startPos = transform.position;
+            deltaTime = 0f;
 
             while (deltaTime <= moveTime)
             {
@@ -75,6 +76,7 @@ namespace GameCampRPG
                 transform.position = Parabola.MParabola(startPos, position, 2f, deltaTime / moveTime);
                 yield return null;
             }
+            yield return new WaitForSeconds(0.75f);
             Moved?.Invoke();
         }
 

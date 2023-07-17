@@ -6,37 +6,24 @@ namespace GameCampRPG
 {
     public class CombatEnemyUnit : CombatUnitBase
     {
-        private PHEnemyHealthDisplay enemyHealthDisplay;
-
         private EnemyGridTargeting gridTargeting;
 
         private int dazedForTurns = 0;
+
+        public int UnitIndex;
 
         protected override void Awake()
         {
             base.Awake();
 
-            enemyHealthDisplay = GetComponentInChildren<PHEnemyHealthDisplay>();
             gridTargeting = GetComponent<EnemyGridTargeting>();
-        }
-
-        private void Start()
-        {
-            enemyHealthDisplay.UpdateText(Health.ToString());
         }
 
         public void Highlight(bool state)
         {
             gridTargeting.HighlightTargeted(state);
 
-            if (state)
-            {
-                gameObject.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
-            }
-            else
-            {
-                gameObject.transform.localScale = new Vector3(1, 1, 1);
-            }
+            GameInstance.Instance.GetEnemyInfoCanvas().SelectUnit(UnitIndex, state);
         }
 
         public void SelectAction()
@@ -50,7 +37,7 @@ namespace GameCampRPG
         public void TakeDamage(int amount)
         {
             ChangeHealth(-amount);
-            enemyHealthDisplay.UpdateText(Health.ToString());
+            GameInstance.Instance.GetEnemyInfoCanvas().SetHealth(UnitIndex, Health);
             if (Health == 0)
             {
                 GetComponent<EnemyGridTargeting>().UnTarget();

@@ -115,6 +115,7 @@ namespace GameCampRPG
                 GameInstance.Instance.GetPlayerInfo().PlayerInventory.AddItems(item);
             }
 
+            GameInstance.Instance.GetEnemyInfoCanvas().DeactivatePanels();
             GameInstance.Instance.GetPlayerCombatCanvas().Hide();
             audioListener.enabled = false;
             transitionRoutine = StartCoroutine(Transition());
