@@ -198,14 +198,6 @@ namespace GameCampRPG
 
         public void SwitchTargetingMode(TargetingMode mode, int spread = 0, bool defaultCamera = false)
         {
-            StartCoroutine(SwitchTargetingModeRoutine(mode, spread));
-
-            if (defaultCamera)
-            {
-                cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Default);
-                return;
-            }
-
             switch (mode)
             {
                 case TargetingMode.PlayerUnits:
@@ -220,6 +212,14 @@ namespace GameCampRPG
                     GameInstance.Instance.GetPlayerCombatCanvas().Hide();
                     cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Grid);
                     break;
+            }
+
+            StartCoroutine(SwitchTargetingModeRoutine(mode, spread));
+
+            if (defaultCamera)
+            {
+                cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Default);
+                return;
             }
         }
 

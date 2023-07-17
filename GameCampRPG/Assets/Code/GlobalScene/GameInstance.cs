@@ -69,6 +69,9 @@ namespace GameCampRPG
             playerInfo = GetComponent<PlayerInfo>();
             combatInfo = GetComponent<CombatInfo>();
             questManager = GetComponent<QuestManager>();
+
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         public void SetOverworldCamera(Camera camera)
