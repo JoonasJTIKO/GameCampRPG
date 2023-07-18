@@ -35,6 +35,8 @@ namespace GameCampRPG.UI
 
         public void SelectUnit(int unitIndex, bool state)
         {
+            eventSystem.SetSelectedGameObject(initialSelectedObject);
+
             switch (unitIndex)
             {
                 case 0:

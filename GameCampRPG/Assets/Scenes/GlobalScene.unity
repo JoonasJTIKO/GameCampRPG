@@ -181,6 +181,7 @@ MonoBehaviour:
     - <ID>k__BackingField: 5
       <Name>k__BackingField: Snakeskin
       <Description>k__BackingField: 
+      <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
       <MaxAmount>k__BackingField: 3
       <IsUnique>k__BackingField: 0
@@ -835,7 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8bb53291cdae7499dd172ac01a7205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventSystem: {fileID: 1463551772}
+  eventSystem: {fileID: 1463551774}
   initialSelectedObject: {fileID: 0}
   evenPanels:
   - {fileID: 1272678377}
@@ -2904,7 +2905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8deb809965b7dab48a50c72d1c77c724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventSystem: {fileID: 1463551772}
+  eventSystem: {fileID: 1463551774}
   initialSelectedObject: {fileID: 0}
   questText: {fileID: 1071244148}
   questProgress: {fileID: 28505406}
@@ -3024,7 +3025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dce718aa30c6547a88dc8ab3f63ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventSystem: {fileID: 1463551772}
+  eventSystem: {fileID: 1463551774}
   initialSelectedObject: {fileID: 143792211}
   currentUnitText: {fileID: 1828156896}
   currentCooldownText: {fileID: 1676103619}
@@ -7362,7 +7363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6107d6ed553b82246b9f433fcc1c915e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventSystem: {fileID: 0}
+  eventSystem: {fileID: 1463551774}
   initialSelectedObject: {fileID: 0}
 --- !u!114 &1825947243
 MonoBehaviour:
@@ -7748,7 +7749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d998285acf676f4ab8b34d6047b3d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventSystem: {fileID: 1463551772}
+  eventSystem: {fileID: 1463551774}
   initialSelectedObject: {fileID: 0}
   dialogueText: {fileID: 258245542}
   speaker: {fileID: 593114774}
@@ -8737,7 +8738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c381916fc87efd043a316e05e7df281d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventSystem: {fileID: 1463551772}
+  eventSystem: {fileID: 1463551774}
   initialSelectedObject: {fileID: 0}
 --- !u!114 &2055769005
 MonoBehaviour:

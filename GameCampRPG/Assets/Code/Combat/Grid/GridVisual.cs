@@ -71,7 +71,12 @@ namespace GameCampRPG
 
         public Vector3 GetNodePosition(int x, int y)
         {
-            return grid[x, y].transform.position;
+            Vector3 returnValue = 
+                new Vector3(grid[x, y].transform.position.x, 
+                grid[x, y].transform.position.y + 1, 
+                grid[x, y].transform.position.z);
+
+            return returnValue;
         }
 
         public bool MoveToNode(int x, int y)

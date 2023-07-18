@@ -8,7 +8,7 @@ namespace GameCampRPG.UI
     public class MenuCanvas : MonoBehaviour
     {
         [SerializeField]
-        protected GameObject eventSystem;
+        protected EventSystem eventSystem;
 
         [SerializeField]
         protected GameObject initialSelectedObject;
@@ -19,7 +19,7 @@ namespace GameCampRPG.UI
 
             if (initialSelectedObject != null)
             {
-                eventSystem.GetComponent<EventSystem>().SetSelectedGameObject(initialSelectedObject);
+                eventSystem.SetSelectedGameObject(initialSelectedObject);
             }
         }
 
