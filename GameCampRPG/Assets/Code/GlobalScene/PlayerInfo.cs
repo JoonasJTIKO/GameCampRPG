@@ -37,7 +37,7 @@ namespace GameCampRPG
         private void Awake()
         {
             PlayerInputs = new PlayerInputs();
-            PlayerInventory = new Inventory(50);
+            PlayerInventory = new Inventory(25);
 
             foreach (Item item in items)
             {
