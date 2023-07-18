@@ -17,6 +17,8 @@ namespace GameCampRPG
 
         private Vector2 move;
 
+        private Animator animator;
+
         [SerializeField]
         private InteractionSensor interactionSensor;
 
@@ -30,6 +32,7 @@ namespace GameCampRPG
             moveAction = inputs.Overworld.Move;
             openPauseMenu = inputs.Overworld.Pause;
             interact = inputs.Overworld.Interact;
+            animator = GetComponentInChildren<Animator>();
         }
 
         private void OnEnable()
@@ -55,11 +58,19 @@ namespace GameCampRPG
             if (Mathf.Abs(move.x) > Mathf.Abs(move.y))
             {
                 move = new Vector2(move.x, 0);
+                animator.SetBool("Idle", false);
+                animator.SetFloat("X", move.x);
+                animator.SetFloat("Y", move.y);
             }
             else if (Mathf.Abs(move.x) <= Mathf.Abs(move.y))
             {
                 move = new Vector2(0, move.y);
+                animator.SetBool("Idle", false);
+                animator.SetFloat("X", move.x);
+                animator.SetFloat("Y", move.y);
             }
+
+            if (move == Vector2.zero) animator.SetBool("Idle", true);
 
             move.Normalize();
 
