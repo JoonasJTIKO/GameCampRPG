@@ -136,18 +136,38 @@ namespace GameCampRPG.UI
             if (itemVendor != null)
             {
                 item = itemVendor.Inventory.GetItem(shopItemData[selectedItem]);
+                if (!BuyItem(item))
+                {
+                    itemVendor.Inventory.AddItems(item);
+                }
                 shopItemData = itemVendor.Inventory.ShowAllItems();
-                GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
                 DrawMenuList(itemVendor);
             }
             else if (blackVendor != null)
             {
                 item = blackVendor.Inventory.GetItem(shopItemData[selectedItem]);
+                if (!BuyItem(item))
+                {
+                    blackVendor.Inventory.AddItems(item);
+                }
                 shopItemData = blackVendor.Inventory.ShowAllItems();
-                GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
                 DrawMenuList(blackVendor);
             }
             UpdateSelectedItem();
+        }
+
+        private bool BuyItem(IItem item)
+        {
+            Debug.Log("price: " + item.Price);
+            Debug.Log("Money: " + GameInstance.Instance.GetPlayerInfo().Money);
+            if (item.Price > GameInstance.Instance.GetPlayerInfo().Money)
+            {
+                return false;
+            }
+
+            GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
+            GameInstance.Instance.GetPlayerInfo().RemoveMoney(item.Price);
+            return true;
         }
 
         private void DrawMenuList(BaseVendor vendor)

@@ -83,6 +83,7 @@ namespace GameCampRPG
                         ID = inspectedItem.ID,
                         Name = inspectedItem.Name,
                         Description = inspectedItem.Description,
+                        Price = inspectedItem.Price,
                         MaxAmount = inspectedItem.MaxAmount,
                         IsUnique = inspectedItem.IsUnique,
                         Icon = inspectedItem.Icon

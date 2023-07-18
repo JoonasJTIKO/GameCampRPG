@@ -13,6 +13,12 @@ namespace GameCampRPG
         [SerializeField]
         private List<Item> items;
 
+        public int Money
+        {
+            get;
+            private set;
+        }
+
         private int[] characterHealths = new int[3];
         public int[] CharacterHealths { get { return characterHealths; } }
 
@@ -37,6 +43,8 @@ namespace GameCampRPG
             {
                 PlayerInventory.AddItems(item);
             }
+
+            Money = 5;
         }
 
         public void SetCharacterHealth(int characterIndex, int value)
@@ -105,6 +113,17 @@ namespace GameCampRPG
                 GameInstance.Instance.GetQuestManager().CheckForQuestProgress(copy);
             }
 ;       }
+
+        public void AddMoney(int amount)
+        {
+            Money += amount;
+        }
+
+        public void RemoveMoney(int amount)
+        {
+            Money -= amount;
+            if (Money < 0) Money = 0;
+        }
 
         public void IncreaseStat(Item.ItemStat stat, int characterIndex)
         {

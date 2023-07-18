@@ -2748,54 +2748,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: talkDialogue.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: introDialogue.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: leaveDialogue.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: introDialogue.Array.data[0].speakerIcon
-      value: 
-      objectReference: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: introDialogue.Array.data[0].speakerName
-      value: Lemon child
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: introDialogue.Array.data[1].speakerIcon
-      value: 
-      objectReference: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: introDialogue.Array.data[1].speakerName
-      value: Hero
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: leaveDialogue.Array.data[0].speakerIcon
-      value: 
-      objectReference: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: leaveDialogue.Array.data[0].speakerName
-      value: Lemon child
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: introDialogue.Array.data[0].dialogueLine
-      value: Greetings brave warriors!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: introDialogue.Array.data[1].dialogueLine
-      value: Sup
-      objectReference: {fileID: 0}
-    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: leaveDialogue.Array.data[0].dialogueLine
-      value: May success follow you wherever you travel!
-      objectReference: {fileID: 0}
     - target: {fileID: 5772859958937571720, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2838,10 +2790,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5772859958937571720, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5772859958937571722, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5772859958937575028, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
