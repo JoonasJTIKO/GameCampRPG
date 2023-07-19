@@ -11,6 +11,8 @@ namespace GameCampRPG
         public enum TargetingType
         {
             Line = 0,
+            Square = 1,
+            Cross = 2
         }
 
         public enum TargetingDirection
@@ -22,6 +24,8 @@ namespace GameCampRPG
         }
 
         private int startPosition = -1;
+
+        private int startX, startY;
 
         private TargetingDirection targetingDirection = TargetingDirection.Up;
 
@@ -36,7 +40,7 @@ namespace GameCampRPG
             grid = FindObjectOfType<GridVisual>();
         }
 
-        public void Target(int position, TargetingType type, TargetingDirection direction = TargetingDirection.Up)
+        public void Target(int position, TargetingType type, TargetingDirection direction = TargetingDirection.Up, int startX = 0, int startY = 0)
         {
             startPosition = position;
             targetingDirection = direction;
@@ -72,6 +76,27 @@ namespace GameCampRPG
                             }
                             break;
                     }
+                    break;
+
+                case TargetingType.Square:
+                    this.startX = startX;
+                    this.startY = startY;
+
+                    grid.TargetNode(startX, startY);
+                    grid.TargetNode(startX + 1, startY);
+                    grid.TargetNode(startX, startY + 1);
+                    grid.TargetNode(startX + 1, startY + 1);
+                    break;
+
+                case TargetingType.Cross:
+                    this.startX = startX;
+                    this.startY = startY;
+
+                    grid.TargetNode(startX, startY);
+                    grid.TargetNode(startX + 1, startY);
+                    grid.TargetNode(startX, startY + 1);
+                    grid.TargetNode(startX - 1, startY);
+                    grid.TargetNode(startX, startY - 1);
                     break;
             }
         }
@@ -111,6 +136,21 @@ namespace GameCampRPG
                             break;
                     }
                     break;
+
+                case TargetingType.Square:
+                    grid.TargetNode(startX, startY, false);
+                    grid.TargetNode(startX + 1, startY, false);
+                    grid.TargetNode(startX, startY + 1, false);
+                    grid.TargetNode(startX + 1, startY + 1, false);
+                    break;
+
+                case TargetingType.Cross:
+                    grid.TargetNode(startX, startY, false);
+                    grid.TargetNode(startX + 1, startY, false);
+                    grid.TargetNode(startX, startY + 1, false);
+                    grid.TargetNode(startX - 1, startY, false);
+                    grid.TargetNode(startX, startY - 1, false);
+                    break;
             }
             startPosition = -1;
         }
@@ -149,6 +189,21 @@ namespace GameCampRPG
                             }
                             break;
                     }
+                    break;
+
+                case TargetingType.Square:
+                    grid.HighlightNode(startX, startY, state);
+                    grid.HighlightNode(startX + 1, startY, state);
+                    grid.HighlightNode(startX, startY + 1, state);
+                    grid.HighlightNode(startX + 1, startY + 1, state);
+                    break;
+
+                case TargetingType.Cross:
+                    grid.HighlightNode(startX, startY, state);
+                    grid.HighlightNode(startX + 1, startY, state);
+                    grid.HighlightNode(startX, startY + 1, state);
+                    grid.HighlightNode(startX - 1, startY, state);
+                    grid.HighlightNode(startX, startY - 1, state);
                     break;
             }
         }
@@ -198,6 +253,34 @@ namespace GameCampRPG
                             }
                             break;
                     }
+                    break;
+
+                case TargetingType.Square:
+                    AttackNode(startX, startY, damage);
+                    grid.TargetNode(startX, startY, false);
+                    AttackNode(startX + 1, startY, damage);
+                    grid.TargetNode(startX + 1, startY, false);
+                    AttackNode(startX, startY + 1, damage);
+                    grid.TargetNode(startX, startY + 1, false);
+                    AttackNode(startX + 1, startY + 1, damage);
+                    grid.TargetNode(startX + 1, startY + 1, false);
+                    yield return new WaitForSeconds(0.2f);
+                    break;
+
+                case TargetingType.Cross:
+                    AttackNode(startX, startY, damage);
+                    grid.TargetNode(startX, startY, false);
+                    yield return new WaitForSeconds(0.2f);
+
+                    AttackNode(startX + 1, startY, damage);
+                    grid.TargetNode(startX + 1, startY, false);
+                    AttackNode(startX, startY + 1, damage);
+                    grid.TargetNode(startX, startY + 1, false);
+                    AttackNode(startX - 1, startY, damage);
+                    grid.TargetNode(startX - 1, startY, false);
+                    AttackNode(startX, startY - 1, damage);
+                    grid.TargetNode(startX, startY - 1, false);
+                    yield return new WaitForSeconds(0.2f);
                     break;
             }
             startPosition = -1;

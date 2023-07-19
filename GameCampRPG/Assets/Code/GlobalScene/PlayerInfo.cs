@@ -49,10 +49,10 @@ namespace GameCampRPG
 
         public void SetCharacterHealth(int characterIndex, int value)
         {
-            if (value < 0)
+            if (value < 1)
             {
-                Debug.LogWarning("Health can not be below 0, setting health to 0");
-                value = 0;
+                Debug.LogWarning("Health can not be below 1, setting health to 1");
+                value = 1;
             }
 
             characterHealths[characterIndex] = value;

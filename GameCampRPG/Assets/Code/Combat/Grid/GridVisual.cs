@@ -91,6 +91,8 @@ namespace GameCampRPG
 
         public void TargetNode(int x, int y, bool state = true)
         {
+            if (x < 0 || x >= Size || y < 0 || y >= Size) return;
+
             gridData.TargetNode(x, y, state);
             if (state)
             {

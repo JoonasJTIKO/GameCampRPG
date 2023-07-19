@@ -98,7 +98,7 @@ namespace GameCampRPG
 
                 if (playerUnit != null)
                 {
-                    playerUnit.UpdateSkillCooldown(cooldown);
+                    playerUnit.UpdateSkillCooldown(counter);
                 }
             }
         }

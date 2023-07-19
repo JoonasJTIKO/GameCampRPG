@@ -159,6 +159,7 @@ namespace GameCampRPG
         {
             bool returnValue = base.ChangeHealth(amount);
             GameInstance.Instance.GetPlayerCombatCanvas().SetHealthText(characterIndex, Health);
+            GameInstance.Instance.GetPlayerInfo().SetCharacterHealth(characterIndex, Health);
             return returnValue;
         }
 

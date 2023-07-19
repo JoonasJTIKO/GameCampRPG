@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
+  targetingType: 2
 --- !u!114 &3451851939000096429
 MonoBehaviour:
   m_ObjectHideFlags: 0
