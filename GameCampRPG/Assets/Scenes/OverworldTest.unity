@@ -1214,20 +1214,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - Type: 0
-    Difficulty: 1
-  - Type: 0
-    Difficulty: 1
-  - Type: 0
-    Difficulty: 1
+  - Type: 1
+    Difficulty: 0
+  - Type: 1
+    Difficulty: 0
+  - Type: 1
+    Difficulty: 0
   drops:
-  - <ID>k__BackingField: 5
-    <Name>k__BackingField: Rubber
-    <Description>k__BackingField: 
-    <Amount>k__BackingField: 5
+  - <ID>k__BackingField: 9
+    <Name>k__BackingField: Gooey substance
+    <Description>k__BackingField: A mysterious substance produced by slimes
+    <Price>k__BackingField: 2
+    <Amount>k__BackingField: 3
     <MaxAmount>k__BackingField: 25
     <IsUnique>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
+    <Equippable>k__BackingField: 0
+    <Stat1>k__BackingField: 0
+    <Stat2>k__BackingField: 0
+    <equippableType>k__BackingField: 0
   targetState: 4
   unloadCurrentScene: 0
 --- !u!23 &614601779
@@ -2462,13 +2467,18 @@ MonoBehaviour:
   - Type: 0
     Difficulty: 0
   drops:
-  - <ID>k__BackingField: 5
-    <Name>k__BackingField: Rubber
-    <Description>k__BackingField: 
+  - <ID>k__BackingField: 8
+    <Name>k__BackingField: Rubber scraps
+    <Description>k__BackingField: Remnants of danger noodles
+    <Price>k__BackingField: 1
     <Amount>k__BackingField: 5
     <MaxAmount>k__BackingField: 25
     <IsUnique>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
+    <Equippable>k__BackingField: 0
+    <Stat1>k__BackingField: 0
+    <Stat2>k__BackingField: 0
+    <equippableType>k__BackingField: 0
   targetState: 4
   unloadCurrentScene: 0
 --- !u!1001 &1495243883

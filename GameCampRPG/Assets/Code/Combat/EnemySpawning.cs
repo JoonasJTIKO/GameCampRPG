@@ -35,10 +35,11 @@ namespace GameCampRPG
             foreach (EnemyData data in combatInfo.Enemies)
             {
                 CombatEnemyUnit enemy = SpawnEnemyOfType(data.Type);
-                SetEnemyDifficulty(enemy, data.Difficulty);
+                
                 enemy.transform.position = enemyPositions[positionIndex].position;
                 enemy.transform.rotation = enemyPositions[positionIndex].rotation;
                 enemy.UnitIndex = unitIndex;
+                SetEnemyDifficulty(enemy, data.Difficulty);
                 unitIndex++;
 
                 if (skipThird && positionIndex == 1) positionIndex = 3;
@@ -80,7 +81,7 @@ namespace GameCampRPG
             switch (difficulty)
             {
                 case EnemyDifficulty.Easy:
-                    //This is the base values stored in prefab
+                    enemy.ChangeStats(0);
                     break;
                 case EnemyDifficulty.Normal:
                     enemy.ChangeStats(1);

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6642292224141418443}
   - component: {fileID: 3451851939000096429}
   m_Layer: 0
-  m_Name: EnemyCombatUnit
+  m_Name: EnemyCombatUnitSlime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dac38ee1d1860df4ea568c7ecfe77583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 4
   attackStrength: 1
   skillStrength: 1
   model: {fileID: 4831272355672318634}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  targetingType: 2
+  targetingType: 0
 --- !u!114 &3451851939000096429
 MonoBehaviour:
   m_ObjectHideFlags: 0

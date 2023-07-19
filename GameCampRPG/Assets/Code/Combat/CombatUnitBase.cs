@@ -53,7 +53,7 @@ namespace GameCampRPG
             combatActions = GetComponents<CombatActionBase>().ToList();
         }
 
-        public void ChangeStats(int amount)
+        public virtual void ChangeStats(int amount)
         {
             maxHealth += amount;
             Health = maxHealth;

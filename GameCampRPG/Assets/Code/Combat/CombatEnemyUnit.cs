@@ -51,5 +51,11 @@ namespace GameCampRPG
             SetQueuedAction(null);
             dazedForTurns = turns;
         }
+
+        public override void ChangeStats(int amount)
+        {
+            base.ChangeStats(amount);
+            GameInstance.Instance.GetEnemyInfoCanvas().SetHealth(UnitIndex, Health);
+        }
     }
 }

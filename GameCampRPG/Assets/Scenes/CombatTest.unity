@@ -1700,8 +1700,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snakePrefab: {fileID: 6642292224141418442, guid: 417b7dd1fadb517438eedcb8f079a0e0, type: 3}
-  slimePrefab: {fileID: 6642292224141418442, guid: 417b7dd1fadb517438eedcb8f079a0e0, type: 3}
-  treePrefab: {fileID: 6642292224141418442, guid: 417b7dd1fadb517438eedcb8f079a0e0, type: 3}
+  slimePrefab: {fileID: 6642292224141418442, guid: 21a0042538934674d941d775aaa7af59, type: 3}
+  treePrefab: {fileID: 6642292224141418442, guid: e90c0262ff2c0884a90e9d11c14232f0, type: 3}
   enemyPositions:
   - {fileID: 531408957}
   - {fileID: 69816308}
