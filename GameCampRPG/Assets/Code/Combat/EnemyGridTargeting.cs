@@ -264,13 +264,13 @@ namespace GameCampRPG
                     grid.TargetNode(startX, startY + 1, false);
                     AttackNode(startX + 1, startY + 1, damage);
                     grid.TargetNode(startX + 1, startY + 1, false);
-                    yield return new WaitForSeconds(0.2f);
+                    yield return new WaitForSeconds(0.5f);
                     break;
 
                 case TargetingType.Cross:
                     AttackNode(startX, startY, damage);
                     grid.TargetNode(startX, startY, false);
-                    yield return new WaitForSeconds(0.2f);
+                    yield return new WaitForSeconds(0.25f);
 
                     AttackNode(startX + 1, startY, damage);
                     grid.TargetNode(startX + 1, startY, false);
@@ -280,7 +280,7 @@ namespace GameCampRPG
                     grid.TargetNode(startX - 1, startY, false);
                     AttackNode(startX, startY - 1, damage);
                     grid.TargetNode(startX, startY - 1, false);
-                    yield return new WaitForSeconds(0.2f);
+                    yield return new WaitForSeconds(0.5f);
                     break;
             }
             startPosition = -1;

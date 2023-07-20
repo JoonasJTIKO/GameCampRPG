@@ -104,6 +104,7 @@ namespace GameCampRPG
                 targetedGrid[x, y].gameObject.SetActive(false);
                 grid[x, y].gameObject.SetActive(true);
             }
+            targetedGrid[x, y].SetTargetedCount(gridData.Grid[x, y].TargetingCount);
         }
 
         public GameObject CheckForPlayer(int x, int y)
