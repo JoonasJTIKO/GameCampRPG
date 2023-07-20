@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 namespace GameCampRPG.UI
 {
@@ -10,6 +11,9 @@ namespace GameCampRPG.UI
     {
         [SerializeField]
         private PauseMenuNavigation pauseMenuNavigation;
+
+        [SerializeField]
+        private ItemInfo itemInfo;
 
         [SerializeField]
         private GameObject itemFrame;
@@ -49,10 +53,16 @@ namespace GameCampRPG.UI
 
         private void OnEnable()
         {
+            playerItems = GameInstance.Instance.GetPlayerInfo().PlayerInventory.ShowAllItems();
+
             for (int i = 0; i < 25; i++)
             {
                 GameObject menuFrame = GameObject.Instantiate(itemFrame, this.transform);
                 inventoryMenuItems.Add(menuFrame);
+                if (i < playerItems.Count)
+                {
+                    inventoryMenuItems[i].GetComponentInChildren<TextMeshProUGUI>().text = playerItems[i].Amount.ToString();
+                }
             }
         }
 
@@ -145,17 +155,25 @@ namespace GameCampRPG.UI
 
         private void SelectPerformed(InputAction.CallbackContext callback)
         {
-
+            Debug.Log("Select performed");
         }
 
         private void EscapePerformed(InputAction.CallbackContext callback)
         {
+            selectedItem = -1;
+            UpdateSelectedItem();
+            itemInfo.Hide();
             DisableInputs();
             pauseMenuNavigation.SetInputs();
         }
 
         private void UpdateSelectedItem()
         {
+            if (selectedItem < playerItems.Count && selectedItem >= 0)
+            {
+                itemInfo.SetInfo(playerItems[selectedItem]);
+            }
+
             for (int i = 0; i < inventoryMenuItems.Count; i++)
             {
                 if (i == selectedItem)

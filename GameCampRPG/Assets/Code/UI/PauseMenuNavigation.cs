@@ -12,6 +12,9 @@ namespace GameCampRPG.UI
         [SerializeField]
         private PlayerInventoryUI playerInventoryUI;
 
+        [SerializeField]
+        private ItemInfo itemInfo;
+
         //[SerializeField]
         //private ManageCharactersUI manageCharactersUI;
 
@@ -95,6 +98,7 @@ namespace GameCampRPG.UI
                 case 1:
                     playerInventoryUI.EnableInputs();
                     RemoveInputs();
+                    itemInfo.Show();
                     break;
             }
         }

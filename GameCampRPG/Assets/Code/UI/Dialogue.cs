@@ -52,7 +52,6 @@ namespace GameCampRPG.UI
             if (inputs == null) return;
 
             inputs.UI.Enable();
-            //gameObject.GetComponent<SpriteRenderer>().sprite = speakerIcon;
         }
 
         private void OnDisable()
@@ -76,10 +75,8 @@ namespace GameCampRPG.UI
             }
         }
 
-        //TODO: passing the sprite of the gameobject to the dialogue
         public void StartDialogue(BaseVendor caller, DialogueLine[] lines, bool openMenu = false)
         {
-            //this.speakerIcon = caller.Icon;
             Show();
             select.performed += PerformSkip;
 
@@ -98,13 +95,12 @@ namespace GameCampRPG.UI
             typeLine = StartCoroutine(TypeLine());
         }
 
-        public void SetText(string text/*, Sprite itemIcon*/)
+        public void SetText(string text)
         {
             if (typeLine != null)
             {
                 StopCoroutine(typeLine);
             }
-            //this.speakerIcon = itemIcon;
             dialogueText.text = text;
         }
 

@@ -1,3 +1,4 @@
+using GameCampRPG.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -93,7 +94,14 @@ namespace GameCampRPG
             }
             else
             {
-                GameInstance.Instance.GetPauseMenuCanvas().Hide();
+                PauseMenuCanvas canvas = GameInstance.Instance.GetPauseMenuCanvas();
+                canvas.GetComponentInChildren<PauseMenuNavigation>().RemoveInputs();
+                PlayerInventoryUI playerInventory = canvas.GetComponentInChildren<PlayerInventoryUI>();
+                if (playerInventory != null)
+                {
+                    playerInventory.DisableInputs();
+                }
+                canvas.Hide();
                 Time.timeScale = 1f;
             }
         }
