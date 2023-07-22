@@ -196,7 +196,7 @@ namespace GameCampRPG
             }
         }
 
-        public void SwitchTargetingMode(TargetingMode mode, int spread = 0, bool defaultCamera = false)
+        public void SwitchTargetingMode(TargetingMode mode, int spread = 0, bool attackCamera = false, bool defaultCamera = false)
         {
             switch (mode)
             {
@@ -210,16 +210,20 @@ namespace GameCampRPG
                     break;
                 case TargetingMode.None:
                     GameInstance.Instance.GetPlayerCombatCanvas().Hide();
-                    cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Grid);
+                    if (!attackCamera && !defaultCamera) cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Grid);
                     break;
             }
 
             StartCoroutine(SwitchTargetingModeRoutine(mode, spread));
 
+            if (attackCamera)
+            {
+                cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Attack);
+                return;
+            }
             if (defaultCamera)
             {
                 cameraMoving.MoveCamera(CombatCameraMoving.CameraPosition.Default);
-                return;
             }
         }
 

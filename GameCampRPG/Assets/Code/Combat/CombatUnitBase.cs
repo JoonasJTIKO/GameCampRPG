@@ -17,9 +17,6 @@ namespace GameCampRPG
         [SerializeField]
         protected int skillStrength = 1;
 
-        [SerializeField]
-        private GameObject model;
-
         protected List<CombatActionBase> combatActions;
 
         public CombatActionBase QueuedAction = null;
@@ -116,7 +113,6 @@ namespace GameCampRPG
         private void Die()
         {
             OnDied?.Invoke();
-            model.SetActive(false);
         }
     }
 }

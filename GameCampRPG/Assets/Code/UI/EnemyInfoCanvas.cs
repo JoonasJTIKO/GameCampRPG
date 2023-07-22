@@ -47,6 +47,7 @@ namespace GameCampRPG.UI
             bool evenAmount = enemyCount % 2 == 0;
             even = evenAmount;
             int index = 0;
+            helper = 0;
 
             if (evenAmount)
             {

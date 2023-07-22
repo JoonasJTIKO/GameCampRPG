@@ -28,6 +28,8 @@ namespace GameCampRPG
 
         private bool actionExecuting = false;
 
+        private bool playerTurn = true;
+
         private int playerCount, enemyCount;
 
         private Coroutine transitionRoutine;
@@ -91,7 +93,7 @@ namespace GameCampRPG
             {
                 if (unit.QueuedAction == null && unit.IsAlive) return;
             }
-            EndPlayerTurn();
+            if (playerTurn) EndPlayerTurn();
         }
 
         private void PlayerUnitDied()
@@ -123,6 +125,8 @@ namespace GameCampRPG
 
         private void StartPlayerTurn()
         {
+            playerTurn = true;
+
             if (transitionRoutine != null) return;
 
             powerUpSpawning.SpawnPowerUp();
@@ -137,11 +141,13 @@ namespace GameCampRPG
 
         private void StartEnemyTurn()
         {
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None, defaultCamera: true);
             StartCoroutine(ExecuteEnemyActions());
         }
 
         public void EndPlayerTurn()
         {
+            playerTurn = false;
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None, defaultCamera: true);
             StartCoroutine(ExecuteQueuedActions());
         }

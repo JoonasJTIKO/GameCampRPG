@@ -21,6 +21,8 @@ namespace GameCampRPG
 
         private CombatPlayerBuffManager playerBuffManager;
 
+        private Animator animator;
+
         private int defense = 1;
 
         protected override void Awake()
@@ -28,6 +30,7 @@ namespace GameCampRPG
             base.Awake();
 
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
+            animator = GetComponentInChildren<Animator>();
 
             if (GameInstance.Instance == null) return;
 
@@ -129,6 +132,14 @@ namespace GameCampRPG
 
             ChangeHealth(-amount);
             GameInstance.Instance.GetPlayerCombatCanvas().SetHealthText(characterIndex, Health);
+            if (Health == 0)
+            {
+                if (animator != null) animator.SetTrigger("Faint");
+            }
+            else
+            {
+                if (animator != null) animator.SetTrigger("Damage");
+            }
         }
 
         public void UpdateSkillCooldown(int cooldown)

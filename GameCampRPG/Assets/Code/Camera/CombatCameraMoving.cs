@@ -18,7 +18,8 @@ namespace GameCampRPG
         {
             Default,
             Grid,
-            Enemies
+            Enemies,
+            Attack
         }
 
         public void MoveCamera(CameraPosition targetPosition)
@@ -35,6 +36,9 @@ namespace GameCampRPG
                     break;
                 case CameraPosition.Enemies:
                     moveRoutine = StartCoroutine(MoveTo(cameraSpots[2].transform.position, cameraSpots[2].transform.rotation));
+                    break;
+                case CameraPosition.Attack:
+                    moveRoutine = StartCoroutine(MoveTo(cameraSpots[3].transform.position, cameraSpots[3].transform.rotation));
                     break;
             }
         }

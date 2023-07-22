@@ -205,9 +205,9 @@ MonoBehaviour:
   Enemies:
   - Type: 0
     Difficulty: 0
-  - Type: 0
+  - Type: 1
     Difficulty: 0
-  - Type: 0
+  - Type: 2
     Difficulty: 0
   Drops: []
 --- !u!114 &3332524

@@ -15,6 +15,8 @@ namespace GameCampRPG
 
         private GridVisual grid;
 
+        private Animator animator;
+
         public override void Awake()
         {
             base.Awake();
@@ -23,6 +25,8 @@ namespace GameCampRPG
             targeting = GetComponent<EnemyGridTargeting>();
 
             grid = FindObjectOfType<GridVisual>();
+
+            animator = GetComponentInChildren<Animator>();
         }
 
         private void OnEnable()
@@ -61,6 +65,7 @@ namespace GameCampRPG
         {
             base.Execute();
 
+            if (animator != null) animator.SetTrigger("Attack");
             targeting.AttackTargeted(enemyUnit.AttackStrength);
             enemyUnit.SetQueuedAction(null);
         }

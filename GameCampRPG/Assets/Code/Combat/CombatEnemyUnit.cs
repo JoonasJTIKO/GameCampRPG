@@ -8,6 +8,10 @@ namespace GameCampRPG
     {
         private EnemyGridTargeting gridTargeting;
 
+        private Animator animator;
+
+        private UnitShake unitShake;
+
         private int dazedForTurns = 0;
 
         public int UnitIndex;
@@ -17,6 +21,8 @@ namespace GameCampRPG
             base.Awake();
 
             gridTargeting = GetComponent<EnemyGridTargeting>();
+            animator = GetComponentInChildren<Animator>();
+            unitShake = GetComponent<UnitShake>();
         }
 
         public void Highlight(bool state)
@@ -42,7 +48,11 @@ namespace GameCampRPG
             {
                 GetComponent<EnemyGridTargeting>().UnTarget();
                 SetQueuedAction(null);
+                animator.SetTrigger("Death");
+                return;
             }
+            unitShake.Shake(0.35f);
+            animator.SetTrigger("Damage");
         }
 
         public void Daze(int turns)

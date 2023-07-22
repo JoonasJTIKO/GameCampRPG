@@ -8,15 +8,26 @@ namespace GameCampRPG
 {
     public class CombatAction_PlayerAttack : CombatActionBase
     {
+        [SerializeField]
+        private Transform attackSpot;
+
+        [SerializeField]
+        private float moveToPositionTime = 0.25f;
+
+        private float deltaTime = 0;
+
         private CombatEnemyUnit targetUnit = null;
 
         private UnitSelection unitSelection;
+
+        private Animator animator;
 
         public override void Awake()
         {
             base.Awake();
 
             unitSelection = FindObjectOfType<UnitSelection>();
+            animator = GetComponentInChildren<Animator>();
         }
 
         private void TargetSelected(List<CombatEnemyUnit> targets)
@@ -29,10 +40,33 @@ namespace GameCampRPG
 
         private IEnumerator AttackEnemy()
         {
+            Vector3 startPos = transform.position;
+
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None, attackCamera: true);
+            deltaTime = 0;
+            while (deltaTime <= moveToPositionTime)
+            {
+                deltaTime += Time.deltaTime;
+                transform.position = Vector3.Lerp(startPos, attackSpot.position, deltaTime / moveToPositionTime);
+                yield return null;
+            }
+            if (animator != null) animator.SetTrigger("Attack");
             targetUnit.TakeDamage(playerUnit.AttackStrength);
             yield return new WaitForSeconds(1);
+
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None, defaultCamera: true);
+            deltaTime = 0;
+            while (deltaTime <= moveToPositionTime)
+            {
+                deltaTime += Time.deltaTime;
+                transform.position = Vector3.Lerp(attackSpot.position, startPos, deltaTime / moveToPositionTime);
+                yield return null;
+            }
+
+            playerUnit.SetQueuedAction(null);
+            targetUnit = null;
             Executed();
-            yield return null;
+            yield return new WaitForSeconds(0.5f);
         }
 
         public bool QueueAction(CombatEnemyUnit target)
@@ -58,8 +92,6 @@ namespace GameCampRPG
             base.Execute();
 
             StartCoroutine(AttackEnemy());
-            playerUnit.SetQueuedAction(null);
-            targetUnit = null;
         }
 
         public override void BeginListening()

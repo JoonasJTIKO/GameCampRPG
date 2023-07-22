@@ -7,11 +7,21 @@ namespace GameCampRPG
 {
     public class CombatAction_PlayerSkillDaze : CombatActionBase
     {
+        [SerializeField]
+        private Transform attackSpot;
+
+        [SerializeField]
+        private float moveToPositionTime = 0.25f;
+
+        private float deltaTime = 0;
+
         private UnitSelection unitSelection;
 
         private CombatPlayerBuffManager playerBuffManager;
 
         private int buffedStrength = 0;
+
+        private Animator animator;
 
         public override void Awake()
         {
@@ -19,6 +29,7 @@ namespace GameCampRPG
 
             unitSelection = FindObjectOfType<UnitSelection>();
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
+            animator = GetComponentInChildren<Animator>();
 
             if (GameInstance.Instance == null) return;
 
@@ -94,7 +105,34 @@ namespace GameCampRPG
             unitSelection.OnEnemySelected -= TargetSelected;
             unitSelection.OnGoBack -= StopTargetSelect;
 
+            StartCoroutine(Daze(units));
+        }
+
+        private IEnumerator Daze(List<CombatEnemyUnit> units)
+        {
+            Vector3 startPos = transform.position;
+
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None, attackCamera: true);
+            deltaTime = 0;
+            while (deltaTime <= moveToPositionTime)
+            {
+                deltaTime += Time.deltaTime;
+                transform.position = Vector3.Lerp(startPos, attackSpot.position, deltaTime / moveToPositionTime);
+                yield return null;
+            }
+
             units[0].Daze(GameInstance.Instance.GetPlayerInfo().SkillStrengths[0] + buffedStrength);
+            if (animator != null) animator.SetTrigger("Skill");
+            yield return new WaitForSeconds(1);
+
+            unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.None, defaultCamera: true);
+            deltaTime = 0;
+            while (deltaTime <= moveToPositionTime)
+            {
+                deltaTime += Time.deltaTime;
+                transform.position = Vector3.Lerp(attackSpot.position, startPos, deltaTime / moveToPositionTime);
+                yield return null;
+            }
 
             QueueAction();
             unitSelection.SwitchTargetingMode(UnitSelection.TargetingMode.PlayerUnits);

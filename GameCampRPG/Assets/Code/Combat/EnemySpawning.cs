@@ -32,6 +32,9 @@ namespace GameCampRPG
             if (combatInfo.Enemies.Count % 2 == 0) skipThird = true;
 
             int unitIndex = 0;
+
+            GameInstance.Instance.GetEnemyInfoCanvas().ActivatePanels(combatInfo.Enemies.Count);
+
             foreach (EnemyData data in combatInfo.Enemies)
             {
                 CombatEnemyUnit enemy = SpawnEnemyOfType(data.Type);
@@ -50,8 +53,6 @@ namespace GameCampRPG
 
                 enemies.Add(enemy);
             }
-
-            GameInstance.Instance.GetEnemyInfoCanvas().ActivatePanels(combatInfo.Enemies.Count);
 
             return enemies;
         }
