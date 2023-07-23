@@ -17,16 +17,19 @@ namespace GameCampRPG
         [SerializeField]
         private PowerUpType powerUpType;
 
-        private MeshRenderer meshRenderer;
+        [SerializeField]
+        private MeshRenderer[] meshRenderers;
 
         private new Collider collider;
 
         private PowerUpSpawning powerUpSpawning;
 
+        private SineBounce sineBounce;
+
         private void Awake()
         {
-            meshRenderer = GetComponent<MeshRenderer>();
             collider = GetComponent<Collider>();
+            sineBounce = GetComponent<SineBounce>();
             Deactivate();
 
             powerUpSpawning = FindObjectOfType<PowerUpSpawning>();
@@ -34,13 +37,21 @@ namespace GameCampRPG
 
         public void Activate()
         {
-            meshRenderer.enabled = true;
+            sineBounce.origin = transform.position;
+            foreach (MeshRenderer renderer in meshRenderers)
+            {
+                renderer.enabled = true;
+            }
             collider.enabled = true;
+
         }
 
         private void Deactivate()
         {
-            meshRenderer.enabled = false;
+            foreach (MeshRenderer renderer in meshRenderers)
+            {
+                renderer.enabled = false;
+            }
             collider.enabled = false;
         }
 

@@ -25,7 +25,7 @@ namespace GameCampRPG
             while (deltaTime <= duration)
             {
                 deltaTime += Time.deltaTime;
-                transform.position = new Vector3(transform.position.x, transform.position.y, startPos.z + Mathf.Sin(deltaTime * shakesPerSecond) * 0.4f);
+                transform.position = new Vector3(transform.position.x, transform.position.y, startPos.z + Mathf.Sin(deltaTime * shakesPerSecond) * 0.3f);
                 yield return null;
             }
             transform.position = startPos;

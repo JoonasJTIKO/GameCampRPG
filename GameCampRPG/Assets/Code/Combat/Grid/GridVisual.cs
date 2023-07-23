@@ -89,7 +89,7 @@ namespace GameCampRPG
             gridData.ClearNode(x, y);
         }
 
-        public void TargetNode(int x, int y, bool state = true)
+        public void TargetNode(int x, int y, int damage, bool state = true)
         {
             if (x < 0 || x >= Size || y < 0 || y >= Size) return;
 
@@ -104,7 +104,7 @@ namespace GameCampRPG
                 targetedGrid[x, y].gameObject.SetActive(false);
                 grid[x, y].gameObject.SetActive(true);
             }
-            targetedGrid[x, y].SetTargetedCount(gridData.Grid[x, y].TargetingCount);
+            targetedGrid[x, y].SetTargetedCount(damage);
         }
 
         public GameObject CheckForPlayer(int x, int y)

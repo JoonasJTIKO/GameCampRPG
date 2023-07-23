@@ -46,13 +46,13 @@ namespace GameCampRPG
                 switch (targetingType)
                 {
                     case EnemyGridTargeting.TargetingType.Line:
-                        targeting.Target(Random.Range(0, grid.Size), targetingType, (EnemyGridTargeting.TargetingDirection)Random.Range(0, 4));
+                        targeting.Target(Random.Range(0, grid.Size), enemyUnit.AttackStrength, targetingType, (EnemyGridTargeting.TargetingDirection)Random.Range(0, 4));
                         break;
                     case EnemyGridTargeting.TargetingType.Square:
-                        targeting.Target(0, targetingType, startX: Random.Range(0, grid.Size - 1), startY: Random.Range(0, grid.Size - 1));
+                        targeting.Target(0, enemyUnit.AttackStrength, targetingType, startX: Random.Range(0, grid.Size - 1), startY: Random.Range(0, grid.Size - 1));
                         break;
                     case EnemyGridTargeting.TargetingType.Cross:
-                        targeting.Target(0, targetingType, startX: Random.Range(1, grid.Size - 1), startY: Random.Range(1, grid.Size - 1));
+                        targeting.Target(0, enemyUnit.AttackStrength, targetingType, startX: Random.Range(1, grid.Size - 1), startY: Random.Range(1, grid.Size - 1));
                         break;
                 }
                 enemyUnit.SetQueuedAction(this);

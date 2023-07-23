@@ -14,6 +14,7 @@ namespace GameCampRPG
         private UnitSelection unitSelection;
         private CombatPlayerMoving playerMoving;
         private CombatPlayerBuffManager playerBuffManager;
+        private Animator animator;
 
         private int targetX, targetY;
 
@@ -25,6 +26,7 @@ namespace GameCampRPG
             unitSelection = FindObjectOfType<UnitSelection>();
             playerMoving = GetComponent<CombatPlayerMoving>();
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
+            animator = GetComponentInChildren<Animator>();
         }
 
         private void OnEnable()
@@ -65,6 +67,7 @@ namespace GameCampRPG
             base.Execute();
 
             playerUnit.SetQueuedAction(null);
+            animator.SetTrigger("Jump");
             playerMoving.MoveToPosition(targetX, targetY);
         }
 

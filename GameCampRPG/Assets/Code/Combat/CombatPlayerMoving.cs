@@ -22,6 +22,8 @@ namespace GameCampRPG
 
         public event Action Moved;
 
+        private Collider playerCollider;
+
         public int GridPositionX
         {
             get;
@@ -37,6 +39,7 @@ namespace GameCampRPG
         private void Awake()
         {
             grid = FindObjectOfType<GridVisual>();
+            playerCollider = GetComponent<Collider>();
 
             GridPositionX = xPosition;
             GridPositionY = yPosition;
@@ -67,6 +70,7 @@ namespace GameCampRPG
 
         private IEnumerator Move(Vector3 position)
         {
+            playerCollider.enabled = true;
             Vector3 startPos = transform.position;
             deltaTime = 0f;
 
@@ -77,6 +81,7 @@ namespace GameCampRPG
                 yield return null;
             }
             yield return new WaitForSeconds(0.75f);
+            playerCollider.enabled = false;
             Moved?.Invoke();
         }
 

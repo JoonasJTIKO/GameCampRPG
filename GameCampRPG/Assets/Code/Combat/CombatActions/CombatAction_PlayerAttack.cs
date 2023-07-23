@@ -11,6 +11,8 @@ namespace GameCampRPG
         [SerializeField]
         private Transform attackSpot;
 
+        private Vector3 attackPosition;
+
         [SerializeField]
         private float moveToPositionTime = 0.25f;
 
@@ -28,6 +30,8 @@ namespace GameCampRPG
 
             unitSelection = FindObjectOfType<UnitSelection>();
             animator = GetComponentInChildren<Animator>();
+
+            attackPosition = new Vector3(attackSpot.position.x, transform.position.y, attackSpot.position.z);
         }
 
         private void TargetSelected(List<CombatEnemyUnit> targets)
@@ -47,7 +51,7 @@ namespace GameCampRPG
             while (deltaTime <= moveToPositionTime)
             {
                 deltaTime += Time.deltaTime;
-                transform.position = Vector3.Lerp(startPos, attackSpot.position, deltaTime / moveToPositionTime);
+                transform.position = Vector3.Lerp(startPos, attackPosition, deltaTime / moveToPositionTime);
                 yield return null;
             }
             if (animator != null) animator.SetTrigger("Attack");
@@ -59,7 +63,7 @@ namespace GameCampRPG
             while (deltaTime <= moveToPositionTime)
             {
                 deltaTime += Time.deltaTime;
-                transform.position = Vector3.Lerp(attackSpot.position, startPos, deltaTime / moveToPositionTime);
+                transform.position = Vector3.Lerp(attackPosition, startPos, deltaTime / moveToPositionTime);
                 yield return null;
             }
 

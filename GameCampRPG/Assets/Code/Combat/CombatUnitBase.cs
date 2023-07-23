@@ -56,6 +56,7 @@ namespace GameCampRPG
             Health = maxHealth;
 
             attackStrength += amount;
+            if (attackStrength > 2) attackStrength = 2;
 
             skillStrength += amount;
         }

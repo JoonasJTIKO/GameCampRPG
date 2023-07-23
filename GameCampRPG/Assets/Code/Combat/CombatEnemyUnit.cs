@@ -46,7 +46,7 @@ namespace GameCampRPG
             GameInstance.Instance.GetEnemyInfoCanvas().SetHealth(UnitIndex, Health);
             if (Health == 0)
             {
-                GetComponent<EnemyGridTargeting>().UnTarget();
+                gridTargeting.UnTarget(attackStrength);
                 SetQueuedAction(null);
                 animator.SetTrigger("Death");
                 return;
@@ -57,7 +57,7 @@ namespace GameCampRPG
 
         public void Daze(int turns)
         {
-            GetComponent<EnemyGridTargeting>().UnTarget();
+            gridTargeting.UnTarget(attackStrength);
             SetQueuedAction(null);
             dazedForTurns = turns;
         }
