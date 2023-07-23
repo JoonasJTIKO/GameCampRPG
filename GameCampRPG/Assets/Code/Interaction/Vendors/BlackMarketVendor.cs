@@ -29,7 +29,7 @@ namespace GameCampRPG
 
         override protected void SetDialogue()
         {
-            this.SpeakerName = "Hirvi";
+            this.SpeakerName = "Jimmy";
             this.DialogueLines = new DialogueLine[4][];
 
 

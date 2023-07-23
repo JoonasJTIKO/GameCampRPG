@@ -15,7 +15,7 @@ namespace GameCampRPG
 
         protected override void SetDialogue()
         {
-            this.SpeakerName = "Hermanni";
+            this.SpeakerName = "Noah";
             this.DialogueLines = new DialogueLine[4][];
 
             DialogueLines[0] = introDialogue;

@@ -157,12 +157,12 @@ MonoBehaviour:
   xOffset: 55
   yOffset: 100
   introDialogue:
-  - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
-    speakerName: Bro
-    dialogueLine: Hey kiddos
   - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
-    speakerName: Hero
-    dialogueLine: Sup
+    speakerName: Sir Riley the Brave
+    dialogueLine: Hi bro!
+  - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+    speakerName: Noah
+    dialogueLine: Great, what does the twerp squad want now?
   talkDialogue:
   - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
     speakerName: Bro
@@ -176,11 +176,11 @@ MonoBehaviour:
   specialDialogue: []
   leaveDialogue:
   - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
-    speakerName: Bro
-    dialogueLine: Be careful out there
+    speakerName: Noah
+    dialogueLine: You twerps done now?
   - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
-    speakerName: Bro
-    dialogueLine: Im the one dad will get mad at if you get hurt
+    speakerName: Noah
+    dialogueLine: I have better things to do.
 --- !u!65 &7405245339927233692
 BoxCollider:
   m_ObjectHideFlags: 0

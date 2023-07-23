@@ -158,22 +158,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questObjectives:
   - ID: 0
-    Text: Go greet your brother
+    Text: Make Noah give us a quest!
     Type: 0
-    NPCName: Hermanni
+    NPCName: Noah
     QuestDialogue:
-    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
-      speakerName: Bro
-      dialogueLine: Kill snakes
     - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
-      speakerName: Hero
-      dialogueLine: Alright
+      speakerName: Sir Riley the Brave
+      dialogueLine: Bro!
+    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Bro!
+    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Hey Bro!
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
-      speakerName: Bro
-      dialogueLine: Alright
+      speakerName: Noah
+      dialogueLine: What now?
+    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Give us a quest!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: No way. I promised mom I would look after you.
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: I said nothing about taking part in your stupid larp session.
+    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: No fair!
+    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Yeah! Give us a quest or I'm telling mom!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Ugh! Fine!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Ahem... Adventurers-
+    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: BRAVE adventurers!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Yeah, sure, whatever. Ahem... Brave adventurers
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Go forth and... kill three snakes... or something.
     RequiredItems: []
   - ID: 1
-    Text: Obtain 3 Snakeskin
+    Text: Slay 3 snakes and collect their skins!
     Type: 1
     NPCName: 
     QuestDialogue: []
@@ -190,6 +223,50 @@ MonoBehaviour:
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
       <equippableType>k__BackingField: 0
+  - ID: 2
+    Text: Brag to Noah about our success
+    Type: 0
+    NPCName: Noah
+    QuestDialogue:
+    - speakerIcon: {fileID: 0}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Bro! We did it! We slayed those snakes!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Huh? Oh right. Good for you.
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jackson the Snipper
+      dialogueLine: You promised to play with us! Take this more seriously!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Okay okay! Just give a moment.
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Go harass Daisy or something while I cook up a new quest for
+        you guys.
+    RequiredItems: []
+  - ID: 3
+    Text: Say hi to Daisy
+    Type: 0
+    NPCName: Daisy
+    QuestDialogue:
+    - speakerIcon: {fileID: 0}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Bro! We did it! We slayed those snakes!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Huh? Oh right. Good for you.
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jackson the Snipper
+      dialogueLine: You promised to play with us! Take this more seriously!
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Okay okay! Just give a moment.
+    - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+      speakerName: Noah
+      dialogueLine: Go harass Daisy or something while I cook up a new quest for
+        you guys.
+    RequiredItems: []
 --- !u!114 &3332523
 MonoBehaviour:
   m_ObjectHideFlags: 0

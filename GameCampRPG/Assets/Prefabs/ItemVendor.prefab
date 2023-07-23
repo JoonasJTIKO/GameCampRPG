@@ -158,19 +158,49 @@ MonoBehaviour:
   yOffset: 100
   introDialogue:
   - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
-    speakerName: Lemon child
-    dialogueLine: Greetings brave warriors!
-  - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
-    speakerName: Hero
-    dialogueLine: Sup
+    speakerName: Daisy
+    dialogueLine: Hiya, brave adventurers!
+  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    speakerName: Daisy
+    dialogueLine: What can I get you?
   talkDialogue:
-  - speakerIcon: {fileID: 0}
-    speakerName: 
-    dialogueLine: 
-  specialDialogue: []
+  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    speakerName: Jackie the Snipper
+    dialogueLine: Hey Daisy!
+  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    speakerName: Daisy
+    dialogueLine: What is it Jackie?
+  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    speakerName: Jackie the Snipper
+    dialogueLine: Got any grapes?
+  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    speakerName: Daisy
+    dialogueLine: No, I sell lemonade!
+  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    speakerName: Daisy
+    dialogueLine: I make it from lemons!
+  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    speakerName: Jackie the Snipper
+    dialogueLine: But you could have grapes, right?
+  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    speakerName: Daisy
+    dialogueLine: No! Then it would be graponade!
+  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    speakerName: Jackie the Snipper
+    dialogueLine: Nevermind, sorry I asked. I'll just waddle away now.
+  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    speakerName: Jackie the Snipper
+    dialogueLine: Waddle waddle.
+  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    speakerName: Daisy
+    dialogueLine: ...
+  specialDialogue:
+  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    speakerName: Daisy
+    dialogueLine: 'Yay! Now I can finally afford to buy a lower body! '
   leaveDialogue:
   - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
-    speakerName: Lemon child
+    speakerName: Daisy
     dialogueLine: May success follow you wherever you travel!
   items:
   - <ID>k__BackingField: 1
