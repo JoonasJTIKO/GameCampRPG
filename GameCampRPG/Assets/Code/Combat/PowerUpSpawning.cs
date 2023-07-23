@@ -51,21 +51,21 @@ namespace GameCampRPG
             {
                 case PowerUpType.Attack:
                     Spawned = attackPowerUp;
-                    attackPowerUp.Activate();
                     attackPowerUp.transform.position = grid.GetNodePosition(x, y);
                     attackPowerUp.transform.position = new(attackPowerUp.transform.position.x, attackPowerUp.transform.position.y + 0.5f, attackPowerUp.transform.position.z);
+                    attackPowerUp.Activate();
                     break;
                 case PowerUpType.Skill:
                     Spawned = skillPowerUp;
-                    skillPowerUp.Activate();
                     skillPowerUp.transform.position = grid.GetNodePosition(x, y);
                     skillPowerUp.transform.position = new(skillPowerUp.transform.position.x, skillPowerUp.transform.position.y + 0.5f, skillPowerUp.transform.position.z);
+                    skillPowerUp.Activate();
                     break;
                 case PowerUpType.Movement:
                     Spawned = movementPowerUp;
-                    movementPowerUp.Activate();
                     movementPowerUp.transform.position = grid.GetNodePosition(x, y);
                     movementPowerUp.transform.position = new(movementPowerUp.transform.position.x, movementPowerUp.transform.position.y + 0.5f, movementPowerUp.transform.position.z);
+                    movementPowerUp.Activate();
                     break;
             }
         }

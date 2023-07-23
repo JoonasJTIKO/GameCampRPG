@@ -283,9 +283,9 @@ MonoBehaviour:
   - Type: 0
     Difficulty: 0
   - Type: 1
-    Difficulty: 0
+    Difficulty: 2
   - Type: 2
-    Difficulty: 0
+    Difficulty: 2
   Drops: []
 --- !u!114 &3332524
 MonoBehaviour:

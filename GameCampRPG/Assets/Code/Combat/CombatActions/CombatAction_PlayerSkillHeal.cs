@@ -12,6 +12,7 @@ namespace GameCampRPG
         private CombatPlayerMoving playerMoving;
         private CombatPlayerBuffManager playerBuffManager;
         private GridVisual grid;
+        private Animator animator;
 
         private int targetX, targetY;
 
@@ -28,6 +29,7 @@ namespace GameCampRPG
             playerMoving = GetComponent<CombatPlayerMoving>();
             playerBuffManager = GetComponent<CombatPlayerBuffManager>();
             grid = FindObjectOfType<GridVisual>();
+            animator = GetComponentInChildren<Animator>();
 
             if (GameInstance.Instance == null) return;
 
@@ -90,6 +92,7 @@ namespace GameCampRPG
 
         private IEnumerator HealTargetedArea()
         {
+            animator.SetTrigger("Skill");
             switch (targetingShape)
             {
                 case GridNavigation.TargetingShape.Single:

@@ -12,6 +12,8 @@ namespace GameCampRPG
 
         private Animator animator;
 
+        private int targetedAmount = 0;
+
         private void Awake()
         {
             animator = GetComponent<Animator>();
@@ -26,8 +28,10 @@ namespace GameCampRPG
         {
             if (targetedCount != null)
             {
-                targetedCount.text = amount.ToString();
-                if (amount == 0)
+                targetedAmount += amount;
+
+                targetedCount.text = targetedAmount.ToString();
+                if (targetedAmount == 0)
                 {
                     targetedCount.text = "";
                 }

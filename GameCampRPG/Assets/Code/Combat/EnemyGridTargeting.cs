@@ -40,7 +40,7 @@ namespace GameCampRPG
             grid = FindObjectOfType<GridVisual>();
         }
 
-        public void Target(int position, TargetingType type, TargetingDirection direction = TargetingDirection.Up, int startX = 0, int startY = 0)
+        public void Target(int position, int damage, TargetingType type, TargetingDirection direction = TargetingDirection.Up, int startX = 0, int startY = 0)
         {
             startPosition = position;
             targetingDirection = direction;
@@ -54,25 +54,25 @@ namespace GameCampRPG
                         case TargetingDirection.Up:
                             for (int i = 0; i < grid.Size; i++)
                             {
-                                grid.TargetNode(position, i);
+                                grid.TargetNode(position, i, damage);
                             }
                             break;
                         case TargetingDirection.Down:
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
-                                grid.TargetNode(position, i);
+                                grid.TargetNode(position, i, damage);
                             }
                             break;
                         case TargetingDirection.Left:
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
-                                grid.TargetNode(i, position);
+                                grid.TargetNode(i, position, damage);
                             }
                             break;
                         case TargetingDirection.Right:
                             for (int i = 0; i < grid.Size; i++)
                             {
-                                grid.TargetNode(i, position);
+                                grid.TargetNode(i, position, damage);
                             }
                             break;
                     }
@@ -82,26 +82,26 @@ namespace GameCampRPG
                     this.startX = startX;
                     this.startY = startY;
 
-                    grid.TargetNode(startX, startY);
-                    grid.TargetNode(startX + 1, startY);
-                    grid.TargetNode(startX, startY + 1);
-                    grid.TargetNode(startX + 1, startY + 1);
+                    grid.TargetNode(startX, startY, damage);
+                    grid.TargetNode(startX + 1, startY, damage);
+                    grid.TargetNode(startX, startY + 1, damage);
+                    grid.TargetNode(startX + 1, startY + 1, damage);
                     break;
 
                 case TargetingType.Cross:
                     this.startX = startX;
                     this.startY = startY;
 
-                    grid.TargetNode(startX, startY);
-                    grid.TargetNode(startX + 1, startY);
-                    grid.TargetNode(startX, startY + 1);
-                    grid.TargetNode(startX - 1, startY);
-                    grid.TargetNode(startX, startY - 1);
+                    grid.TargetNode(startX, startY, damage);
+                    grid.TargetNode(startX + 1, startY, damage);
+                    grid.TargetNode(startX, startY + 1, damage);
+                    grid.TargetNode(startX - 1, startY, damage);
+                    grid.TargetNode(startX, startY - 1, damage);
                     break;
             }
         }
 
-        public void UnTarget()
+        public void UnTarget(int damage)
         {
             if (startPosition == -1) return;
 
@@ -113,43 +113,43 @@ namespace GameCampRPG
                         case TargetingDirection.Up:
                             for (int i = 0; i < grid.Size; i++)
                             {
-                                grid.TargetNode(startPosition, i, false);
+                                grid.TargetNode(startPosition, i, -damage, false);
                             }
                             break;
                         case TargetingDirection.Down:
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
-                                grid.TargetNode(startPosition, i, false);
+                                grid.TargetNode(startPosition, i, -damage, false);
                             }
                             break;
                         case TargetingDirection.Left:
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
-                                grid.TargetNode(i, startPosition, false);
+                                grid.TargetNode(i, startPosition, -damage, false);
                             }
                             break;
                         case TargetingDirection.Right:
                             for (int i = 0; i < grid.Size; i++)
                             {
-                                grid.TargetNode(i, startPosition, false);
+                                grid.TargetNode(i, startPosition, -damage, false);
                             }
                             break;
                     }
                     break;
 
                 case TargetingType.Square:
-                    grid.TargetNode(startX, startY, false);
-                    grid.TargetNode(startX + 1, startY, false);
-                    grid.TargetNode(startX, startY + 1, false);
-                    grid.TargetNode(startX + 1, startY + 1, false);
+                    grid.TargetNode(startX, startY, -damage, false);
+                    grid.TargetNode(startX + 1, startY, -damage, false);
+                    grid.TargetNode(startX, startY + 1, -damage, false);
+                    grid.TargetNode(startX + 1, startY + 1, -damage, false);
                     break;
 
                 case TargetingType.Cross:
-                    grid.TargetNode(startX, startY, false);
-                    grid.TargetNode(startX + 1, startY, false);
-                    grid.TargetNode(startX, startY + 1, false);
-                    grid.TargetNode(startX - 1, startY, false);
-                    grid.TargetNode(startX, startY - 1, false);
+                    grid.TargetNode(startX, startY, -damage, false);
+                    grid.TargetNode(startX + 1, startY, -damage, false);
+                    grid.TargetNode(startX, startY + 1, -damage, false);
+                    grid.TargetNode(startX - 1, startY, -damage, false);
+                    grid.TargetNode(startX, startY - 1, -damage, false);
                     break;
             }
             startPosition = -1;
@@ -224,7 +224,7 @@ namespace GameCampRPG
                             for (int i = 0; i < grid.Size; i++)
                             {
                                 AttackNode(startPosition, i, damage);
-                                grid.TargetNode(startPosition, i, false);
+                                grid.TargetNode(startPosition, i, -damage, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
                             break;
@@ -232,7 +232,7 @@ namespace GameCampRPG
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
                                 AttackNode(startPosition, i, damage);
-                                grid.TargetNode(startPosition, i, false);
+                                grid.TargetNode(startPosition, i, -damage, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
                             break;
@@ -240,7 +240,7 @@ namespace GameCampRPG
                             for (int i = grid.Size - 1; i >= 0; i--)
                             {
                                 AttackNode(i, startPosition, damage);
-                                grid.TargetNode(i, startPosition, false);
+                                grid.TargetNode(i, startPosition, -damage, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
                             break;
@@ -248,7 +248,7 @@ namespace GameCampRPG
                             for (int i = 0; i < grid.Size; i++)
                             {
                                 AttackNode(i, startPosition, damage);
-                                grid.TargetNode(i, startPosition, false);
+                                grid.TargetNode(i, startPosition, -damage, false);
                                 yield return new WaitForSeconds(0.2f);
                             }
                             break;
@@ -257,29 +257,29 @@ namespace GameCampRPG
 
                 case TargetingType.Square:
                     AttackNode(startX, startY, damage);
-                    grid.TargetNode(startX, startY, false);
+                    grid.TargetNode(startX, startY, -damage, false);
                     AttackNode(startX + 1, startY, damage);
-                    grid.TargetNode(startX + 1, startY, false);
+                    grid.TargetNode(startX + 1, startY, -damage, false);
                     AttackNode(startX, startY + 1, damage);
-                    grid.TargetNode(startX, startY + 1, false);
+                    grid.TargetNode(startX, startY + 1, -damage, false);
                     AttackNode(startX + 1, startY + 1, damage);
-                    grid.TargetNode(startX + 1, startY + 1, false);
+                    grid.TargetNode(startX + 1, startY + 1, -damage, false);
                     yield return new WaitForSeconds(0.5f);
                     break;
 
                 case TargetingType.Cross:
                     AttackNode(startX, startY, damage);
-                    grid.TargetNode(startX, startY, false);
+                    grid.TargetNode(startX, startY, -damage, false);
                     yield return new WaitForSeconds(0.25f);
 
                     AttackNode(startX + 1, startY, damage);
-                    grid.TargetNode(startX + 1, startY, false);
+                    grid.TargetNode(startX + 1, startY, -damage, false);
                     AttackNode(startX, startY + 1, damage);
-                    grid.TargetNode(startX, startY + 1, false);
+                    grid.TargetNode(startX, startY + 1, -damage, false);
                     AttackNode(startX - 1, startY, damage);
-                    grid.TargetNode(startX - 1, startY, false);
+                    grid.TargetNode(startX - 1, startY, -damage, false);
                     AttackNode(startX, startY - 1, damage);
-                    grid.TargetNode(startX, startY - 1, false);
+                    grid.TargetNode(startX, startY - 1, -damage, false);
                     yield return new WaitForSeconds(0.5f);
                     break;
             }
