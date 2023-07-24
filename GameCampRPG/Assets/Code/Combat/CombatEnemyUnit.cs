@@ -43,6 +43,7 @@ namespace GameCampRPG
         public void TakeDamage(int amount)
         {
             ChangeHealth(-amount);
+            unitShake.Shake(0.35f);
             GameInstance.Instance.GetEnemyInfoCanvas().SetHealth(UnitIndex, Health);
             if (Health == 0)
             {
@@ -51,7 +52,6 @@ namespace GameCampRPG
                 animator.SetTrigger("Death");
                 return;
             }
-            unitShake.Shake(0.35f);
             animator.SetTrigger("Damage");
         }
 

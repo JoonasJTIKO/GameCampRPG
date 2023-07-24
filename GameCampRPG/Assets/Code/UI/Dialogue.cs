@@ -38,7 +38,7 @@ namespace GameCampRPG.UI
 
         private bool openMenu;
 
-        private void Start()
+        private void Initialize()
         {
             Hide();
 
@@ -77,6 +77,7 @@ namespace GameCampRPG.UI
 
         public void StartDialogue(BaseVendor caller, DialogueLine[] lines, bool openMenu = false)
         {
+            Initialize();
             Show();
             select.performed += PerformSkip;
 

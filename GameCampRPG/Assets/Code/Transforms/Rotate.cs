@@ -11,6 +11,9 @@ namespace GameCampRPG
         [SerializeField]
         private float rotationDegrees = 1f;
 
+        [SerializeField]
+        private bool counterClockwise = false;
+
         private void Start()
         {
             thisTransform = transform;
@@ -21,7 +24,15 @@ namespace GameCampRPG
             Vector3 rotation;
 
             rotation = thisTransform.rotation.eulerAngles;
-            rotation.y += (rotationDegrees * Time.deltaTime);
+
+            if (counterClockwise)
+            {
+                rotation.y -= (rotationDegrees * Time.deltaTime);
+            }
+            else
+            {
+                rotation.y += (rotationDegrees * Time.deltaTime);
+            }
             thisTransform.eulerAngles = rotation;
         }
     }
