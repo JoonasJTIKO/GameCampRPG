@@ -6,7 +6,7 @@ namespace GameCampRPG
 {
     public class Inventory
     {
-        public List<IItem> Items
+        public List<Item> Items
         {
             get;
         }
@@ -25,7 +25,7 @@ namespace GameCampRPG
         {
             MaxAmount = maxAmount;
 
-            Items = new List<IItem>();
+            Items = new List<Item>();
         }
 
         /// <summary>
@@ -33,10 +33,10 @@ namespace GameCampRPG
         /// </summary>
         /// <param name="item">Item(s) to be added</param>
         /// <returns>The amount of the given item that were added. Therefore 0 means adding failed</returns>
-        public int AddItems(IItem item)
+        public int AddItems(Item item)
         {
-            IItem existing = null;
-            foreach (IItem inspectedItem in Items)
+            Item existing = null;
+            foreach (Item inspectedItem in Items)
             {
                 if (inspectedItem.ID == item.ID)
                 {
@@ -64,17 +64,17 @@ namespace GameCampRPG
             return 0;
         }
 
-        public IItem GetItem(IItem item, int amount = 1)
+        public Item GetItem(Item item, int amount = 1)
         {
             return GetItem(item.ID, amount);
         }
 
-        public IItem GetItem(int ID, int amount = 1)
+        public Item GetItem(int ID, int amount = 1)
         {
-            IItem returnItem = null;
-            IItem removeItem = null;
+            Item returnItem = null;
+            Item removeItem = null;
 
-            foreach (IItem inspectedItem in Items)
+            foreach (Item inspectedItem in Items)
             {
                 if (inspectedItem.ID == ID)
                 {
@@ -117,16 +117,16 @@ namespace GameCampRPG
             return returnItem;
         }
 
-        public List<IItem> GetAllItems()
+        public List<Item> GetAllItems()
         {
-            List<IItem> items = new List<IItem>(Items);
+            List<Item> items = new List<Item>(Items);
             Items.Clear();
             return items;
         }
 
-        public List<IItem> ShowAllItems()
+        public List<Item> ShowAllItems()
         {
-            List<IItem> items = new List<IItem>(Items);
+            List<Item> items = new List<Item>(Items);
             return items;
         }
     }

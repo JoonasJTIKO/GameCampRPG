@@ -102,7 +102,7 @@ namespace GameCampRPG
             defenses[characterIndex] = value;
         }
 
-        public void AddItemToInventory(IItem item)
+        public void AddItemToInventory(Item item)
         {
             int amount = PlayerInventory.AddItems(item);
             if (amount != 0)

@@ -20,7 +20,9 @@ namespace GameCampRPG.UI
 
         private List<GameObject> inventoryMenuItems = new();
 
-        private List<IItem> playerItems;
+        private ItemEquipping itemEquipping;
+
+        private List<Item> playerItems;
 
         private PlayerInputs inputs;
 
@@ -54,6 +56,7 @@ namespace GameCampRPG.UI
         private void OnEnable()
         {
             playerItems = GameInstance.Instance.GetPlayerInfo().PlayerInventory.ShowAllItems();
+            itemEquipping = GameInstance.Instance.GetItemEquipping();
 
             for (int i = 0; i < 25; i++)
             {
@@ -61,7 +64,7 @@ namespace GameCampRPG.UI
                 inventoryMenuItems.Add(menuFrame);
                 if (i < playerItems.Count)
                 {
-                    inventoryMenuItems[i].GetComponentInChildren<TextMeshProUGUI>().text = playerItems[i].Amount.ToString();
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[0].text = playerItems[i].Amount.ToString();
                 }
             }
         }
@@ -183,6 +186,29 @@ namespace GameCampRPG.UI
                 else
                 {
                     inventoryMenuItems[i].GetComponent<Image>().color = Color.black;
+                }
+            }
+            IndicateEquippedItems();
+        }
+
+        private void IndicateEquippedItems()
+        {
+            for (int i = 0; i < playerItems.Count; i++)
+            {
+                if (playerItems[i] == itemEquipping.EquippedKnightWeapon || playerItems[i] == itemEquipping.EquippedKnightArmor)
+                {
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].enabled = true;
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].color = Color.blue;
+                }
+                else if (playerItems[i] == itemEquipping.EquippedRogueWeapon || playerItems[i] == itemEquipping.EquippedRogueArmor)
+                {
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].enabled = true;
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].color = Color.green;
+                }
+                else if (playerItems[i] == itemEquipping.EquippedMageWeapon || playerItems[i] == itemEquipping.EquippedMageArmor)
+                {
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].enabled = true;
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].color = Color.magenta;
                 }
             }
         }

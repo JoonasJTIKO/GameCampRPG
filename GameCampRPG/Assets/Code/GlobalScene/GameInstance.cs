@@ -34,6 +34,8 @@ namespace GameCampRPG
 
         private PlayerInfo playerInfo;
 
+        private ItemEquipping itemEquipping;
+
         private CombatInfo combatInfo;
 
         private QuestManager questManager;
@@ -67,6 +69,7 @@ namespace GameCampRPG
             UsingController = Gamepad.all.Count > 0;
             gameStateManager = GetComponent<GameStateManager>();
             playerInfo = GetComponent<PlayerInfo>();
+            itemEquipping = GetComponent<ItemEquipping>();
             combatInfo = GetComponent<CombatInfo>();
             questManager = GetComponent<QuestManager>();
 
@@ -95,6 +98,11 @@ namespace GameCampRPG
         public PlayerInfo GetPlayerInfo()
         {
             return playerInfo;
+        }
+
+        public ItemEquipping GetItemEquipping()
+        {
+            return itemEquipping;
         }
 
         public CombatInfo GetCombatInfo()

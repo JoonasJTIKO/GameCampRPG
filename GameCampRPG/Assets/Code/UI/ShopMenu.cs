@@ -27,7 +27,7 @@ namespace GameCampRPG.UI
 
         private List<GameObject> shopItems = new();
 
-        private List<IItem> shopItemData;
+        private List<Item> shopItemData;
 
         private float positionOffset = 50f;
 
@@ -117,7 +117,23 @@ namespace GameCampRPG.UI
                 }
                 else
                 {
-                    texts[0].color = Color.black;
+                    if (i < shopItemData.Count)
+                    {
+                        if (shopItemData[i].Price > GameInstance.Instance.GetPlayerInfo().Money)
+                        {
+                            texts[0].color = new Color(0, 0, 0, 0.5f);
+                            texts[1].color = new Color(0, 0, 0, 0.5f);
+                        }
+                        else
+                        {
+                            texts[0].color = Color.black;
+                            texts[1].color = Color.black;
+                        }
+                    }
+                    else
+                    {
+                        texts[0].color = Color.black;
+                    }
                 }
             }
         }
@@ -132,7 +148,7 @@ namespace GameCampRPG.UI
                 return;
             }
 
-            IItem item;
+            Item item;
             if (itemVendor != null)
             {
                 item = itemVendor.Inventory.GetItem(shopItemData[selectedItem]);
@@ -156,7 +172,7 @@ namespace GameCampRPG.UI
             UpdateSelectedItem();
         }
 
-        private bool BuyItem(IItem item)
+        private bool BuyItem(Item item)
         {
             Debug.Log("price: " + item.Price);
             Debug.Log("Money: " + GameInstance.Instance.GetPlayerInfo().Money);
@@ -200,12 +216,19 @@ namespace GameCampRPG.UI
                 TextMeshProUGUI[] texts = shopItems[i].GetComponentsInChildren<TextMeshProUGUI>();
                 if (texts[0].gameObject.name == "ItemName")
                 {
-                    texts[0].text = shopItemData[i].Name;
+                    if (shopItemData[i].Amount > 1)
+                    {
+                        texts[0].text = shopItemData[i].Name + " x" + shopItemData[i].Amount.ToString();
+                    }
+                    else
+                    {
+                        texts[0].text = shopItemData[i].Name;
+                    }
                 }
 
-                if (texts[1].gameObject.name == "Count")
+                if (texts[1].gameObject.name == "Price")
                 {
-                    texts[1].text = shopItemData[i].Amount.ToString() + "x";
+                    texts[1].text = shopItemData[i].Price.ToString() + "G";
                 }
             }
             GameObject cancel = GameObject.Instantiate(shopItem, this.gameObject.transform);
@@ -217,7 +240,7 @@ namespace GameCampRPG.UI
                 textComps[0].text = "Cancel";
             }
 
-            if (textComps[1].gameObject.name == "Count")
+            if (textComps[1].gameObject.name == "Price")
             {
                 textComps[1].text = "";
             }
