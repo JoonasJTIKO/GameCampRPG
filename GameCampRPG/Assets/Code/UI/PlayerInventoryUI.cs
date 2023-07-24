@@ -65,6 +65,7 @@ namespace GameCampRPG.UI
                 if (i < playerItems.Count)
                 {
                     inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[0].text = playerItems[i].Amount.ToString();
+                    //inventoryMenuItems[i].GetComponentInChildren<Image>().sprite = playerItems[i].Icon;
                 }
             }
         }
@@ -176,6 +177,10 @@ namespace GameCampRPG.UI
             {
                 itemInfo.SetInfo(playerItems[selectedItem]);
             }
+            else
+            {
+                itemInfo.ClearInfo();
+            }
 
             for (int i = 0; i < inventoryMenuItems.Count; i++)
             {
@@ -197,17 +202,17 @@ namespace GameCampRPG.UI
             {
                 if (playerItems[i] == itemEquipping.EquippedKnightWeapon || playerItems[i] == itemEquipping.EquippedKnightArmor)
                 {
-                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].enabled = true;
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].text = "E";
                     inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].color = Color.blue;
                 }
                 else if (playerItems[i] == itemEquipping.EquippedRogueWeapon || playerItems[i] == itemEquipping.EquippedRogueArmor)
                 {
-                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].enabled = true;
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].text = "E";
                     inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].color = Color.green;
                 }
                 else if (playerItems[i] == itemEquipping.EquippedMageWeapon || playerItems[i] == itemEquipping.EquippedMageArmor)
                 {
-                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].enabled = true;
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].text = "E";
                     inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].color = Color.magenta;
                 }
             }

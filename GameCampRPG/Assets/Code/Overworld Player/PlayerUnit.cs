@@ -96,6 +96,11 @@ namespace GameCampRPG
             {
                 PauseMenuCanvas canvas = GameInstance.Instance.GetPauseMenuCanvas();
                 canvas.GetComponentInChildren<PauseMenuNavigation>().RemoveInputs();
+                ItemInfo itemInfo = canvas.GetComponentInChildren<ItemInfo>();
+                if (itemInfo != null)
+                {
+                    itemInfo.ClearInfo();
+                }
                 PlayerInventoryUI playerInventory = canvas.GetComponentInChildren<PlayerInventoryUI>();
                 if (playerInventory != null)
                 {

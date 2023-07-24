@@ -7,17 +7,18 @@ namespace GameCampRPG.UI
 {
     public class ItemInfo : MenuCanvas
     {
-        private TextMeshProUGUI[] texts;
-
-        private void Awake()
+        public void SetInfo(Item item)
         {
-            texts = GetComponentsInChildren<TextMeshProUGUI>();
-        }
-        
-        public void SetInfo(IItem item)
-        {
+            TextMeshProUGUI[] texts = GetComponentsInChildren<TextMeshProUGUI>();
             texts[0].text = item.Name;
             texts[1].text = item.Description;
+        }
+
+        public void ClearInfo()
+        {
+            TextMeshProUGUI[] texts = GetComponentsInChildren<TextMeshProUGUI>();
+            texts[0].text = "";
+            texts[1].text = "";
         }
     }
 }
