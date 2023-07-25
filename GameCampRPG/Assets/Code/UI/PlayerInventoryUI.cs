@@ -16,6 +16,9 @@ namespace GameCampRPG.UI
         private ItemInfo itemInfo;
 
         [SerializeField]
+        private InventoryContextMenu iContextMenu;
+
+        [SerializeField]
         private GameObject itemFrame;
 
         private List<GameObject> inventoryMenuItems = new();
@@ -160,6 +163,12 @@ namespace GameCampRPG.UI
         private void SelectPerformed(InputAction.CallbackContext callback)
         {
             Debug.Log("Select performed");
+            if (selectedItem < playerItems.Count)
+            {
+                iContextMenu.Show();
+                iContextMenu.InitializeMenu(playerItems[selectedItem]);
+                DisableInputs();
+            }
         }
 
         private void EscapePerformed(InputAction.CallbackContext callback)
