@@ -23,6 +23,7 @@ namespace GameCampRPG
             {
                 SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
             }
+            GameInstance.Instance.GetAudioManager().PlayMusic(GameMusic.MUSIC_COMBAT);
             GameInstance.Instance.GetQuestCanvas().Hide();
             GameInstance.Instance.GetSceneFadeCanvas().FadeOut();
             GameInstance.Instance.GetPlayerCombatCanvas().Show();
@@ -32,6 +33,7 @@ namespace GameCampRPG
         {
             GameInstance.Instance.GetPlayerCombatCanvas().Hide();
             SceneManager.UnloadSceneAsync(SceneName);
+            GameInstance.Instance.ActivateOverworldCamera(true);
         }
 
         public CombatState() : base()

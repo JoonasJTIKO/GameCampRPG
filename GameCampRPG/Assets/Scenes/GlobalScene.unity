@@ -407,11 +407,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemies:
-  - Type: 0
-    Difficulty: 0
   - Type: 1
     Difficulty: 2
-  - Type: 2
+  - Type: 1
+    Difficulty: 2
+  - Type: 1
+    Difficulty: 2
+  - Type: 1
+    Difficulty: 2
+  - Type: 1
     Difficulty: 2
   Drops: []
 --- !u!114 &3332524
@@ -482,9 +486,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 3332521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fcc4ce3169cf1a4f947ee860b0a3b30, type: 3}
+  m_Script: {fileID: 11500000, guid: 1891bfb7d43b8e145a0f694d7041972c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerSFX: {fileID: 7252181580559540609, guid: 0dbd0381413c4f645b84ff631b8f3363, type: 2}
+  mixerMusic: {fileID: -5340690795836815389, guid: 0dbd0381413c4f645b84ff631b8f3363, type: 2}
+  mixerMain: {fileID: 24100000, guid: 0dbd0381413c4f645b84ff631b8f3363, type: 2}
+  playerRun: {fileID: 8300000, guid: df7087e4d8a8bb546bc08ce68632903f, type: 3}
+  combatPlayerJump: {fileID: 8300000, guid: 4e349dc959014a845b9aa317d1c2b7f0, type: 3}
+  rogueAttack: {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
+  rogueSkill: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
+  knightAttack: {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
+  knightSkill: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
+  mageAttack: {fileID: 8300000, guid: a652877b012108e41871f867ada9f176, type: 3}
+  mageSkill: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
+  playerTakeDamage: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}
+  playerDie: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}
+  snakeAttack: {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
+  slimeAttack: {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
+  treeAttack: {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
+  enemyTakeDamage: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}
+  enemyDie: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
+  collectPowerUp: {fileID: 8300000, guid: 7a9de5c4d998126449cf964a6b27a8b0, type: 3}
+  textType: {fileID: 0}
+  UISelect: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  musicMain: {fileID: 8300000, guid: b3e7e068f61b05b43b8defa9dcbbe5ed, type: 3}
+  musicTown: {fileID: 8300000, guid: 8e57c40f7980f674aa0191429ce1352d, type: 3}
+  musicOverworld: {fileID: 8300000, guid: ed0c0c828c2c4ba478d82c99bc97b04c, type: 3}
+  musicCombat: {fileID: 8300000, guid: 031bbb98a7e1a3c4684afe0c45789da8, type: 3}
 --- !u!1 &10543716
 GameObject:
   m_ObjectHideFlags: 0

@@ -134,7 +134,7 @@ namespace GameCampRPG
             GameInstance.Instance.GetPlayerCombatCanvas().SetHealthText(characterIndex, Health);
             if (Health == 0)
             {
-                if (animator != null) animator.SetTrigger("Faint");
+                if (animator != null) animator.SetTrigger("Death");
             }
             else
             {

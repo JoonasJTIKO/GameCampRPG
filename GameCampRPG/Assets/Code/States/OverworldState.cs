@@ -26,6 +26,7 @@ namespace GameCampRPG
             }
             GameInstance.Instance.GetQuestCanvas().Show();
             GameInstance.Instance.GetSceneFadeCanvas().FadeOut();
+            GameInstance.Instance.GetAudioManager().PlayMusic(GameMusic.MUSIC_OVERWORLD);
             PlayerInputs inputs = GameInstance.Instance.GetPlayerInfo().PlayerInputs;
             inputs.Overworld.Enable();
             GameInstance.Instance.ActivateOverworldCamera(true);
@@ -34,6 +35,7 @@ namespace GameCampRPG
         public override void Deactivate()
         {
             SceneManager.UnloadSceneAsync(SceneName);
+            GameInstance.Instance.ActivateOverworldCamera(false);
         }
 
         public OverworldState() : base()

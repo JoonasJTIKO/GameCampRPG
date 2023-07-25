@@ -114,7 +114,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: PlayRogueAttack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -143,7 +150,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.41132075
+        functionName: PlayRogueSkill
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -230,7 +244,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: PlayDie
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -259,7 +280,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.11320755
+        functionName: PlayTakeDamage
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -288,7 +316,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.23396227
+        functionName: PlayJump
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a472299298d999c448afe178b81b43ba, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: f207879ab7c20fc45bcf702ee92ffe3c, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &5695349
@@ -242,6 +246,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -354,6 +362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &47845713
@@ -419,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &48316448
@@ -483,6 +499,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -635,6 +655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &65049554 stripped
@@ -704,6 +728,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -953,6 +981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &111220321 stripped
@@ -1141,6 +1173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &128481069
@@ -1314,6 +1350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &136877108 stripped
@@ -1381,6 +1421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &157669965
@@ -1441,6 +1485,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -1507,6 +1555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &162262320
@@ -1563,6 +1615,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -1625,6 +1681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &182503835
@@ -1685,6 +1745,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -1747,6 +1811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &194431114
@@ -1807,6 +1875,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -1874,6 +1946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &219359393 stripped
@@ -1940,6 +2016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &224412131
@@ -2001,6 +2081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &225355927
@@ -2061,6 +2145,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -2126,6 +2214,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -2224,6 +2316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &239845202
@@ -2285,6 +2381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &248056068
@@ -2345,6 +2445,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -2416,6 +2520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &274282550
@@ -2472,6 +2580,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -2533,6 +2645,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -2610,6 +2726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &320272033 stripped
@@ -2685,6 +2805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &327157380
@@ -2750,6 +2874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &328025290
@@ -2810,6 +2938,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -2887,6 +3019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &410773770
@@ -2951,6 +3087,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -3038,6 +3178,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -3213,6 +3357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &482290939 stripped
@@ -3275,6 +3423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &487267076
@@ -3335,6 +3487,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -3427,6 +3583,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -3554,6 +3714,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -3760,6 +3924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &587745649
@@ -3816,6 +3984,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -3881,6 +4053,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -3963,6 +4139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &634819937 stripped
@@ -4034,6 +4214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &648963775 stripped
@@ -4096,6 +4280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &658027904
@@ -4156,6 +4344,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -4273,6 +4465,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &672192971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672192969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &676925324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -4453,6 +4657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &692483502
@@ -4513,6 +4721,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -4583,6 +4795,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -4744,6 +4960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &744343636
@@ -4800,6 +5020,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -4881,6 +5105,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -4980,6 +5208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &820944617 stripped
@@ -5045,6 +5277,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -5224,6 +5460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &873549024 stripped
@@ -5336,6 +5576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &901024411
@@ -5405,6 +5649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &919375315
@@ -5465,6 +5713,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -5531,6 +5783,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -5603,6 +5859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &947264742 stripped
@@ -5664,6 +5924,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -5847,6 +6111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &987921274
@@ -5907,6 +6175,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -5974,6 +6246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &999055756
@@ -6034,6 +6310,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -6109,6 +6389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &1015593111
@@ -6165,6 +6449,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -6232,6 +6520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1047330055
@@ -6296,6 +6588,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -6528,6 +6824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1086672723
@@ -6589,6 +6889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1094991092
@@ -6645,6 +6949,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -7229,6 +7537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1 &1141284420
@@ -7429,6 +7741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &1167414437
@@ -7603,6 +7919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &1179716249 stripped
@@ -7729,6 +8049,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1224376806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224376804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1228258033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7787,6 +8119,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -7864,6 +8200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &1250025293 stripped
@@ -7926,6 +8266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1273717038
@@ -7986,6 +8330,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -8059,6 +8407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1289046312
@@ -8123,6 +8475,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -8265,6 +8621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1344582310
@@ -8325,6 +8685,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -8392,6 +8756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &1372369379 stripped
@@ -8458,6 +8826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1386165731
@@ -8519,6 +8891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1388535722
@@ -8579,6 +8955,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -8650,6 +9030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1395640652
@@ -8710,6 +9094,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -8772,6 +9160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1410543467
@@ -8833,6 +9225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1414151625
@@ -8890,6 +9286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1425140225
@@ -8946,6 +9346,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -9007,6 +9411,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -9083,6 +9491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &1463211777 stripped
@@ -9145,6 +9557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1470518274
@@ -9205,6 +9621,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -9322,6 +9742,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1492045494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492045492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1cb1f3a9489f94d9ce3f0ce6d9c255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1493392756
 GameObject:
   m_ObjectHideFlags: 0
@@ -9422,6 +9854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &1534306437 stripped
@@ -9483,6 +9919,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -9550,6 +9990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &1563493418
@@ -9610,6 +10054,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -9893,6 +10341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &1612437650 stripped
@@ -9962,6 +10414,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -10033,6 +10489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1649624985
@@ -10097,6 +10557,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -10498,6 +10962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &1727323615 stripped
@@ -10563,6 +11031,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -10691,6 +11163,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -10913,6 +11389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &1798876940
@@ -11055,6 +11535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &1809359070 stripped
@@ -11126,6 +11610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &1813667302
@@ -11182,6 +11670,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -11243,6 +11735,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -11316,6 +11812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!4 &1832416186 stripped
@@ -11382,6 +11882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &1838048439
@@ -11442,6 +11946,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -11509,6 +12017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &1845906462
@@ -11565,6 +12077,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -11626,6 +12142,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -11702,6 +12222,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -11845,6 +12369,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -12018,6 +12546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &1926204243 stripped
@@ -12084,6 +12616,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -12254,6 +12790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &1971991611
@@ -12314,6 +12854,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -12447,6 +12991,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -12736,6 +13284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!4 &2033715793 stripped
@@ -12801,6 +13353,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -12882,6 +13438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &2056490401
@@ -12938,6 +13498,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
@@ -13010,6 +13574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &2072610359
@@ -13070,6 +13638,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -13136,6 +13708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatGrass (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}
 --- !u!1001 &2084536148
@@ -13196,6 +13772,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
       propertyPath: m_Name
       value: combatTree (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
@@ -13258,6 +13838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: combatTree (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d0cedbbb84fdfd4c8af7ab532782cf7, type: 3}
 --- !u!1001 &2122202100
@@ -13318,6 +13902,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
       propertyPath: m_Name
       value: combatGrass (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 112f0a03110ea85458319837d3a41379, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f0a03110ea85458319837d3a41379, type: 3}

@@ -40,6 +40,8 @@ namespace GameCampRPG
 
         private QuestManager questManager;
 
+        private AudioManager audioManager;
+
         private static GameInstance instance;
 
         public static GameInstance Instance
@@ -72,9 +74,15 @@ namespace GameCampRPG
             itemEquipping = GetComponent<ItemEquipping>();
             combatInfo = GetComponent<CombatInfo>();
             questManager = GetComponent<QuestManager>();
+            audioManager = GetComponent<AudioManager>();
 
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        private void Update()
+        {
+            audioManager.NextFrame();
         }
 
         public void SetOverworldCamera(Camera camera)
@@ -143,6 +151,11 @@ namespace GameCampRPG
         public QuestManager GetQuestManager()
         {
             return questManager;
+        }
+
+        public AudioManager GetAudioManager()
+        {
+            return audioManager;
         }
     }
 }

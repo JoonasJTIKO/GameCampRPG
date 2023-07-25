@@ -56,7 +56,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.16226415
+        functionName: PlayTreeAttack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a7e3bc4c0c8b7294e938e870dc466ec0, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -85,7 +92,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: PlayTakeDamage
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a7e3bc4c0c8b7294e938e870dc466ec0, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -119,6 +133,13 @@ ModelImporter:
         functionName: Disable
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: a7a714ca0a4a92a47ab8325d2a6148a0, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: PlayDie
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a7e3bc4c0c8b7294e938e870dc466ec0, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
