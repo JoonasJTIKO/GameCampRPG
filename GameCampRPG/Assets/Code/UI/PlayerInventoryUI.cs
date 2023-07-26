@@ -86,7 +86,6 @@ namespace GameCampRPG.UI
         {
             if (inputs == null) return;
 
-            selectedItem = 0;
             menuUp.performed += MoveInMenusUp;
             menuDown.performed += MoveInMenusDown;
             menuLeft.performed += MoveInMenusLeft;
@@ -227,6 +226,10 @@ namespace GameCampRPG.UI
                 {
                     inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].text = "E";
                     inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].color = Color.magenta;
+                }
+                else
+                {
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[1].text = "";
                 }
             }
         }

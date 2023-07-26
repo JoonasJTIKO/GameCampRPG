@@ -51,6 +51,9 @@ namespace GameCampRPG.UI
             select.performed += SelectPerformed;
             menuUp.performed += MoveInMenusUp;
             menuDown.performed += MoveInMenusDown;
+
+            GetComponentInChildren<TextMeshProUGUI>().text = "Money: " + GameInstance.Instance.GetPlayerInfo().Money.ToString() + "G";
+
             itemVendor = baseVendor.gameObject.GetComponent<ItemVendor>();
             blackVendor = baseVendor.gameObject.GetComponent<BlackMarketVendor>();
             if (itemVendor != null)
@@ -183,6 +186,7 @@ namespace GameCampRPG.UI
 
             GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
             GameInstance.Instance.GetPlayerInfo().RemoveMoney(item.Price);
+            GetComponentInChildren<TextMeshProUGUI>().text = "Money: " + GameInstance.Instance.GetPlayerInfo().Money.ToString() + "G";
             return true;
         }
 

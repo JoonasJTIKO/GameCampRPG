@@ -62,12 +62,12 @@ namespace GameCampRPG.UI
             inventoryItem = item;
             if (inventoryItem.Equippable)
             {
-                DrawMenu(3, new string[] { "Equip", "Unequip" });
+                DrawMenu(new string[] { "Equip", "Unequip" });
                 UpdateSelectedItem();
             }
             else
             {
-                DrawMenu(2, new string[] { "Use" });
+                DrawMenu(new string[] { "Use" });
                 UpdateSelectedItem();
             }
         }
@@ -105,7 +105,7 @@ namespace GameCampRPG.UI
             switch (option)
             {
                 case "Equip":
-                    DrawMenu(4, new string[] { "Knight", "Rogue", "Mage" });
+                    DrawMenu(EquipOptionsBasedOnItem(inventoryItem));
                     UpdateSelectedItem();
                     break;
                 case "Unequip":
@@ -121,6 +121,8 @@ namespace GameCampRPG.UI
                     {
                         itemEquipping.UnequipItem(inventoryItem, 2);
                     }
+                    playerInventoryUI.EnableInputs();
+                    RemoveInputs();
                     break;
                 case "Use":
                     break;
@@ -161,7 +163,7 @@ namespace GameCampRPG.UI
             }
         }
 
-        private void DrawMenu(int count, string[] menuItemNames)
+        private void DrawMenu(string[] menuItemNames)
         {
             if (menuItems.Count != 0)
             {
@@ -176,23 +178,37 @@ namespace GameCampRPG.UI
             Vector3 optionPosition = menuItem.GetComponent<RectTransform>().anchoredPosition3D;
             Vector3 newPosition;
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < menuItemNames.Length; i++)
             {
-                newPosition = new(optionPosition.x, optionPosition.y - (250 * i), optionPosition.z);
-                if (i == count - 1)
-                {
-                    GameObject option = GameObject.Instantiate(menuItem, this.gameObject.transform);
-                    menuItems.Add(option);
-                    menuItems[i].GetComponent<RectTransform>().anchoredPosition3D = newPosition;
-                    menuItems[i].GetComponent<TextMeshProUGUI>().text = "Cancel";
-                }
-                else
-                {
-                    GameObject option = GameObject.Instantiate(menuItem, this.gameObject.transform);
-                    menuItems.Add(option);
-                    menuItems[i].GetComponent<RectTransform>().anchoredPosition3D = newPosition;
-                    menuItems[i].GetComponent<TextMeshProUGUI>().text = menuItemNames[i];
-                }
+                newPosition = new(optionPosition.x, optionPosition.y - (225 * i), optionPosition.z);
+                GameObject option = GameObject.Instantiate(menuItem, this.gameObject.transform);
+                menuItems.Add(option);
+                menuItems[i].GetComponent<RectTransform>().anchoredPosition3D = newPosition;
+                menuItems[i].GetComponent<TextMeshProUGUI>().text = menuItemNames[i];
+            }
+            GameObject cancel = GameObject.Instantiate(menuItem, this.gameObject.transform);
+            menuItems.Add(cancel);
+            menuItems[^1].GetComponent<RectTransform>().anchoredPosition3D = new(optionPosition.x, optionPosition.y - (225 * menuItemNames.Length), optionPosition.z);
+            menuItems[^1].GetComponent<TextMeshProUGUI>().text = "Cancel";
+        }
+
+        private string[] EquipOptionsBasedOnItem(Item item)
+        {
+            if (item.EquipCharacter == ItemEquipping.EquipCharacter.Knight)
+            {
+                return new string[] { "Knight" };
+            }
+            else if (item.EquipCharacter == ItemEquipping.EquipCharacter.Rogue)
+            {
+                return new string[] { "Rogue" };
+            }
+            else if (item.EquipCharacter == ItemEquipping.EquipCharacter.Mage)
+            {
+                return new string[] { "Mage" };
+            }
+            else
+            {
+                return new string[] { "Knight", "Rogue", "Mage" };
             }
         }
 

@@ -86,7 +86,12 @@ namespace GameCampRPG
                         Price = inspectedItem.Price,
                         MaxAmount = inspectedItem.MaxAmount,
                         IsUnique = inspectedItem.IsUnique,
-                        Icon = inspectedItem.Icon
+                        Icon = inspectedItem.Icon,
+                        Equippable = inspectedItem.Equippable,
+                        EquipCharacter = inspectedItem.EquipCharacter,
+                        Stat1 = inspectedItem.Stat1,
+                        Stat2 = inspectedItem.Stat2,
+                        EquipType = inspectedItem.EquipType
                     };
 
                     if (inspectedItem.Amount > amount)

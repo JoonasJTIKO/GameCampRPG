@@ -105,6 +105,7 @@ namespace GameCampRPG
         public void AddItemToInventory(Item item)
         {
             int amount = PlayerInventory.AddItems(item);
+            items = PlayerInventory.ShowAllItems();
             if (amount != 0)
             {
                 Item copy = new Item();
