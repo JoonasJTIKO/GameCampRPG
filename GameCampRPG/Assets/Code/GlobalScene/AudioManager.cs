@@ -151,7 +151,7 @@ namespace GameCampRPG
                 activeMusicAudioSource.bypassReverbZones = true;
                 activeMusicAudioSource.loop = true;
                 activeMusicAudioSource.spatialBlend = 0.0f;
-                activeMusicAudioSource.rolloffMode = AudioRolloffMode.Custom;       // Shouldn't need to set these, but just in case...
+                activeMusicAudioSource.rolloffMode = AudioRolloffMode.Custom;
                 activeMusicAudioSource.minDistance = 0.1f;
                 activeMusicAudioSource.maxDistance = 100000000000.0f;
 
@@ -204,7 +204,7 @@ namespace GameCampRPG
                 // UI SFX
                 case GameSFX.SFX_TEXT_TYPE: audioSourceSFX.clip = textType; break;
                 case GameSFX.SFX_UI_SELECT: audioSourceSFX.clip = UISelect; break;
-                #endregion
+                    #endregion
             }
 
             SFXAudioPool[SFXAudioPoolIndex].transform.position = pos;
@@ -250,5 +250,17 @@ namespace GameCampRPG
             activeMusicAudioSource.Stop();
         }
 
+        public IEnumerator FadeMusicOut(float fadeTime)
+        {
+            if (null == activeMusicAudioSource) Debug.Log("Music Game Object is missing an audio source component");
+
+            while (activeMusicAudioSource.volume > 0)
+            {
+                activeMusicAudioSource.volume -= Time.deltaTime / fadeTime;
+
+                yield return null;
+            }
+            StopMusic();
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace GameCampRPG
         int MaxAmount { get; set; }
         bool IsUnique { get; set; }
         bool Equippable { get; set; }
+        ItemEquipping.EquipCharacter EquipCharacter { get; set; }
         Sprite Icon { get; set; }
     }
 }

@@ -29,10 +29,10 @@ namespace GameCampRPG
             GameInstance.Instance.GetPlayerCombatCanvas().Show();
         }
 
-        public override void Deactivate()
+        public override void Deactivate(bool unloadScene = true)
         {
             GameInstance.Instance.GetPlayerCombatCanvas().Hide();
-            SceneManager.UnloadSceneAsync(SceneName);
+            if (unloadScene) SceneManager.UnloadSceneAsync(SceneName);
             GameInstance.Instance.ActivateOverworldCamera(true);
         }
 

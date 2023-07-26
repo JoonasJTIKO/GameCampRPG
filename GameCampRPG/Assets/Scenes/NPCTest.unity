@@ -1620,6 +1620,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1425387258, guid: 95d8ac6e9d0925744806eb51b431c8e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7850001
+      objectReference: {fileID: 0}
     - target: {fileID: 5772859958937571720, guid: 95d8ac6e9d0925744806eb51b431c8e5, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1663,6 +1667,10 @@ PrefabInstance:
     - target: {fileID: 5772859958937571720, guid: 95d8ac6e9d0925744806eb51b431c8e5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772859958937571724, guid: 95d8ac6e9d0925744806eb51b431c8e5, type: 3}
+      propertyPath: m_Center.y
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 5772859958937575028, guid: 95d8ac6e9d0925744806eb51b431c8e5, type: 3}
       propertyPath: m_Name
@@ -2670,6 +2678,230 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: introDialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[3].<ID>k__BackingField
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<ID>k__BackingField
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<ID>k__BackingField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<ID>k__BackingField
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[0].<Name>k__BackingField
+      value: Health potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[1].<Name>k__BackingField
+      value: Cutters of Fiskars
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[2].<Name>k__BackingField
+      value: Masterful sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[3].<Name>k__BackingField
+      value: Advanced algebra
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<Name>k__BackingField
+      value: Mystic armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<Name>k__BackingField
+      value: Woodland armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<Name>k__BackingField
+      value: Thorny armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[1].<Price>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[1].<Stat1>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[2].<Price>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[2].<Stat1>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[3].<Price>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[3].<Stat1>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<Price>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<Stat1>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<Stat2>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<Price>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<Stat1>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<Stat2>k__BackingField
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<Price>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<Stat1>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<Stat2>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<Amount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<Amount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<Amount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[1].<IsUnique>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<IsUnique>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<IsUnique>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<IsUnique>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[1].<MaxAmount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<MaxAmount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<MaxAmount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<MaxAmount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[0].<Description>k__BackingField
+      value: Heals party for 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[1].<Description>k__BackingField
+      value: Increases damage dealt by Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[2].<Description>k__BackingField
+      value: Increases damage dealt by Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[3].<Description>k__BackingField
+      value: Increases damage dealt by Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<Description>k__BackingField
+      value: Increases Defense and Skill damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<Description>k__BackingField
+      value: Increases Defense and decreases Skill cooldown
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<Description>k__BackingField
+      value: Increases Defense and damage dealt by Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[0].<EquipCharacter>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[2].<EquipCharacter>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[2].<equippableType>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[3].<EquipCharacter>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<EquipCharacter>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<equippableType>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<EquipCharacter>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<equippableType>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<EquipCharacter>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<equippableType>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5772859958937571720, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
       propertyPath: m_RootOrder
       value: 3

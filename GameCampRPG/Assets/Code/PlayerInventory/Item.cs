@@ -48,12 +48,15 @@ namespace GameCampRPG
         public bool Equippable { get; set; }
 
         [field: SerializeField]
+        public ItemEquipping.EquipCharacter EquipCharacter { get; set; }
+
+        [field: SerializeField]
         public ItemStat Stat1 { get; set; }
 
         [field: SerializeField]
         public ItemStat Stat2 { get; set; }
 
         [field: SerializeField]
-        public EquippableType equippableType { get; set; }
+        public EquippableType EquipType { get; set; }
     }
 }

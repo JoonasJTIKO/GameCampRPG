@@ -28,9 +28,9 @@ namespace GameCampRPG
             inputs.Overworld.Enable();
         }
 
-        public override void Deactivate()
+        public override void Deactivate(bool unloadScene = true)
         {
-            SceneManager.UnloadSceneAsync(SceneName);
+            if (unloadScene) SceneManager.UnloadSceneAsync(SceneName);
         }
 
         public VillageState() : base()
