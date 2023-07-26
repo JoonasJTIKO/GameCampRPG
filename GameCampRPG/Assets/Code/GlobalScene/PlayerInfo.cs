@@ -44,7 +44,7 @@ namespace GameCampRPG
                 PlayerInventory.AddItems(item);
             }
 
-            Money = 5;
+            Money = 500;
         }
 
         public void SetCharacterHealth(int characterIndex, int value)

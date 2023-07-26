@@ -204,8 +204,8 @@ MonoBehaviour:
     dialogueLine: May success follow you wherever you travel!
   items:
   - <ID>k__BackingField: 1
-    <Name>k__BackingField: Random potion
-    <Description>k__BackingField: Random description
+    <Name>k__BackingField: Health potion
+    <Description>k__BackingField: Heals party for 1
     <Price>k__BackingField: 1
     <Amount>k__BackingField: 3
     <MaxAmount>k__BackingField: 20
@@ -216,41 +216,77 @@ MonoBehaviour:
     <Stat2>k__BackingField: 0
     <equippableType>k__BackingField: 0
   - <ID>k__BackingField: 2
-    <Name>k__BackingField: Random item
-    <Description>k__BackingField: Random description 2
-    <Price>k__BackingField: 2
-    <Amount>k__BackingField: 1
-    <MaxAmount>k__BackingField: 10
-    <IsUnique>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 0}
-    <Equippable>k__BackingField: 0
-    <Stat1>k__BackingField: 0
-    <Stat2>k__BackingField: 0
-    <equippableType>k__BackingField: 0
-  - <ID>k__BackingField: 3
-    <Name>k__BackingField: Random ase??
-    <Description>k__BackingField: Random description 3
-    <Price>k__BackingField: 3
+    <Name>k__BackingField: Cutters of Fiskars
+    <Description>k__BackingField: Increases damage dealt by Attack
+    <Price>k__BackingField: 10
     <Amount>k__BackingField: 1
     <MaxAmount>k__BackingField: 1
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
-    <Equippable>k__BackingField: 0
-    <Stat1>k__BackingField: 0
+    <Equippable>k__BackingField: 1
+    <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
     <equippableType>k__BackingField: 0
   - <ID>k__BackingField: 3
-    <Name>k__BackingField: Random ase??
-    <Description>k__BackingField: Random description 3
-    <Price>k__BackingField: 3
+    <Name>k__BackingField: Masterful sword
+    <Description>k__BackingField: Increases damage dealt by Attack
+    <Price>k__BackingField: 10
     <Amount>k__BackingField: 1
     <MaxAmount>k__BackingField: 1
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
-    <Equippable>k__BackingField: 0
-    <Stat1>k__BackingField: 0
+    <Equippable>k__BackingField: 1
+    <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
     <equippableType>k__BackingField: 0
+  - <ID>k__BackingField: 4
+    <Name>k__BackingField: Advanced algebra
+    <Description>k__BackingField: Increases damage dealt by Attack
+    <Price>k__BackingField: 10
+    <Amount>k__BackingField: 1
+    <MaxAmount>k__BackingField: 1
+    <IsUnique>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 0}
+    <Equippable>k__BackingField: 1
+    <Stat1>k__BackingField: 1
+    <Stat2>k__BackingField: 0
+    <equippableType>k__BackingField: 0
+  - <ID>k__BackingField: 5
+    <Name>k__BackingField: Mystic armor
+    <Description>k__BackingField: Increases Defense and Skill damage
+    <Price>k__BackingField: 10
+    <Amount>k__BackingField: 1
+    <MaxAmount>k__BackingField: 1
+    <IsUnique>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 0}
+    <Equippable>k__BackingField: 1
+    <Stat1>k__BackingField: 2
+    <Stat2>k__BackingField: 3
+    <equippableType>k__BackingField: 1
+  - <ID>k__BackingField: 6
+    <Name>k__BackingField: Woodland armor
+    <Description>k__BackingField: Increases Defense and decreases Skill cooldown
+    <Price>k__BackingField: 10
+    <Amount>k__BackingField: 1
+    <MaxAmount>k__BackingField: 1
+    <IsUnique>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 0}
+    <Equippable>k__BackingField: 1
+    <Stat1>k__BackingField: 2
+    <Stat2>k__BackingField: 4
+    <equippableType>k__BackingField: 1
+  - <ID>k__BackingField: 7
+    <Name>k__BackingField: Thorny armor
+    <Description>k__BackingField: Increases Defense and damage dealt by Attack
+    <Price>k__BackingField: 10
+    <Amount>k__BackingField: 1
+    <MaxAmount>k__BackingField: 1
+    <IsUnique>k__BackingField: 1
+    <Icon>k__BackingField: {fileID: 0}
+    <Equippable>k__BackingField: 1
+    <Stat1>k__BackingField: 2
+    <Stat2>k__BackingField: 1
+    <equippableType>k__BackingField: 1
 --- !u!65 &7405245339927233692
 BoxCollider:
   m_ObjectHideFlags: 0

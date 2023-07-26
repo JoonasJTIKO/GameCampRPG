@@ -21,9 +21,10 @@ namespace GameCampRPG.UI
         [SerializeField]
         private GameObject itemFrame;
 
-        private List<GameObject> inventoryMenuItems = new();
-
+        [SerializeField]
         private ItemEquipping itemEquipping;
+
+        private List<GameObject> inventoryMenuItems = new();
 
         private List<Item> playerItems;
 
@@ -59,7 +60,6 @@ namespace GameCampRPG.UI
         private void OnEnable()
         {
             playerItems = GameInstance.Instance.GetPlayerInfo().PlayerInventory.ShowAllItems();
-            itemEquipping = GameInstance.Instance.GetItemEquipping();
 
             for (int i = 0; i < 25; i++)
             {
@@ -93,6 +93,9 @@ namespace GameCampRPG.UI
             menuRight.performed += MoveInMenusRight;
             select.performed += SelectPerformed;
             escape.performed += EscapePerformed;
+
+            itemInfo.Show();
+            iContextMenu.Hide();
             UpdateSelectedItem();
         }
 
@@ -165,9 +168,10 @@ namespace GameCampRPG.UI
             Debug.Log("Select performed");
             if (selectedItem < playerItems.Count)
             {
+                DisableInputs();
+                itemInfo.Hide();
                 iContextMenu.Show();
                 iContextMenu.InitializeMenu(playerItems[selectedItem]);
-                DisableInputs();
             }
         }
 

@@ -11,6 +11,11 @@ namespace GameCampRPG.UI
         [SerializeField]
         private GameObject menuItem;
 
+        [SerializeField]
+        private PlayerInventoryUI playerInventoryUI;
+
+        private ItemEquipping itemEquipping;
+
         private PlayerInputs inputs;
 
         private InputAction menuUp;
@@ -21,6 +26,8 @@ namespace GameCampRPG.UI
 
         private List<GameObject> menuItems = new();
 
+        private Item inventoryItem;
+
         private int selectedItem = 0;
 
         private void Awake()
@@ -28,6 +35,7 @@ namespace GameCampRPG.UI
             if (GameInstance.Instance == null) return;
 
             inputs = GameInstance.Instance.GetPlayerInfo().PlayerInputs;
+            itemEquipping = GetComponent<ItemEquipping>();
             menuUp = inputs.UI.MenuUp;
             menuDown = inputs.UI.MenuDown;
             select = inputs.UI.Select;
@@ -47,18 +55,20 @@ namespace GameCampRPG.UI
             if (inputs == null) return;
 
             RemoveInputs();
-            inputs.UI.Disable();
         }
 
         public void InitializeMenu(Item item)
         {
-            if (item.Equippable)
+            inventoryItem = item;
+            if (inventoryItem.Equippable)
             {
-
+                DrawMenu(3, new string[] { "Equip", "Unequip" });
+                UpdateSelectedItem();
             }
             else
             {
                 DrawMenu(2, new string[] { "Use" });
+                UpdateSelectedItem();
             }
         }
 
@@ -91,6 +101,49 @@ namespace GameCampRPG.UI
         private void SelectPerformed(InputAction.CallbackContext callback)
         {
             Debug.Log("Select performed");
+            string option = menuItems[selectedItem].GetComponent<TextMeshProUGUI>().text;
+            switch (option)
+            {
+                case "Equip":
+                    DrawMenu(4, new string[] { "Knight", "Rogue", "Mage" });
+                    UpdateSelectedItem();
+                    break;
+                case "Unequip":
+                    if (inventoryItem == itemEquipping.EquippedKnightArmor || inventoryItem == itemEquipping.EquippedKnightWeapon)
+                    {
+                        itemEquipping.UnequipItem(inventoryItem, 1);
+                    }
+                    else if (inventoryItem == itemEquipping.EquippedRogueArmor || inventoryItem == itemEquipping.EquippedRogueWeapon)
+                    {
+                        itemEquipping.UnequipItem(inventoryItem, 0);
+                    }
+                    else if (inventoryItem == itemEquipping.EquippedMageArmor || inventoryItem == itemEquipping.EquippedMageWeapon)
+                    {
+                        itemEquipping.UnequipItem(inventoryItem, 2);
+                    }
+                    break;
+                case "Use":
+                    break;
+                case "Knight":
+                    itemEquipping.EquipItem(inventoryItem, 1);
+                    playerInventoryUI.EnableInputs();
+                    RemoveInputs();
+                    break;
+                case "Rogue":
+                    itemEquipping.EquipItem(inventoryItem, 0);
+                    playerInventoryUI.EnableInputs();
+                    RemoveInputs();
+                    break;
+                case "Mage":
+                    itemEquipping.EquipItem(inventoryItem, 2);
+                    playerInventoryUI.EnableInputs();
+                    RemoveInputs();
+                    break;
+                case "Cancel":
+                    playerInventoryUI.EnableInputs();
+                    RemoveInputs();
+                    break;
+            }
         }
 
         private void UpdateSelectedItem()
