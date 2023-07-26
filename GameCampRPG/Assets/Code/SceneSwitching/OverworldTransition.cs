@@ -31,8 +31,8 @@ namespace GameCampRPG
         private IEnumerator Transition()
         {
             GameInstance.Instance.GetSceneFadeCanvas().FadeIn();
+            StartCoroutine(GameInstance.Instance.GetAudioManager().FadeMusicOut(1f));
             yield return new WaitForSeconds(1.1f);
-            GameInstance.Instance.ActivateOverworldCamera(false);
             gameObject.SetActive(false);
             GameInstance.Instance.GetGameStateManager().Go(targetState, unloadCurrentScene);
         }

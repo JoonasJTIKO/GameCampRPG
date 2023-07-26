@@ -32,9 +32,9 @@ namespace GameCampRPG
             GameInstance.Instance.ActivateOverworldCamera(true);
         }
 
-        public override void Deactivate()
+        public override void Deactivate(bool unloadScene = true)
         {
-            SceneManager.UnloadSceneAsync(SceneName);
+            if (unloadScene) SceneManager.UnloadSceneAsync(SceneName);
             GameInstance.Instance.ActivateOverworldCamera(false);
         }
 

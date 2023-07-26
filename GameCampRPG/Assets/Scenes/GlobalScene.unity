@@ -212,8 +212,8 @@ MonoBehaviour:
     NPCName: 
     QuestDialogue: []
     RequiredItems:
-    - <ID>k__BackingField: 5
-      <Name>k__BackingField: Snakeskin
+    - <ID>k__BackingField: 8
+      <Name>k__BackingField: Rubber scraps
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
@@ -221,9 +221,10 @@ MonoBehaviour:
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
-      <equippableType>k__BackingField: 0
+      <EquipType>k__BackingField: 0
   - ID: 2
     Text: Brag to Noah about our success
     Type: 0
@@ -343,9 +344,10 @@ MonoBehaviour:
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
-      <equippableType>k__BackingField: 0
+      <EquipType>k__BackingField: 0
     - <ID>k__BackingField: 0
       <Name>k__BackingField: Shinies
       <Description>k__BackingField: 
@@ -355,9 +357,10 @@ MonoBehaviour:
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
-      <equippableType>k__BackingField: 0
+      <EquipType>k__BackingField: 0
     - <ID>k__BackingField: 0
       <Name>k__BackingField: Shinies
       <Description>k__BackingField: 
@@ -367,9 +370,10 @@ MonoBehaviour:
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
-      <equippableType>k__BackingField: 0
+      <EquipType>k__BackingField: 0
     - <ID>k__BackingField: 0
       <Name>k__BackingField: Shinies
       <Description>k__BackingField: 
@@ -379,9 +383,10 @@ MonoBehaviour:
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
-      <equippableType>k__BackingField: 0
+      <EquipType>k__BackingField: 0
     - <ID>k__BackingField: 0
       <Name>k__BackingField: Shinies
       <Description>k__BackingField: 
@@ -391,9 +396,10 @@ MonoBehaviour:
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
-      <equippableType>k__BackingField: 0
+      <EquipType>k__BackingField: 0
 --- !u!114 &3332523
 MonoBehaviour:
   m_ObjectHideFlags: 0

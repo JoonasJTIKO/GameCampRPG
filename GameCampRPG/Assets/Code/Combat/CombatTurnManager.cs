@@ -114,12 +114,11 @@ namespace GameCampRPG
 
             foreach (Item item in GameInstance.Instance.GetCombatInfo().Drops)
             {
-                GameInstance.Instance.GetPlayerInfo().PlayerInventory.AddItems(item);
+                GameInstance.Instance.GetPlayerInfo().AddItemToInventory(item);
             }
 
             GameInstance.Instance.GetEnemyInfoCanvas().DeactivatePanels();
             GameInstance.Instance.GetPlayerCombatCanvas().Hide();
-            audioListener.enabled = false;
             transitionRoutine = StartCoroutine(Transition());
         }
 

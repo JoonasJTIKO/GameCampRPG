@@ -8,6 +8,14 @@ namespace GameCampRPG
     {
         private PlayerInfo playerInfo;
 
+        public enum EquipCharacter
+        {
+            Rogue = 0,
+            Knight = 1,
+            Mage = 2,
+            Any = 3,
+        }
+
         public Item EquippedKnightWeapon { get; private set; }
         public Item EquippedKnightArmor { get; private set; }
         public Item EquippedRogueWeapon { get; private set; }
@@ -24,7 +32,9 @@ namespace GameCampRPG
 
         public void EquipItem(Item item, int characterIndex)
         {
-            Item.EquippableType newItemType = item.equippableType;
+            if ((int)item.EquipCharacter != characterIndex && (int)item.EquipCharacter != 3) return;
+
+            Item.EquippableType newItemType = item.EquipType;
 
             playerInfo.IncreaseStat(item.Stat1, characterIndex);
             playerInfo.IncreaseStat(item.Stat2, characterIndex);
@@ -79,7 +89,7 @@ namespace GameCampRPG
 
         public void UnequipItem(Item item, int characterIndex)
         {
-            Item.EquippableType itemType = item.equippableType;
+            Item.EquippableType itemType = item.EquipType;
 
             switch (itemType)
             {

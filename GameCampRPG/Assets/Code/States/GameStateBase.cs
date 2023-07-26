@@ -20,7 +20,7 @@ namespace GameCampRPG
         }
 
         public abstract void Activate(bool loadScene = true);
-        public abstract void Deactivate();
+        public abstract void Deactivate(bool unloadScene = true);
 
         public bool IsValidTarget(StateType targetStateType)
         {

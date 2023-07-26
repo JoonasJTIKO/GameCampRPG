@@ -101,7 +101,7 @@ namespace GameCampRPG
                 return false;
             }
 
-            if (CurrentState != null && unloadCurrent) CurrentState.Deactivate();
+            if (CurrentState != null) CurrentState.Deactivate(unloadCurrent);
             CurrentState = nextState;
             CurrentState.Activate(loadScene);
 
