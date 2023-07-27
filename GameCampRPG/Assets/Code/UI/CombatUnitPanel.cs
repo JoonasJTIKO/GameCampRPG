@@ -18,7 +18,7 @@ namespace GameCampRPG.UI
 
         public void UpdateHealthText(int health)
         {
-            healthText.text = "Health: " + health;
+            healthText.text = health.ToString();
         }
 
         public void UpdateCooldownText(int cooldown)
