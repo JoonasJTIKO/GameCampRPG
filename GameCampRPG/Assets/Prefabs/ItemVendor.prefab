@@ -212,9 +212,10 @@ MonoBehaviour:
     <IsUnique>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
     <Equippable>k__BackingField: 0
+    <EquipCharacter>k__BackingField: 3
     <Stat1>k__BackingField: 0
     <Stat2>k__BackingField: 0
-    <equippableType>k__BackingField: 0
+    <EquipType>k__BackingField: 0
   - <ID>k__BackingField: 2
     <Name>k__BackingField: Cutters of Fiskars
     <Description>k__BackingField: Increases damage dealt by Attack
@@ -224,9 +225,10 @@ MonoBehaviour:
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
     <Equippable>k__BackingField: 1
+    <EquipCharacter>k__BackingField: 0
     <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
-    <equippableType>k__BackingField: 0
+    <EquipType>k__BackingField: 0
   - <ID>k__BackingField: 3
     <Name>k__BackingField: Masterful sword
     <Description>k__BackingField: Increases damage dealt by Attack
@@ -236,9 +238,10 @@ MonoBehaviour:
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
     <Equippable>k__BackingField: 1
+    <EquipCharacter>k__BackingField: 1
     <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
-    <equippableType>k__BackingField: 0
+    <EquipType>k__BackingField: 0
   - <ID>k__BackingField: 4
     <Name>k__BackingField: Advanced algebra
     <Description>k__BackingField: Increases damage dealt by Attack
@@ -248,9 +251,10 @@ MonoBehaviour:
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
     <Equippable>k__BackingField: 1
+    <EquipCharacter>k__BackingField: 2
     <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
-    <equippableType>k__BackingField: 0
+    <EquipType>k__BackingField: 0
   - <ID>k__BackingField: 5
     <Name>k__BackingField: Mystic armor
     <Description>k__BackingField: Increases Defense and Skill damage
@@ -260,9 +264,10 @@ MonoBehaviour:
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
     <Equippable>k__BackingField: 1
+    <EquipCharacter>k__BackingField: 3
     <Stat1>k__BackingField: 2
     <Stat2>k__BackingField: 3
-    <equippableType>k__BackingField: 1
+    <EquipType>k__BackingField: 1
   - <ID>k__BackingField: 6
     <Name>k__BackingField: Woodland armor
     <Description>k__BackingField: Increases Defense and decreases Skill cooldown
@@ -272,9 +277,10 @@ MonoBehaviour:
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
     <Equippable>k__BackingField: 1
+    <EquipCharacter>k__BackingField: 3
     <Stat1>k__BackingField: 2
     <Stat2>k__BackingField: 4
-    <equippableType>k__BackingField: 1
+    <EquipType>k__BackingField: 1
   - <ID>k__BackingField: 7
     <Name>k__BackingField: Thorny armor
     <Description>k__BackingField: Increases Defense and damage dealt by Attack
@@ -284,9 +290,10 @@ MonoBehaviour:
     <IsUnique>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
     <Equippable>k__BackingField: 1
+    <EquipCharacter>k__BackingField: 3
     <Stat1>k__BackingField: 2
     <Stat2>k__BackingField: 1
-    <equippableType>k__BackingField: 1
+    <EquipType>k__BackingField: 1
 --- !u!65 &7405245339927233692
 BoxCollider:
   m_ObjectHideFlags: 0
