@@ -163,19 +163,19 @@ MonoBehaviour:
     Type: 0
     NPCName: Noah
     QuestDialogue:
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Bro!
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Bro!
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Hey Bro!
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
       speakerName: Noah
       dialogueLine: What now?
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Give us a quest!
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
@@ -184,10 +184,10 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
       speakerName: Noah
       dialogueLine: I said nothing about taking part in your stupid larp session.
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: No fair!
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Yeah! Give us a quest or I'm telling mom!
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
@@ -196,7 +196,7 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
       speakerName: Noah
       dialogueLine: Ahem... Adventurers-
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: BRAVE adventurers!
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
@@ -213,7 +213,7 @@ MonoBehaviour:
     QuestDialogue: []
     RequiredItems:
     - <ID>k__BackingField: 8
-      <Name>k__BackingField: Rubber scraps
+      <Name>k__BackingField: Snake hides
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
@@ -225,19 +225,20 @@ MonoBehaviour:
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
   - ID: 2
     Text: Brag to Noah about our success
     Type: 0
     NPCName: Noah
     QuestDialogue:
-    - speakerIcon: {fileID: 0}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Bro! We did it! We slayed those snakes!
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
       speakerName: Noah
       dialogueLine: Huh? Oh right. Good for you.
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
-      speakerName: Jackson the Snipper
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
       dialogueLine: You promised to play with us! Take this more seriously!
     - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
       speakerName: Noah
@@ -255,52 +256,52 @@ MonoBehaviour:
     Type: 0
     NPCName: Daisy
     QuestDialogue:
-    - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
       speakerName: Daisy
       dialogueLine: '*Sniff sniff*'
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: Oh great, she's crying again.
-    - speakerIcon: {fileID: 21300000, guid: 053be8f8804eded41b4033ec2de82b88, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
       speakerName: Ash the Mathgician
       dialogueLine: Stop being mean to your sister Jackie!
-    - speakerIcon: {fileID: 21300000, guid: 053be8f8804eded41b4033ec2de82b88, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
       speakerName: Ash the Mathgician
       dialogueLine: What's wrong Daisy?
-    - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
       speakerName: Daisy
       dialogueLine: '*Sniff sniff*'
-    - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
       speakerName: Daisy
       dialogueLine: Someone stole my sweetroll!
-    - speakerIcon: {fileID: 21300000, guid: 053be8f8804eded41b4033ec2de82b88, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
       speakerName: Ash the Mathgician
       dialogueLine: Oh no! Did you see who did it?
-    - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
       speakerName: Daisy
       dialogueLine: No... I saw a pretty butterfly and ran after it.
-    - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
       speakerName: Daisy
       dialogueLine: When I came back, the sweetroll was gone!
-    - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Fear not, fair maiden! We will find the criminal who did it and
         bring them to justice!
-    - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
       speakerName: Daisy
       dialogueLine: Yay, my brave heroes! *Sniff*
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: Psst, Ash. She probably ate the damn thing herself and just forgot.
-    - speakerIcon: {fileID: 21300000, guid: 053be8f8804eded41b4033ec2de82b88, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
       speakerName: Ash the Mathgician
       dialogueLine: Even so, we promised to help her. Lets find a way to get her
         a new one.
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: Hmph, I guess... Lets go and ask that weird bush kid nearby if
         he has any.
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: He creeps me out but he always has the weirdest things stored
         in that bush of his.
@@ -310,27 +311,87 @@ MonoBehaviour:
     Type: 0
     NPCName: Jimmy
     QuestDialogue:
+    - speakerIcon: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
+      speakerName: Jimmy
+      dialogueLine: '*Rustle rustle*'
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Uhh... Hi?
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jimmy
+      dialogueLine: SHINIES!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: AHH!
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jimmy
+      dialogueLine: Hey! Stop yelling! You'll scare the shinies!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: 'Yeah, this is too weird for me '
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: Let me talk to him.
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: Hello Jimmy, could we-
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jimmy
+      dialogueLine: Are you here to STEAL my shinies too?
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jimmy
+      dialogueLine: I won't let you!
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: I... uh...
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Fear not, little one! We are here on a quest to help a fair maiden!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: If we help you find your lost shinies, could you assist us in
+        our task as well?
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jimmy
+      dialogueLine: You would help me get my shinies back?
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Indeed! If possible, we would like to get a sweetca-
+    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+      speakerName: Jimmy
+      dialogueLine: Yay! Come back when you find my shinies, I'll wait here!
     - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
       speakerName: Jimmy
       dialogueLine: '*Rustle rustle*'
     - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
       speakerName: Jimmy
-      dialogueLine: Uhh... Hi?
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
-      speakerName: Jimmy
-      dialogueLine: SHINIES!
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
-      speakerName: Jimmy
-      dialogueLine: AHH!
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
-      speakerName: Jimmy
-      dialogueLine: Hey! Stop yelling, you'll scare the shinies!
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
-      speakerName: Jimmy
-      dialogueLine: Hey! Stop yelling, you'll scare the shinies!
+      dialogueLine: ...
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: Maybe we should have tried to ask where to find these shinies
+        first...
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Yeah, or what they even are in the first place!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Ash! Can't you use your mathgic to sense the shinies?
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: What...? Oh, right.
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: ' I sense that the shinies are being held captive by evil...
+        uh... slimegums!'
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Let us venture forth to slay those foul beasts posthaste!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Do you even know what youre saying?
     RequiredItems: []
   - ID: 5
-    Text: Kill Slimegums and get the bush kid his "shinies"
+    Text: Get Jimmy his "shinies" by killing Slimegums
     Type: 1
     NPCName: Jimmy
     QuestDialogue: []
@@ -340,7 +401,7 @@ MonoBehaviour:
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 5
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
@@ -348,8 +409,190 @@ MonoBehaviour:
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+  - ID: 6
+    Text: Give Jimmy his shinies
+    Type: 0
+    NPCName: Jimmy
+    QuestDialogue:
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: We have returned victorious!
+    - speakerIcon: {fileID: 0}
+      speakerName: Jimmy
+      dialogueLine: Really? You have my shinies?
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Indeed! We have them right here!
+    - speakerIcon: {fileID: 0}
+      speakerName: Jimmy
+      dialogueLine: Yay! Shinies!
+    - speakerIcon: {fileID: 0}
+      speakerName: Jimmy
+      dialogueLine: '*Rustle rustle*'
+    - speakerIcon: {fileID: 0}
+      speakerName: Jimmy
+      dialogueLine: ...
+    - speakerIcon: {fileID: 0}
+      speakerName: Sir Riley the Brave
+      dialogueLine: ...
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Ahem!
+    - speakerIcon: {fileID: 0}
+      speakerName: Jimmy
+      dialogueLine: Oh, did you want something else?
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Like we tried to tell you...
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: '*Kick*'
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Ow!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Yes, oh honorable merchant. We are trying to assist a fair maiden
+        in her quest to recover her stolen sweetroll!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Would you happen to have a sweetroll you could give us now that
+        we helped you?
+    - speakerIcon: {fileID: 0}
+      speakerName: Jimmy
+      dialogueLine: You should've just said so! Here you go!
+    - speakerIcon: {fileID: 0}
+      speakerName: 
+      dialogueLine: You should've just said so! Here you go!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Great, now let's go give Daisy her sweetroll!
+    RequiredItems: []
+  - ID: 7
+    Text: Return to Daisy with the sweetroll
+    Type: 0
+    NPCName: Daisy
+    QuestDialogue:
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Hi sis, still crying?
+    - speakerIcon: {fileID: 0}
+      speakerName: 
+      dialogueLine: Are you still eating you boogers when you think nobody is looking?
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Hey! I uh... No!
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: Can you two stop fighting for a second! We have a world to save!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Yeah, way to ruin our campaign!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Fine! Here Daisy, we got you your sweetroll
+    - speakerIcon: {fileID: 0}
+      speakerName: 
+      dialogueLine: Fine! Here Daisy, we got you your sweetroll.
+    - speakerIcon: {fileID: 0}
+      speakerName: 
+      dialogueLine: Aww, thanks bro. Youre alright sometimes!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Don't mention it.
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Speaking of brothers, should we go and check if Noah has that
+        quest ready for us?
+    RequiredItems: []
+  - ID: 8
+    Text: See if Noah is ready to give us a quest
+    Type: 0
+    NPCName: Noah
+    QuestDialogue:
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Yeah, this should do just fine.
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Now I just need to-
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Bro!
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Riley! Don't sneak up on me like that, you twerp!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Sorry bro. Are you done with that quest you promised for us?
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: I'm not a giga nerd like you twerps, just give me a bit more
+        time.
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Aww man, we already helped two people with missing items
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Yeah, this sucks! I was hoping for something a bit more interesting.
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: These fetch quests are starting to bore me.
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: I'm sure we can think of something more while we wait.
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Wait, did you say missing items? Could it be there is actually
+        a dragon on the loose?
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: A dragon?
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Yes, didn't you know? Dragons steal treasure and hoard it for
+        themselves!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Woah, that's scary!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Yeah, finally something interesting!
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Don't underestimate the dreaded dragon!
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: One hit from its fire breath and youre goners!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Sweet!
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Now, young adventurers, go look for clues of the dragon's whereabouts!
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: Wait, where do we find these clues?
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Uhh, right. The dragon's minions are scattered among the enemies
+        nearby.
+    - speakerIcon: {fileID: 0}
+      speakerName: Noah
+      dialogueLine: Go and "interrogate" them.
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Will do! Thanks bro!
+    RequiredItems: []
+  - ID: 9
+    Text: Try to find out clues about dragon's whereabouts
+    Type: 1
+    NPCName: Noah
+    QuestDialogue: []
+    RequiredItems:
     - <ID>k__BackingField: 0
-      <Name>k__BackingField: Shinies
+      <Name>k__BackingField: Clues
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
@@ -361,8 +604,9 @@ MonoBehaviour:
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
     - <ID>k__BackingField: 0
-      <Name>k__BackingField: Shinies
+      <Name>k__BackingField: Clues
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
@@ -374,8 +618,9 @@ MonoBehaviour:
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
     - <ID>k__BackingField: 0
-      <Name>k__BackingField: Shinies
+      <Name>k__BackingField: Clues
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
@@ -387,8 +632,9 @@ MonoBehaviour:
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
     - <ID>k__BackingField: 0
-      <Name>k__BackingField: Shinies
+      <Name>k__BackingField: Clues
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
@@ -400,6 +646,173 @@ MonoBehaviour:
       <Stat1>k__BackingField: 0
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: Clues
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+  - ID: 10
+    Text: Report our findings to Noah
+    Type: 0
+    NPCName: Noah
+    QuestDialogue: []
+    RequiredItems:
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+  - ID: 11
+    Text: Defeat the great evil!
+    Type: 1
+    NPCName: Noah
+    QuestDialogue: []
+    RequiredItems:
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 0
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 0
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
 --- !u!114 &3332523
 MonoBehaviour:
   m_ObjectHideFlags: 0

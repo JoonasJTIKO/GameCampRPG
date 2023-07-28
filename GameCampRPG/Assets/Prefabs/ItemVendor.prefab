@@ -162,36 +162,36 @@ MonoBehaviour:
     dialogueLine: Hiya, brave adventurers!
   - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
     speakerName: Daisy
-    dialogueLine: What can I get you?
+    dialogueLine: My lemonade cures even the deadliest of wounds!
   talkDialogue:
-  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
     speakerName: Jackie the Snipper
     dialogueLine: Hey Daisy!
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: What is it Jackie?
-  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
     speakerName: Jackie the Snipper
     dialogueLine: Got any grapes?
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: No, I sell lemonade!
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: I make it from lemons!
-  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
     speakerName: Jackie the Snipper
     dialogueLine: But you could have grapes, right?
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: No! Then it would be graponade!
-  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
     speakerName: Jackie the Snipper
     dialogueLine: Nevermind, sorry I asked. I'll just waddle away now.
-  - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
     speakerName: Jackie the Snipper
     dialogueLine: Waddle waddle.
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: ...
   specialDialogue:
@@ -201,7 +201,7 @@ MonoBehaviour:
   leaveDialogue:
   - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
     speakerName: Daisy
-    dialogueLine: May success follow you wherever you travel!
+    dialogueLine: Come back soon!
   items:
   - <ID>k__BackingField: 1
     <Name>k__BackingField: Health potion
@@ -216,6 +216,7 @@ MonoBehaviour:
     <Stat1>k__BackingField: 0
     <Stat2>k__BackingField: 0
     <EquipType>k__BackingField: 0
+    <UseType>k__BackingField: 0
   - <ID>k__BackingField: 2
     <Name>k__BackingField: Cutters of Fiskars
     <Description>k__BackingField: Increases damage dealt by Attack
@@ -229,6 +230,7 @@ MonoBehaviour:
     <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
     <EquipType>k__BackingField: 0
+    <UseType>k__BackingField: 0
   - <ID>k__BackingField: 3
     <Name>k__BackingField: Masterful sword
     <Description>k__BackingField: Increases damage dealt by Attack
@@ -242,6 +244,7 @@ MonoBehaviour:
     <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
     <EquipType>k__BackingField: 0
+    <UseType>k__BackingField: 0
   - <ID>k__BackingField: 4
     <Name>k__BackingField: Advanced algebra
     <Description>k__BackingField: Increases damage dealt by Attack
@@ -255,6 +258,7 @@ MonoBehaviour:
     <Stat1>k__BackingField: 1
     <Stat2>k__BackingField: 0
     <EquipType>k__BackingField: 0
+    <UseType>k__BackingField: 0
   - <ID>k__BackingField: 5
     <Name>k__BackingField: Mystic armor
     <Description>k__BackingField: Increases Defense and Skill damage
@@ -268,6 +272,7 @@ MonoBehaviour:
     <Stat1>k__BackingField: 2
     <Stat2>k__BackingField: 3
     <EquipType>k__BackingField: 1
+    <UseType>k__BackingField: 0
   - <ID>k__BackingField: 6
     <Name>k__BackingField: Woodland armor
     <Description>k__BackingField: Increases Defense and decreases Skill cooldown
@@ -281,6 +286,7 @@ MonoBehaviour:
     <Stat1>k__BackingField: 2
     <Stat2>k__BackingField: 4
     <EquipType>k__BackingField: 1
+    <UseType>k__BackingField: 0
   - <ID>k__BackingField: 7
     <Name>k__BackingField: Thorny armor
     <Description>k__BackingField: Increases Defense and damage dealt by Attack
@@ -294,6 +300,7 @@ MonoBehaviour:
     <Stat1>k__BackingField: 2
     <Stat2>k__BackingField: 1
     <EquipType>k__BackingField: 1
+    <UseType>k__BackingField: 0
 --- !u!65 &7405245339927233692
 BoxCollider:
   m_ObjectHideFlags: 0
