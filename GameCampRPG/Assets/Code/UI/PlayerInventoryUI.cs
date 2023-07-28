@@ -59,27 +59,7 @@ namespace GameCampRPG.UI
 
         private void OnEnable()
         {
-            playerItems = GameInstance.Instance.GetPlayerInfo().PlayerInventory.ShowAllItems();
-
-            for (int i = 0; i < 25; i++)
-            {
-                GameObject menuFrame = GameObject.Instantiate(itemFrame, this.transform);
-                inventoryMenuItems.Add(menuFrame);
-                if (i < playerItems.Count)
-                {
-                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[0].text = playerItems[i].Amount.ToString();
-                    //inventoryMenuItems[i].GetComponentInChildren<Image>().sprite = playerItems[i].Icon;
-                }
-            }
-        }
-
-        private void OnDisable()
-        {
-            foreach (GameObject menuListItem in inventoryMenuItems)
-            {
-                Destroy(menuListItem);
-            }
-            inventoryMenuItems.Clear();
+            DrawInventoryMenu();
         }
 
         public void EnableInputs()
@@ -95,6 +75,7 @@ namespace GameCampRPG.UI
 
             itemInfo.Show();
             iContextMenu.Hide();
+            DrawInventoryMenu();
             UpdateSelectedItem();
         }
 
@@ -108,6 +89,31 @@ namespace GameCampRPG.UI
             menuRight.performed -= MoveInMenusRight;
             select.performed -= SelectPerformed;
             escape.performed -= EscapePerformed;
+        }
+
+        private void DrawInventoryMenu()
+        {
+            if (inventoryMenuItems.Count != 0)
+            {
+                foreach (GameObject menuListItem in inventoryMenuItems)
+                {
+                    Destroy(menuListItem);
+                }
+                inventoryMenuItems.Clear();
+            }
+
+            playerItems = GameInstance.Instance.GetPlayerInfo().PlayerInventory.ShowAllItems();
+
+            for (int i = 0; i < 25; i++)
+            {
+                GameObject menuFrame = GameObject.Instantiate(itemFrame, this.transform);
+                inventoryMenuItems.Add(menuFrame);
+                if (i < playerItems.Count)
+                {
+                    inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[0].text = playerItems[i].Amount.ToString();
+                    //inventoryMenuItems[i].GetComponentInChildren<Image>().sprite = playerItems[i].Icon;
+                }
+            }
         }
 
         private void MoveInMenusUp(InputAction.CallbackContext callback)

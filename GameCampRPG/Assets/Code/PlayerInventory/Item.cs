@@ -20,6 +20,14 @@ namespace GameCampRPG
             Armor = 1
         }
 
+        public enum ConsumableType
+        {
+            None = 0,
+            Heal = 1,
+            HealAll = 2,
+            LowerCooldown = 3,
+        }
+
         [field: SerializeField]
         public int ID { get; set; }
 
@@ -58,5 +66,8 @@ namespace GameCampRPG
 
         [field: SerializeField]
         public EquippableType EquipType { get; set; }
+
+        [field: SerializeField]
+        public ConsumableType UseType { get; set; }
     }
 }

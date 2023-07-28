@@ -106,6 +106,12 @@ namespace GameCampRPG
                 {
                     playerInventory.DisableInputs();
                 }
+                InventoryContextMenu iContextMenu = canvas.GetComponentInChildren<InventoryContextMenu>();
+                if (iContextMenu != null)
+                {
+                    iContextMenu.RemoveInputs();
+                    iContextMenu.Hide();
+                }
                 canvas.Hide();
                 Time.timeScale = 1f;
             }

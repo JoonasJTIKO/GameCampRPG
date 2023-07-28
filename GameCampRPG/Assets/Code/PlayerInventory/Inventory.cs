@@ -91,7 +91,8 @@ namespace GameCampRPG
                         EquipCharacter = inspectedItem.EquipCharacter,
                         Stat1 = inspectedItem.Stat1,
                         Stat2 = inspectedItem.Stat2,
-                        EquipType = inspectedItem.EquipType
+                        EquipType = inspectedItem.EquipType,
+                        UseType = inspectedItem.UseType
                     };
 
                     if (inspectedItem.Amount > amount)

@@ -133,16 +133,16 @@ namespace GameCampRPG
             switch (stat)
             {
                 case Item.ItemStat.IncreaseDamage:
-                    SetCharacterAttackStrength(attackStrengths[characterIndex] + 1, characterIndex);
+                    SetCharacterAttackStrength(characterIndex, attackStrengths[characterIndex] + 1);
                     break;
                 case Item.ItemStat.IncreaseDefense:
-                    SetCharacterDefense(defenses[characterIndex] + 1, characterIndex);
+                    SetCharacterDefense(characterIndex, defenses[characterIndex] + 1);
                     break;
                 case Item.ItemStat.IncreaseSkill:
-                    SetCharacterSkillStrength(skillStrengths[characterIndex] + 1, characterIndex);
+                    SetCharacterSkillStrength(characterIndex, skillStrengths[characterIndex] + 1);
                     break;
                 case Item.ItemStat.DecreaseCooldown:
-                    SetCharacterSkillModifier(skillCooldownModifiers[characterIndex] + 1, characterIndex);
+                    SetCharacterSkillModifier(characterIndex, skillCooldownModifiers[characterIndex] + 1);
                     break;
             }
         }
@@ -154,16 +154,37 @@ namespace GameCampRPG
             switch (stat)
             {
                 case Item.ItemStat.IncreaseDamage:
-                    SetCharacterAttackStrength(attackStrengths[characterIndex] - 1, characterIndex);
+                    SetCharacterAttackStrength(characterIndex, attackStrengths[characterIndex] - 1);
                     break;
                 case Item.ItemStat.IncreaseDefense:
-                    SetCharacterDefense(defenses[characterIndex] - 1, characterIndex);
+                    SetCharacterDefense(characterIndex, defenses[characterIndex] - 1);
                     break;
                 case Item.ItemStat.IncreaseSkill:
-                    SetCharacterSkillStrength(skillStrengths[characterIndex] - 1, characterIndex);
+                    SetCharacterSkillStrength(characterIndex, skillStrengths[characterIndex] - 1);
                     break;
                 case Item.ItemStat.DecreaseCooldown:
-                    SetCharacterSkillModifier(skillCooldownModifiers[characterIndex] - 1, characterIndex);
+                    SetCharacterSkillModifier(characterIndex, skillCooldownModifiers[characterIndex] - 1);
+                    break;
+            }
+        }
+
+        public void UseItem(Item.ConsumableType usableType, int characterIndex)
+        {
+            if (usableType == Item.ConsumableType.None) return;
+
+            switch (usableType)
+            {
+                case Item.ConsumableType.Heal:
+                    SetCharacterHealth(characterIndex, characterHealths[characterIndex] + 1);
+                    break;
+                case Item.ConsumableType.HealAll:
+                    for (int i = 0; i < 3; i++)
+                    {
+                        SetCharacterHealth(i, characterHealths[i] + 1);
+                    }
+                    break;
+                case Item.ConsumableType.LowerCooldown:
+                    SetCharacterSkillModifier(characterIndex, skillCooldownModifiers[characterIndex] + 1);
                     break;
             }
         }

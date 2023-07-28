@@ -2823,11 +2823,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[4].<EquipType>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
       propertyPath: items.Array.data[4].<MaxAmount>k__BackingField
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[5].<EquipType>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
       propertyPath: items.Array.data[5].<MaxAmount>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[6].<EquipType>k__BackingField
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}

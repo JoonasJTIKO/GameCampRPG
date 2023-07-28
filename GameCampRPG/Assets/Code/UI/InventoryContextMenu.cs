@@ -28,6 +28,8 @@ namespace GameCampRPG.UI
 
         private Item inventoryItem;
 
+        private bool consumable = false;
+
         private int selectedItem = 0;
 
         private void Awake()
@@ -125,21 +127,57 @@ namespace GameCampRPG.UI
                     RemoveInputs();
                     break;
                 case "Use":
+                    DrawMenu(EquipOptionsBasedOnItem(inventoryItem));
+                    UpdateSelectedItem();
+                    consumable = true;
                     break;
                 case "Knight":
-                    itemEquipping.EquipItem(inventoryItem, 1);
-                    playerInventoryUI.EnableInputs();
-                    RemoveInputs();
+                    if (consumable)
+                    {
+                        GameInstance.Instance.GetPlayerInfo().UseItem(inventoryItem.UseType, 1);
+                        GameInstance.Instance.GetPlayerInfo().PlayerInventory.GetItem(inventoryItem);
+                        playerInventoryUI.EnableInputs();
+                        RemoveInputs();
+                        consumable = false;
+                    }
+                    else
+                    {
+                        itemEquipping.EquipItem(inventoryItem, 1);
+                        playerInventoryUI.EnableInputs();
+                        RemoveInputs();
+                    }
                     break;
                 case "Rogue":
-                    itemEquipping.EquipItem(inventoryItem, 0);
-                    playerInventoryUI.EnableInputs();
-                    RemoveInputs();
+                    if (consumable)
+                    {
+                        GameInstance.Instance.GetPlayerInfo().UseItem(inventoryItem.UseType, 0);
+                        GameInstance.Instance.GetPlayerInfo().PlayerInventory.GetItem(inventoryItem);
+                        playerInventoryUI.EnableInputs();
+                        RemoveInputs();
+                        consumable = false;
+                    }
+                    else
+                    {
+                        itemEquipping.EquipItem(inventoryItem, 0);
+                        playerInventoryUI.EnableInputs();
+                        RemoveInputs();
+                    }
                     break;
                 case "Mage":
-                    itemEquipping.EquipItem(inventoryItem, 2);
-                    playerInventoryUI.EnableInputs();
-                    RemoveInputs();
+                    if (consumable)
+                    {
+                        GameInstance.Instance.GetPlayerInfo().UseItem(inventoryItem.UseType, 2);
+                        GameInstance.Instance.GetPlayerInfo().PlayerInventory.GetItem(inventoryItem);
+                        playerInventoryUI.EnableInputs();
+                        RemoveInputs();
+                        consumable = false;
+                    }
+                    else
+                    {
+                        itemEquipping.EquipItem(inventoryItem, 2);
+                        playerInventoryUI.EnableInputs();
+                        RemoveInputs();
+                    }
                     break;
                 case "Cancel":
                     playerInventoryUI.EnableInputs();
