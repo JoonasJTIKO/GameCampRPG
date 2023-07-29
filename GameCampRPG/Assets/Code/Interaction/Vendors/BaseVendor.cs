@@ -7,6 +7,9 @@ namespace GameCampRPG
     public abstract class BaseVendor : MonoBehaviour
     {
         [SerializeField]
+        protected Canvas interactPrompt;
+
+        [SerializeField]
         protected float xOffset = 55f;
 
         [SerializeField]

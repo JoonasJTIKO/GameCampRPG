@@ -6,12 +6,8 @@ namespace GameCampRPG
 {
     public interface IInteractable
     {
-        bool InRange 
-        { 
-            get;
-            set;
-        }
-
         void Interact();
+
+        void PlayerEnterRange(bool entered);
     }
 }

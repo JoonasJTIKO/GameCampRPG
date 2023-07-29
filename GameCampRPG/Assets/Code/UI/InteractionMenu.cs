@@ -12,6 +12,9 @@ namespace GameCampRPG.UI
         [SerializeField]
         private ShopMenu shopMenu;
 
+        [SerializeField]
+        private SellMenu sellMenu;
+
         private PlayerInputs inputs;
 
         private InputAction menuUp;
@@ -213,7 +216,8 @@ namespace GameCampRPG.UI
 
         private void Sell()
         {
-            Debug.Log("Open sell interface");
+            sellMenu.OpenSellMenu(baseVendor);
+            Hide();
         }
 
         private void Cancel()

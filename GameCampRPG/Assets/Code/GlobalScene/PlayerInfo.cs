@@ -115,6 +115,11 @@ namespace GameCampRPG
             }
 ;       }
 
+        public void RemoveItem(Item item)
+        {
+            PlayerInventory.GetItem(item);
+        }
+
         public void AddMoney(int amount)
         {
             Money += amount;

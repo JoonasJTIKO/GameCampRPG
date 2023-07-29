@@ -11,8 +11,6 @@ namespace GameCampRPG
 
         public Inventory Inventory { get; private set; }
 
-        public bool InRange { get; set; }
-
         private void Awake()
         {
             if (GameInstance.Instance == null) return;
@@ -58,12 +56,9 @@ namespace GameCampRPG
             GameInstance.Instance.GetDialogueCanvas().StartDialogue(this, this.DialogueLines[0], true);
         }
 
-        private void OnGUI()
+        public void PlayerEnterRange(bool entered)
         {
-            if (!InRange) return;
-            Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
-            Rect menuRect = new Rect(screenPos.x - xOffset, Screen.height - screenPos.y - yOffset, 200, 100);
-            GUI.Label(menuRect, "Press E to interact");
+            interactPrompt.enabled = entered;
         }
     }
 }

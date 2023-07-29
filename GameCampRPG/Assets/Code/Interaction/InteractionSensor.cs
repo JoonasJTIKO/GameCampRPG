@@ -23,7 +23,7 @@ namespace GameCampRPG
         {
             collisionCount++;
             IntersectingObject = other.GetComponent<IInteractable>();
-            IntersectingObject.InRange = true;
+            IntersectingObject.PlayerEnterRange(true);
         }
 
         private void OnTriggerExit(Collider other)
@@ -32,7 +32,7 @@ namespace GameCampRPG
 
             if (!IsActive)
             {
-                IntersectingObject.InRange = false;
+                IntersectingObject.PlayerEnterRange(false);
                 IntersectingObject = null;
             }
         }
