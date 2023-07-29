@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace GameCampRPG.UI
 {
@@ -27,6 +29,46 @@ namespace GameCampRPG.UI
 
         public static event Action OnAttackPressed, OnSkillPressed, OnBlockPressed, OnMovePressed;
 
+        private List<Image> images = new List<Image>();
+
+        private List<TMP_Text> textList = new List<TMP_Text>();
+
+        private void Awake()
+        {
+            images = GetComponentsInChildren<Image>().ToList();
+            textList = GetComponentsInChildren<TMP_Text>().ToList();
+        }
+
+        public override void Show()
+        {
+            foreach (Image image in images)
+            {
+                image.enabled = true;
+            }
+
+            foreach (TMP_Text text in textList)
+            {
+                text.enabled = true;
+            }
+
+            if (initialSelectedObject != null)
+            {
+                eventSystem.SetSelectedGameObject(initialSelectedObject);
+            }
+        }
+
+        public override void Hide()
+        {
+            foreach (Image image in images)
+            {
+                image.enabled = false;
+            }
+
+            foreach (TMP_Text text in textList)
+            {
+                text.enabled = false;
+            }
+        }
 
         public void SetUnitText(string text)
         {

@@ -8,7 +8,8 @@ namespace GameCampRPG
     {
         Snake = 0,
         Slime = 1,
-        Tree = 2
+        Tree = 2,
+        Boss = 3
     }
 
     public enum EnemyDifficulty

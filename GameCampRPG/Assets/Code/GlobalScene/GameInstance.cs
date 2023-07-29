@@ -44,6 +44,8 @@ namespace GameCampRPG
 
         private static GameInstance instance;
 
+        public bool BossActive = false;
+
         public static GameInstance Instance
         {
             get

@@ -74,6 +74,7 @@ namespace GameCampRPG
                     break;
             }
 
+            GameInstance.Instance.GetAudioManager().PlayAudioAtLocation(GameSFX.SFX_COLLECT_POWERUP, other.transform.position);
             powerUpSpawning.Spawned = null;
             Deactivate();
         }

@@ -229,10 +229,10 @@ namespace GameCampRPG
             PlayAudioAtLocation(intSFX, Camera.current.transform.position);
         }
 
-        public void PlayMusic(GameMusic iTrackIndex, float volume = 0.2f)
+        public void PlayMusic(GameMusic trackIndex, float volume = 0.1f)
         {
             if (null == activeMusicAudioSource) Debug.Log("Music Game Object is missing an audio source component");
-            switch (iTrackIndex)
+            switch (trackIndex)
             {
                 case GameMusic.MUSIC_MAIN: activeMusicAudioSource.clip = musicMain; break;
                 case GameMusic.MUSIC_TOWN: activeMusicAudioSource.clip = musicTown; break;

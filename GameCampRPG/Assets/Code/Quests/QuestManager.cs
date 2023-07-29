@@ -39,6 +39,11 @@ namespace GameCampRPG.Quests
                 questCanvas.UpdateText(ActiveQuest.Text, ActiveQuest.RequiredItems[0].Amount, ActiveQuest.RequiredItems[0].MaxAmount);
             }
 
+            if (ActiveQuest == questObjectives[questObjectives.Length - 1])
+            {
+                GameInstance.Instance.BossActive = true;
+            }
+
             ID++;
         }
 
