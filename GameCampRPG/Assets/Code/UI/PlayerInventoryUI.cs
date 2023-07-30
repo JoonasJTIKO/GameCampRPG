@@ -204,11 +204,11 @@ namespace GameCampRPG.UI
             {
                 if (i == selectedItem)
                 {
-                    inventoryMenuItems[i].GetComponent<Image>().color = Color.red;
+                    inventoryMenuItems[i].transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
                 }
                 else
                 {
-                    inventoryMenuItems[i].GetComponent<Image>().color = Color.black;
+                    inventoryMenuItems[i].transform.localScale = new Vector3(1, 1, 1);
                 }
             }
             IndicateEquippedItems();
