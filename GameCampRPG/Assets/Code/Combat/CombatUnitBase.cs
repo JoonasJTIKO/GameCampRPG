@@ -29,6 +29,11 @@ namespace GameCampRPG
             protected set;
         }
 
+        public int MaxHealth
+        {
+            get { return maxHealth; }
+        }
+
         public int AttackStrength
         {
             get { return attackStrength; }

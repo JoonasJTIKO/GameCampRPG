@@ -99,17 +99,19 @@ namespace GameCampRPG
         private void PlayerUnitDied()
         {
             playerCount--;
-            if (playerCount == 0) EndCombat();
+            if (playerCount == 0) StartCoroutine(EndCombat());
         }
 
         private void EnemyUnitDied()
         {
             enemyCount--;
-            if (enemyCount == 0) EndCombat();
+            if (enemyCount == 0) StartCoroutine(EndCombat());
         }
 
-        private void EndCombat()
+        private IEnumerator EndCombat()
         {
+            yield return new WaitForSeconds(0.5f);
+
             GameInstance.Instance.GetPlayerInfo().PlayerInputs.Combat.Disable();
 
             foreach (Item item in GameInstance.Instance.GetCombatInfo().Drops)

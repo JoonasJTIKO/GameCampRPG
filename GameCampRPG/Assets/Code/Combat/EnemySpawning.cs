@@ -16,6 +16,9 @@ namespace GameCampRPG
         private CombatEnemyUnit treePrefab;
 
         [SerializeField]
+        private CombatEnemyUnit bossPrefab;
+
+        [SerializeField]
         private Transform[] enemyPositions;
 
         private bool skipThird = false;
@@ -71,6 +74,9 @@ namespace GameCampRPG
                     break;
                 case EnemyType.Tree:
                     spawned = Instantiate(treePrefab);
+                    break;
+                case EnemyType.Boss:
+                    spawned = Instantiate(bossPrefab);
                     break;
             }
 
