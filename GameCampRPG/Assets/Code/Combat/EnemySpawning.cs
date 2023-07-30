@@ -36,7 +36,13 @@ namespace GameCampRPG
 
             int unitIndex = 0;
 
-            GameInstance.Instance.GetEnemyInfoCanvas().ActivatePanels(combatInfo.Enemies.Count);
+            EnemyType[] types = new EnemyType[combatInfo.Enemies.Count];
+            for (int i = 0; i < combatInfo.Enemies.Count; i++)
+            {
+                types[i] = combatInfo.Enemies[i].Type;
+            }
+
+            GameInstance.Instance.GetEnemyInfoCanvas().ActivatePanels(combatInfo.Enemies.Count, types);
 
             foreach (EnemyData data in combatInfo.Enemies)
             {

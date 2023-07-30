@@ -202,7 +202,7 @@ namespace GameCampRPG.UI
             }
             GameObject cancel = GameObject.Instantiate(listItem, this.gameObject.transform);
             listItems.Add(cancel);
-            listItems[^1].GetComponent<RectTransform>().anchoredPosition3D = new(listItemPos.x, -410, listItemPos.z);
+            listItems[^1].GetComponent<RectTransform>().anchoredPosition3D = new(listItemPos.x, -360, listItemPos.z);
             TextMeshProUGUI[] textComps = listItems[^1].GetComponentsInChildren<TextMeshProUGUI>();
             if (textComps[0].gameObject.name == "ItemName")
             {

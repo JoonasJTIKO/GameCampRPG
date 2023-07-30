@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GameCampRPG.UI
 {
@@ -11,6 +12,18 @@ namespace GameCampRPG.UI
 
         [SerializeField]
         private CombatUnitPanel[] unevenPanels;
+
+        [SerializeField]
+        private Texture snakeSprite;
+
+        [SerializeField]
+        private Texture slimeSprite;
+
+        [SerializeField]
+        private Texture treeSprite;
+
+        [SerializeField]
+        private Texture bossSprite;
 
         private bool even = false;
 
@@ -40,7 +53,7 @@ namespace GameCampRPG.UI
             }
         }
 
-        public void ActivatePanels(int enemyCount)
+        public void ActivatePanels(int enemyCount, EnemyType[] types)
         {
             if (enemyCount == 0) return;
 
@@ -55,6 +68,21 @@ namespace GameCampRPG.UI
                 while (index < enemyCount)
                 {
                     evenPanels[index + helper].gameObject.SetActive(true);
+                    switch (types[index])
+                    {
+                        case EnemyType.Snake:
+                            evenPanels[index + helper].GetComponentInChildren<RawImage>().texture = snakeSprite;
+                            break;
+                        case EnemyType.Slime:
+                            evenPanels[index + helper].GetComponentInChildren<RawImage>().texture = slimeSprite;
+                            break;
+                        case EnemyType.Tree:
+                            evenPanels[index + helper].GetComponentInChildren<RawImage>().texture = treeSprite;
+                            break;
+                        case EnemyType.Boss:
+                            //evenPanels[index + helper].GetComponentInChildren<RawImage>().texture = bossSprite;
+                            break;
+                    }
                     index++;
                 }
             }
@@ -65,6 +93,21 @@ namespace GameCampRPG.UI
                 while (index < enemyCount)
                 {
                     unevenPanels[index + helper].gameObject.SetActive(true);
+                    switch (types[index])
+                    {
+                        case EnemyType.Snake:
+                            unevenPanels[index + helper].GetComponentInChildren<RawImage>().texture = snakeSprite;
+                            break;
+                        case EnemyType.Slime:
+                            unevenPanels[index + helper].GetComponentInChildren<RawImage>().texture = slimeSprite;
+                            break;
+                        case EnemyType.Tree:
+                            unevenPanels[index + helper].GetComponentInChildren<RawImage>().texture = treeSprite;
+                            break;
+                        case EnemyType.Boss:
+                            //unevenPanels[index + helper].GetComponentInChildren<RawImage>().texture = bossSprite;
+                            break;
+                    }
                     index++;
                 }
             }

@@ -3378,6 +3378,22 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10000
       objectReference: {fileID: 0}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[0].<Icon>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: dcfd9719c754a7147a5f0ae1a42325e7, type: 3}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[1].<Icon>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 5a47c7da20c78084db879f3382c046f2, type: 3}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[2].<Icon>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f64a643af183994eb41b6926fb246f6, type: 3}
+    - target: {fileID: 2343070428304641530, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
+      propertyPath: items.Array.data[3].<Icon>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: a43825d74dcc79646a96340cb5268656, type: 3}
     - target: {fileID: 5772859958937571720, guid: 8bf10c333ccdbf4429b317f5a1fa54db, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4983,6 +4999,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: items.Array.data[0].<Icon>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f2744a4562b5e3488254d501b60241b, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: items.Array.data[1].<Icon>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: 81fc421e53c8f0245b41bdb06598d0df, type: 3}
+    - target: {fileID: -5005699819325925248, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
+      propertyPath: items.Array.data[2].<Icon>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: a363c30b51cac7f4e90e24a5dcf773ac, type: 3}
     - target: {fileID: 318998312, guid: 813c062b27332ef4694bf32f0f69b5f1, type: 3}
       propertyPath: m_Enabled
       value: 0

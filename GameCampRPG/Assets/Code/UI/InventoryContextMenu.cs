@@ -218,7 +218,7 @@ namespace GameCampRPG.UI
 
             for (int i = 0; i < menuItemNames.Length; i++)
             {
-                newPosition = new(optionPosition.x, optionPosition.y - (225 * i), optionPosition.z);
+                newPosition = new(optionPosition.x, optionPosition.y - (250 * i), optionPosition.z);
                 GameObject option = GameObject.Instantiate(menuItem, this.gameObject.transform);
                 menuItems.Add(option);
                 menuItems[i].GetComponent<RectTransform>().anchoredPosition3D = newPosition;
@@ -226,7 +226,7 @@ namespace GameCampRPG.UI
             }
             GameObject cancel = GameObject.Instantiate(menuItem, this.gameObject.transform);
             menuItems.Add(cancel);
-            menuItems[^1].GetComponent<RectTransform>().anchoredPosition3D = new(optionPosition.x, optionPosition.y - (225 * menuItemNames.Length), optionPosition.z);
+            menuItems[^1].GetComponent<RectTransform>().anchoredPosition3D = new(optionPosition.x, optionPosition.y - (250 * menuItemNames.Length), optionPosition.z);
             menuItems[^1].GetComponent<TextMeshProUGUI>().text = "Cancel";
         }
 

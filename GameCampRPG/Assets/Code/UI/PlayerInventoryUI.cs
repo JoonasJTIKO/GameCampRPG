@@ -111,13 +111,19 @@ namespace GameCampRPG.UI
                 if (i < playerItems.Count)
                 {
                     inventoryMenuItems[i].GetComponentsInChildren<TextMeshProUGUI>()[0].text = playerItems[i].Amount.ToString();
-                    //inventoryMenuItems[i].GetComponentInChildren<Image>().sprite = playerItems[i].Icon;
+                    inventoryMenuItems[i].GetComponentInChildren<Image>().sprite = playerItems[i].Icon;
+                }
+                else
+                {
+                    inventoryMenuItems[i].GetComponentInChildren<Image>().color = new Color(0, 0, 0, 0);
                 }
             }
         }
 
         private void MoveInMenusUp(InputAction.CallbackContext callback)
         {
+            int previousSelected = selectedItem;
+
             if (selectedItem - 5 >= 0)
             {
                 selectedItem -= 5;
@@ -126,11 +132,19 @@ namespace GameCampRPG.UI
             {
                 selectedItem = inventoryMenuItems.Count - (5 - selectedItem);
             }
+
+            if (selectedItem >= playerItems.Count)
+            {
+                selectedItem = previousSelected;
+            }
+
             UpdateSelectedItem();
         }
 
         private void MoveInMenusDown(InputAction.CallbackContext callback)
         {
+            int previousSelected = selectedItem;
+
             if (selectedItem + 5 <= inventoryMenuItems.Count - 1)
             {
                 selectedItem += 5;
@@ -139,11 +153,19 @@ namespace GameCampRPG.UI
             {
                 selectedItem = 5 - (inventoryMenuItems.Count - selectedItem);
             }
+
+            if (selectedItem >= playerItems.Count)
+            {
+                selectedItem = previousSelected;
+            }
+
             UpdateSelectedItem();
         }
 
         private void MoveInMenusLeft(InputAction.CallbackContext callback)
         {
+            int previousSelected = selectedItem;
+
             if (selectedItem > 0)
             {
                 selectedItem--;
@@ -152,11 +174,19 @@ namespace GameCampRPG.UI
             {
                 selectedItem = inventoryMenuItems.Count - 1;
             }
+
+            if (selectedItem >= playerItems.Count)
+            {
+                selectedItem = previousSelected;
+            }
+
             UpdateSelectedItem();
         }
 
         private void MoveInMenusRight(InputAction.CallbackContext callback)
         {
+            int previousSelected = selectedItem;
+
             if (selectedItem < inventoryMenuItems.Count - 1)
             {
                 selectedItem++;
@@ -165,6 +195,12 @@ namespace GameCampRPG.UI
             {
                 selectedItem = 0;
             }
+
+            if (selectedItem >= playerItems.Count)
+            {
+                selectedItem = previousSelected;
+            }
+
             UpdateSelectedItem();
         }
 
