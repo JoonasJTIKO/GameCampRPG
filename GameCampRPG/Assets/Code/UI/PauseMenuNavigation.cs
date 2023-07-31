@@ -94,12 +94,12 @@ namespace GameCampRPG.UI
             switch (selectedItem)
             {
                 case 0:
-                    charactersUI.enabled = true;
+                    charactersUI.gameObject.SetActive(true);
                     break;
                 case 1:
                     playerInventoryUI.EnableInputs();
                     RemoveInputs();
-                    charactersUI.enabled = false;
+                    charactersUI.gameObject.SetActive(false);
                     itemInfo.Show();
                     break;
             }
@@ -121,11 +121,11 @@ namespace GameCampRPG.UI
                 switch (selectedItem)
                 {
                     case 0:
-                        charactersUI.enabled = true;
+                        charactersUI.gameObject.SetActive(true);
                         playerInventoryUI.Hide();
                         break;
                     case 1:
-                        charactersUI.enabled = false;
+                        charactersUI.gameObject.SetActive(false);
                         playerInventoryUI.Show();
                         break;
                 }
