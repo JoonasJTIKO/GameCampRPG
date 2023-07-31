@@ -395,10 +395,10 @@ MonoBehaviour:
   xOffset: 55
   yOffset: 100
   introDialogue:
-  - speakerIcon: {fileID: 21300000, guid: 08411de95369247478cede2cf7e86a6a, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
     speakerName: Sir Riley the Brave
     dialogueLine: Hi bro!
-  - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
     speakerName: Noah
     dialogueLine: Great, what does the twerp squad want now?
   talkDialogue:
@@ -413,10 +413,10 @@ MonoBehaviour:
     dialogueLine: Yeah, well, good luck with that I guess
   specialDialogue: []
   leaveDialogue:
-  - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
     speakerName: Noah
     dialogueLine: You twerps done now?
-  - speakerIcon: {fileID: 21300000, guid: 64c14775f170d6a4e9bd6404680d189e, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
     speakerName: Noah
     dialogueLine: I have better things to do.
 --- !u!65 &7405245339927233692

@@ -395,10 +395,10 @@ MonoBehaviour:
   xOffset: 55
   yOffset: 100
   introDialogue:
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: Hiya, brave adventurers!
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: My lemonade cures even the deadliest of wounds!
   talkDialogue:
@@ -433,11 +433,11 @@ MonoBehaviour:
     speakerName: Daisy
     dialogueLine: ...
   specialDialogue:
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: 'Yay! Now I can finally afford to buy a lower body! '
   leaveDialogue:
-  - speakerIcon: {fileID: 21300000, guid: 97c5c01efe328dd42859e160d126331f, type: 3}
+  - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
     speakerName: Daisy
     dialogueLine: Come back soon!
   items:
