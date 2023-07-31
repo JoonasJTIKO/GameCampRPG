@@ -24,6 +24,7 @@ namespace GameCampRPG
                 SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
             }
             PlayerInputs inputs = GameInstance.Instance.GetPlayerInfo().PlayerInputs;
+            GameInstance.Instance.GetStartMenuCanvas().Hide();
             GameInstance.Instance.GetSceneFadeCanvas().FadeOut();
             GameInstance.Instance.GetAudioManager().PlayMusic(GameMusic.MUSIC_TOWN);
             inputs.Overworld.Enable();

@@ -51,10 +51,12 @@ namespace GameCampRPG
 
         private void Initialize()
         {
+            StartMenuState startMenuState = new StartMenuState();
             VillageState villageState = new VillageState();
             OverworldState overworldState = new OverworldState();
             CombatState combatState = new CombatState();
 
+            states.Add(startMenuState);
             states.Add(villageState);
             states.Add(overworldState);
             states.Add(combatState);

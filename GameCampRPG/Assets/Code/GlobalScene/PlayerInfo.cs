@@ -45,6 +45,15 @@ namespace GameCampRPG
             }
 
             Money = 500;
+
+            for (int i = 0; i < 3; i++)
+            {
+                SetCharacterHealth(i, 3);
+                SetCharacterAttackStrength(i, 1);
+                SetCharacterSkillStrength(i, 1);
+                SetCharacterDefense(i, 1);
+                SetCharacterSkillModifier(i, 1);
+            }
         }
 
         public void SetCharacterHealth(int characterIndex, int value)
@@ -113,7 +122,8 @@ namespace GameCampRPG
                 copy.Amount = amount;
                 GameInstance.Instance.GetQuestManager().CheckForQuestProgress(copy);
             }
-;       }
+;
+        }
 
         public void RemoveItem(Item item)
         {

@@ -28,6 +28,9 @@ namespace GameCampRPG
         [SerializeField]
         private QuestCanvas UI_QuestCanvas;
 
+        [SerializeField]
+        private StartMenuCanvas UI_StartMenuCanvas;
+
         private Camera overworldCamera;
 
         private GameStateManager gameStateManager;
@@ -148,6 +151,11 @@ namespace GameCampRPG
         public QuestCanvas GetQuestCanvas()
         {
             return UI_QuestCanvas;
+        }
+
+        public StartMenuCanvas GetStartMenuCanvas()
+        {
+            return UI_StartMenuCanvas;
         }
 
         public QuestManager GetQuestManager()
