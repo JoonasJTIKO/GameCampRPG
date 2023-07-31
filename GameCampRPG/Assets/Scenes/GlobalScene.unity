@@ -396,7 +396,7 @@ MonoBehaviour:
     NPCName: Jimmy
     QuestDialogue: []
     RequiredItems:
-    - <ID>k__BackingField: 0
+    - <ID>k__BackingField: 9
       <Name>k__BackingField: Shinies
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
@@ -585,12 +585,12 @@ MonoBehaviour:
     NPCName: Noah
     QuestDialogue: []
     RequiredItems:
-    - <ID>k__BackingField: 0
+    - <ID>k__BackingField: 10
       <Name>k__BackingField: Clues
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 5
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
@@ -672,12 +672,40 @@ MonoBehaviour:
     NPCName: Daisy
     QuestDialogue: []
     RequiredItems:
-    - <ID>k__BackingField: 0
+    - <ID>k__BackingField: 2
       <Name>k__BackingField: 
       <Description>k__BackingField: 
       <Price>k__BackingField: 0
       <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 1
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 3
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 1
+      <IsUnique>k__BackingField: 0
+      <Icon>k__BackingField: {fileID: 0}
+      <Equippable>k__BackingField: 0
+      <EquipCharacter>k__BackingField: 0
+      <Stat1>k__BackingField: 0
+      <Stat2>k__BackingField: 0
+      <EquipType>k__BackingField: 0
+      <UseType>k__BackingField: 0
+    - <ID>k__BackingField: 4
+      <Name>k__BackingField: 
+      <Description>k__BackingField: 
+      <Price>k__BackingField: 0
+      <Amount>k__BackingField: 0
+      <MaxAmount>k__BackingField: 1
       <IsUnique>k__BackingField: 0
       <Icon>k__BackingField: {fileID: 0}
       <Equippable>k__BackingField: 0
