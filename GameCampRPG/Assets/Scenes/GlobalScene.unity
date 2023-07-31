@@ -317,13 +317,13 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: Uhh... Hi?
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: SHINIES!
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: AHH!
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: Hey! Stop yelling! You'll scare the shinies!
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
@@ -335,10 +335,10 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
       speakerName: Ash the Mathgician
       dialogueLine: Hello Jimmy, could we-
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: Are you here to STEAL my shinies too?
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: I won't let you!
     - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
@@ -351,19 +351,19 @@ MonoBehaviour:
       speakerName: Sir Riley the Brave
       dialogueLine: If we help you find your lost shinies, could you assist us in
         our task as well?
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: You would help me get my shinies back?
     - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Indeed! If possible, we would like to get a sweetca-
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: Yay! Come back when you find my shinies, I'll wait here!
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: '*Rustle rustle*'
-    - speakerIcon: {fileID: 21300000, guid: f9de1ab7c09059646a06c35e3fd152c5, type: 3}
+    - speakerIcon: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: ...
     - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
@@ -418,19 +418,19 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: We have returned victorious!
-    - speakerIcon: {fileID: 0}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: Really? You have my shinies?
     - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Indeed! We have them right here!
-    - speakerIcon: {fileID: 0}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: Yay! Shinies!
-    - speakerIcon: {fileID: 0}
+    - speakerIcon: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: '*Rustle rustle*'
-    - speakerIcon: {fileID: 0}
+    - speakerIcon: {fileID: 1001224522, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: ...
     - speakerIcon: {fileID: 0}
@@ -439,7 +439,7 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
       dialogueLine: Ahem!
-    - speakerIcon: {fileID: 0}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
       dialogueLine: Oh, did you want something else?
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
@@ -459,11 +459,8 @@ MonoBehaviour:
       speakerName: Sir Riley the Brave
       dialogueLine: Would you happen to have a sweetroll you could give us now that
         we helped you?
-    - speakerIcon: {fileID: 0}
+    - speakerIcon: {fileID: 1206327739, guid: ccbb8325faf5f3c4ca63e790544e3aa3, type: 3}
       speakerName: Jimmy
-      dialogueLine: You should've just said so! Here you go!
-    - speakerIcon: {fileID: 0}
-      speakerName: 
       dialogueLine: You should've just said so! Here you go!
     - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
       speakerName: Sir Riley the Brave
@@ -477,8 +474,8 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: Hi sis, still crying?
-    - speakerIcon: {fileID: 0}
-      speakerName: 
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
+      speakerName: Daisy
       dialogueLine: Are you still eating you boogers when you think nobody is looking?
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
@@ -492,11 +489,8 @@ MonoBehaviour:
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
       dialogueLine: Fine! Here Daisy, we got you your sweetroll
-    - speakerIcon: {fileID: 0}
-      speakerName: 
-      dialogueLine: Fine! Here Daisy, we got you your sweetroll.
-    - speakerIcon: {fileID: 0}
-      speakerName: 
+    - speakerIcon: {fileID: 21300000, guid: 5616808146b1a5f4bb2d890e0856bcfd, type: 3}
+      speakerName: Daisy
       dialogueLine: Aww, thanks bro. Youre alright sometimes!
     - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
       speakerName: Jackie the Snipper
@@ -605,66 +599,77 @@ MonoBehaviour:
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
       <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: Clues
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: Clues
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: Clues
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: Clues
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
   - ID: 10
     Text: Report our findings to Noah
     Type: 0
     NPCName: Noah
+    QuestDialogue:
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Hey Riley, what are we going to tell him? I don't understand
+        any of these clues!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Just trust me and go along with it!
+    - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
+      speakerName: Noah
+      dialogueLine: Oh hey, brave adventurers, are you finally done looking for the
+        clues?
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Uh-
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Yes! We have indeed vanquished the foul servants of the evil
+        dragon and arrived at a conclusion!
+    - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
+      speakerName: Noah
+      dialogueLine: So... You already know the culprit...
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Actually we were hoping-
+    - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
+      speakerName: Great Dragon lord Noah
+      dialogueLine: Bwahaha! Puny mortals!
+    - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
+      speakerName: Great Dragon lord Noah
+      dialogueLine: It is I, the great Dragon lord Noah who has stolen the precious
+        items from the townsfolk!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Huh?
+    - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
+      speakerName: Great Dragon lord Noah
+      dialogueLine: Prepare yourselves for the battle of your lives!
+    - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
+      speakerName: Great Dragon lord Noah
+      dialogueLine: Now, brave adventurers! Come at me with all you've got!
+    - speakerIcon: {fileID: 21300000, guid: 6f2f0fec1a884f7469663a22d73654b3, type: 3}
+      speakerName: Great Dragon lord Noah
+      dialogueLine: Be warned though, without the master weapons, you heroes stand
+        no chance against me!
+    - speakerIcon: {fileID: 21300000, guid: ec1596a19a9e7914bbb1eb1e3a9cc9de, type: 3}
+      speakerName: Jackie the Snipper
+      dialogueLine: Do we really have to fight your bro, Riley? I don't think we
+        can take him!
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: Even if we cannot win, we still must stand tall and face him.
+    - speakerIcon: {fileID: 21300000, guid: 8acf1c81417232e4898e135fda2b1801, type: 3}
+      speakerName: Sir Riley the Brave
+      dialogueLine: If we don't, the whole world will be doomed for sure!
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: Hey, didn't he say something about "master weapons"?
+    - speakerIcon: {fileID: 21300000, guid: fd61094d75a2719458bd0a396a271d46, type: 3}
+      speakerName: Ash the Mathgician
+      dialogueLine: I think I saw Daisy hiding something behind her stand when we
+        arrived in town.
+    RequiredItems: []
+  - ID: 11
+    Text: Buy the master weapons so we have a chance!
+    Type: 1
+    NPCName: Daisy
     QuestDialogue: []
     RequiredItems:
     - <ID>k__BackingField: 0
@@ -681,124 +686,12 @@ MonoBehaviour:
       <Stat2>k__BackingField: 0
       <EquipType>k__BackingField: 0
       <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-  - ID: 11
-    Text: Defeat the great evil!
+  - ID: 12
+    Text: Defeat the evil Dragon lord Noah!
     Type: 1
     NPCName: Noah
     QuestDialogue: []
     RequiredItems:
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
-    - <ID>k__BackingField: 0
-      <Name>k__BackingField: 
-      <Description>k__BackingField: 
-      <Price>k__BackingField: 0
-      <Amount>k__BackingField: 0
-      <MaxAmount>k__BackingField: 0
-      <IsUnique>k__BackingField: 0
-      <Icon>k__BackingField: {fileID: 0}
-      <Equippable>k__BackingField: 0
-      <EquipCharacter>k__BackingField: 0
-      <Stat1>k__BackingField: 0
-      <Stat2>k__BackingField: 0
-      <EquipType>k__BackingField: 0
-      <UseType>k__BackingField: 0
     - <ID>k__BackingField: 0
       <Name>k__BackingField: 
       <Description>k__BackingField: 
